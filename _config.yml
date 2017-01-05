@@ -5,7 +5,7 @@ locale: en_GB
 description: A place to share my thoughts 
 logo: 
 search: true
-url: http://localhost:4000
+url: heatherjcampbell.com #http://localhost:4000
 
 # Jekyll configuration
 
