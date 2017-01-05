@@ -2,7 +2,7 @@
 layout: post
 title: "MongoDB Day 1 (CRUD Part 1: Create)"
 description: "Creating items in MongoDB"
-category: development
+category: tutorial
 share: true
 tags: [seven databases in seven weeks, nosql, data, mongodb]
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: "Oracle Cloud Event"
 description: "Keypoints of the Oracle Cloud Event"
-category: products
+category: trends
 share: true
 tags: [cloud, oracle, services]
 ---

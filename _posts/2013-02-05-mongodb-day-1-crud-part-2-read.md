@@ -2,7 +2,7 @@
 layout: post
 title: "MongoDB Day 1 (CRUD Part 2: Read)"
 description: "Reading items in MongoDB"
-category: development
+category: tutorial
 share: true
 tags: [seven databases in seven weeks, nosql, data, mongodb]
 ---

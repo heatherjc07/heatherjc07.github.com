@@ -2,7 +2,7 @@
 layout: post
 title: "Functional Programming with Java"
 description: "Review of plural sight course Functional Programming with Java and some of my takeaways"
-category: tutorials
+category: tutorial
 tags: [java, online courses, functional programming]
 share: true
 ---

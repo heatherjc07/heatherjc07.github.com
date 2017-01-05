@@ -2,7 +2,7 @@
 layout: post
 title: "Invention Machine"
 description: ""
-category: 
+category: books 
 tags: [show your work, blogging]
 share: true
 ---

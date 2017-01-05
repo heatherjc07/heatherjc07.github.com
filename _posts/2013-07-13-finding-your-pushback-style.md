@@ -2,7 +2,7 @@
 layout: post
 title: "Finding Your Pushback Style"
 description: "Chapter 2 of Pushback"
-category: development
+category: skills
 share: true
 tags: [negotiation, Pushback, Selena Rezvani"]
 ---

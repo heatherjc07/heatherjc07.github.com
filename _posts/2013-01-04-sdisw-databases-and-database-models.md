@@ -2,7 +2,7 @@
 layout: post
 title: "SDISW: Databases and Database Models"
 description: "Seven Databases in Seven Weeks"
-category: development
+category: tutorial
 share: true
 tags: [seven databases in seven weeks, nosql, data]
 ---

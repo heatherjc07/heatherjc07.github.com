@@ -2,7 +2,7 @@
 layout: post
 title: "Final Thoughts on Three Days of Prolog"
 description: "Prolog Roundup: Seven Languages in Seven Weeks"
-category: development
+category: tutorial
 share: true
 tags: [seven languages in seven weeks, prolog, languages]
 ---

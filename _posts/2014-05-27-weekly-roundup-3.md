@@ -2,7 +2,7 @@
 layout: post
 title: "Weekly Roundup May 27th 2014"
 description: "Roundup May 27th 2014"
-category: 
+category: roundup 
 tags: []
 share: true
 ---

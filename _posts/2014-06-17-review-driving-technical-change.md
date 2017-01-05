@@ -2,7 +2,7 @@
 layout: post
 title: "Review: Driving Technical Change"
 description: "Driving Technical Change, Terrence Ryan"
-category: 
+category: books 
 tags: [book, review]
 share: true
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: "MongoDB Day 1 (Intro)"
 description: "Introduction to MongoDB"
-category: development
+category: tutorial
 share: true
 tags: [seven databases in seven weeks, nosql, data, mongodb]
 ---

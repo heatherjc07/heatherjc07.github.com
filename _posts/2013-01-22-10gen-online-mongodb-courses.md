@@ -2,7 +2,7 @@
 layout: post
 title: "10gen Online MongoDB Courses"
 description: "10gen Online MongoDB Courses"
-category: development
+category: skills
 share: true
 tags: [10gen, mongodb, online courses, nosql, databases]
 ---

@@ -17,8 +17,7 @@ task :publish => [:generate] do
     Dir.chdir tmp
     system "git init"
     system "git add ."
-    message = "Site_updated"
-    system "git commit -m #{message.shellescape}"
+    system "git commit -m 'site updated'"
     system "git remote add origin https://github.com/#{GITHUB_REPONAME}.git"
     system "git push origin master --force"
 end

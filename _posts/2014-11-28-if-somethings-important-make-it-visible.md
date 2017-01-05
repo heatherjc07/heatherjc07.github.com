@@ -2,7 +2,7 @@
 layout: post
 title: "If Something's Important Make it Visible"
 description: "Improving your processes by making them visible"
-category: Agile
+category: culture
 tags: [Agile, Improvement, Practices]
 share: true
 ---

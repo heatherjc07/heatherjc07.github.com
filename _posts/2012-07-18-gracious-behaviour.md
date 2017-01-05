@@ -2,7 +2,7 @@
 layout: post
 title: "Gracious Behaviour"
 description: "The importance of gracious behaviour"
-category: development 
+category: skills 
 share: true
 tags: [relationships, soft skills, career development, 12 essential skills]
 ---

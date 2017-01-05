@@ -2,7 +2,7 @@
 layout: post
 title: "Prepare Psychologically"
 description: "Chapter 3 of Pushback"
-category: development
+category: skills
 share: true
 tags: [negotiation, Pushback, Selena Rezvani]
 ---

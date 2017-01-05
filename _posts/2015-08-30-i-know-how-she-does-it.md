@@ -2,7 +2,7 @@
 layout: post
 title: "I Know How She Does It"
 description: "Lesson From I Know How She Does It"
-category: Books
+category: books
 share: true
 tags: [work life balance, fulfilment, book, review]
 ---

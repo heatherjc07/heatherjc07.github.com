@@ -2,7 +2,7 @@
 layout: post
 title: "Do Your Homework"
 description: "Chapter 4 of Pushback"
-category: development
+category: skills
 share: true
 tags: [negotiation, Pushback, Selena Rezvani]
 ---

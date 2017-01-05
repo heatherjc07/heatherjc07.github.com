@@ -2,7 +2,7 @@
 layout: post
 title: "Final Thoughts on Three Days of Io"
 description: "Io Roundup: Seven Languages in Seven Weeks"
-category: development 
+category: tutorial 
 tags: [seven languages in seven weeks, io, languages]
 ---
 

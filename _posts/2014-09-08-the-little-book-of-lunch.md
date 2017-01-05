@@ -2,7 +2,7 @@
 layout: post
 title: "The Little Book of Lunch"
 description: "Review of The Little Book of Lunch"
-category: 
+category: books 
 tags: [lifestyle, food]
 share: true
 ---

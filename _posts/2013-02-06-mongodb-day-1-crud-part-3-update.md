@@ -2,7 +2,7 @@
 layout: post
 title: "MongoDB Day 1 (CRUD Part 3: Update)"
 description: "Updating items in MongoDB"
-category: development
+category: tutorial
 share: true
 tags: [seven databases in seven weeks, nosql, data, mongodb]
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: "A Fresh Look"
 description: "Updating the look and feel of my blog"
-category: 
+category: life 
 share: true
 tags: [site]
 ---

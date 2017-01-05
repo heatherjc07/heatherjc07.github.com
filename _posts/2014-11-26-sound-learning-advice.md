@@ -2,7 +2,7 @@
 layout: post
 title: "Sound Learning Advice"
 description: "Pointer to a great post by Trisha Gee on Learning"
-category: learning
+category: skills
 tags: [learning, career]
 share: true
 ---

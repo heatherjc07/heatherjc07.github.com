@@ -2,7 +2,7 @@
 layout: post
 title: "Clojure Day 1"
 description: "Clojure Day 1: Seven Languages in Seven Weeks"
-category: development
+category: tutorial
 share: true
 tags: [seven languages in seven weeks, clojure, languages]
 ---

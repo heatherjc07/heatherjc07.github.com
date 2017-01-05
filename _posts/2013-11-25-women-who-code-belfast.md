@@ -2,7 +2,7 @@
 layout: post
 title: "Women Who Code Belfast"
 description: "Women Who Code Belfast"
-category: development
+category: culture
 tags: [women, development, women who code]
 share: true
 ---

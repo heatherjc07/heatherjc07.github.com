@@ -2,7 +2,7 @@
 layout: post
 title: "Communication"
 description: "The importance of good communication"
-category: development
+category: skills
 share: true
 tags: [relationships, soft skills, career development, 12 essential skills]
 ---

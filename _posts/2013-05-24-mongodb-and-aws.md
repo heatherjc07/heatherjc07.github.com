@@ -2,7 +2,7 @@
 layout: post
 title: "MongoDB and AWS"
 description: "Using MongoDB with AWS"
-category: presentations 
+category: skills 
 share: true
 tags: [aws, mongodb]
 ---

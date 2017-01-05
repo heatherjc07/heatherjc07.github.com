@@ -2,7 +2,7 @@
 layout: post
 title: "Review: Talking with Tech Leads"
 description: ""
-category: 
+category: books 
 tags: [review, book, career, leadership]
 share: true
 ---

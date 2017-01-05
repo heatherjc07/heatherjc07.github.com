@@ -2,7 +2,7 @@
 layout: post
 title: "Don't Let a Lack of Time be an Excuse"
 description: "Small investments add up"
-category: development
+category: life
 share: true
 tags: [career development, work life balance]
 ---

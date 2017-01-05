@@ -2,7 +2,7 @@
 layout: post
 title: "Why I'm Bought in to Coaching"
 description: "The positives of a coaching culture"
-category: skills
+category: culture
 share: true
 tags: [coaching, soft skills, development]
 ---
