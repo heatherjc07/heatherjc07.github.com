@@ -1,0 +1,371 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Clojure Day 2 &#8211; Heather Campbell's Blog</title>
+<meta name="description" content="My experience with day two of exploring Clojure through Seven Languages in Seven Weeks.
+
+">
+<meta name="keywords" content="seven languages in seven weeks, clojure, languages">
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Clojure Day 2">
+<meta name="twitter:description" content="My experience with day two of exploring Clojure through Seven Languages in Seven Weeks.
+
+">
+<meta name="twitter:site" content="@hcampbell07">
+<meta name="twitter:creator" content="@hcampbell07">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://localhost:4000/images/">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_GB">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Clojure Day 2">
+<meta property="og:description" content="My experience with day two of exploring Clojure through Seven Languages in Seven Weeks.
+
+">
+<meta property="og:url" content="http://localhost:4000/development/clojure-day-2/">
+<meta property="og:site_name" content="Heather Campbell's Blog">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/development/clojure-day-2/">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Heather Campbell's Blog Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+<!-- Webfonts -->
+<script src="https://use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="http://localhost:4000/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="http://localhost:4000/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://localhost:4000/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+
+<!-- MathJax -->
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body id="post">
+
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop">
+	    <ul>
+      
+		    
+		    <li><a href="http://localhost:4000/about/" >About</a></li>
+		  
+		    
+		    <li><a href="http://localhost:4000/blog/" >Blog</a></li>
+		  
+		    
+		    <li><a href="http://localhost:4000/presentations/" >Presentations</a></li>
+		  
+		    
+		    <li><a href="https://twitter.com/HCampbell07/" target="_blank">Tweets</a></li>
+		  
+		    
+		    <li><a href="http://localhost:4000/search/" >Search</a></li>
+		  
+		<li><a href="http://localhost:4000/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li>
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+<header class="masthead">
+	<div class="wrap">
+      <h1 class="site-title animated fadeIn"><a href="http://localhost:4000/">Heather Campbell's Blog</a></h1>
+		<h2 class="site-description animated fadeIn" itemprop="description">A place to share my thoughts</h2>
+	</div>
+</header><!-- /.masthead -->
+
+<div class="js-menu-screen menu-screen"></div>
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <ul class="entry-tags">
+          <li><a href="http://localhost:4000/tags/#seven languages in seven weeks" title="Pages tagged seven languages in seven weeks">seven languages in seven weeks</a></li><li><a href="http://localhost:4000/tags/#clojure" title="Pages tagged clojure">clojure</a></li><li><a href="http://localhost:4000/tags/#languages" title="Pages tagged languages">languages</a></li>
+        </ul>
+        
+          <h1 class="entry-title">Clojure Day 2</h1>
+        
+      </header>
+      <footer class="entry-meta">
+        
+        
+          <img src="http://localhost:4000/images/bio-photo.jpg" class="bio-photo" alt="Heather Campbell bio photo"></a>
+        
+        <span class="author vcard">By <span class="fn">Heather Campbell</span></span>
+        <span class="entry-date date published"><time datetime="2013-12-29T00:00:00+00:00"><i class="fa fa-calendar-o"></i> December 29, 2013</time></span>
+        
+
+        <span class="social-share-twitter">
+  <a href="https://twitter.com/intent/tweet?hashtags=sevenlanguagesinsevenweeks,clojure,languages&amp;text=Clojure%20Day%202&amp;url=http://localhost:4000/development/clojure-day-2/&amp;via=hcampbell07" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i> Tweet</a>
+</span>
+<span class="social-share-facebook">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/development/clojure-day-2/" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i> Like</a>
+</span>
+<span class="social-share-googleplus">
+  <a href="https://plus.google.com/share?url=http://localhost:4000/development/clojure-day-2/" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> +1</a>
+</span>
+<!-- /.social-share -->
+        
+      </footer>
+      <div class="entry-content">
+        <p><em>My experience with day two of exploring Clojure through <a href="http://pragprog.com/book/btlang/seven-languages-in-seven-weeks" target="_blank">Seven Languages in Seven Weeks</a>.</em></p>
+
+<p>Todays chapter covers some of key concepts in Clojure such as sequences and the abstractionlayer that unifies all Clojure collections and ties them to Java collections. It also covers lazy evaluation and macros.</p>
+
+<h2 id="recursion-with-loop-and-recur">Recursion with loop and recur</h2>
+
+<p>In Scala, Prolog and Erlang I’ve seen how powerful recursion can be. Being another functional language Clojure also relies on recursion rather than iteration.The example below calculates the total of a vector. The total of an empty vector is zero; the total of a populated vector is the head plus the total of the rest of the vector.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/8174263.js?file=total.clj"> </script>
+
+<p>Unlike the other functional languages we’ve look at Clojure does not support implicit tail recursion optimization because of limitations of the JVM. As discussed in previous blogs this is a strategy to counteract memory consumption in recursive functions. Instead you need to explicitly recur through the use of loop and recur. Loop binds the variable on the left to the value on the right, the body of the function is called and then the function recur invokes the loop again passing in the new values.</p>
+
+<p>I’ll now modify the total function to use recur and loop. I bind the l variable to the vector and a c variable to 0. c will act as my accumulator holding the running total.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/8174263.js?file=total2.clj"> </script>
+
+<h2 id="sequences">Sequences</h2>
+
+<p>A sequence in Clojure provides a generic way to treat all collections (both Clojure and Java) by providing a layer of abstraction round them.</p>
+
+<p>There will be times you will want to test if you sequence meets a certain condition. In this case you use a function called a predicate. A predicate takes a test function, the sequence and returns a boolean.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/8174263.js?file=seq1.clj"> </script>
+
+<h3 id="changing-a-sequence">Changing a Sequence</h3>
+
+<p>Lets take a look at the functions provided to transform sequences.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/8174263.js?file=seq2.clj"> </script>
+
+<p>Like Scala and Erlang, Clojure supports list comprehensions which combine multiple lists and filters, taking the possible combinations of the lists and applying the filters.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/8174263.js?file=seq3.clj"> </script>
+
+<p>The reduce function is Clojure’s way of accumulating the result of a function on a list.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/8174263.js?file=reduce.clj"> </script>
+
+<p>Here are some examples of sorting</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/8174263.js?file=sort.clj"> </script>
+
+<h3 id="lazy-evaluation">Lazy Evaluation</h3>
+
+<p>Clojure calculates sequence values as they are needed. Lets look at some of the different ways we can create sequences.</p>
+
+<p>The range function allows you to generate sequences which have an upper and lower bound (or the default lower bound of zero).</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/8174263.js?file=range.clj"> </script>
+
+<p>The repeat function generates an infinite sequence of one repeated element. The take function allows us to grab a number of these values.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/8174263.js?file=take.clj"> </script>
+
+<p>You can repeat elements in a list with cycle.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/8174263.js?file=cycle.clj"> </script>
+
+<p>In the example below we build the infinite sequence. Drop the first two values in it and take the next 5. In order to make it easier to read instead of working inside out we can use left-to-right operator (-») to apply each function to a result.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/8174263.js?file=leftright.clj"> </script>
+
+<p>Another approach to create sequences is using the iterate function. This accepts a function and a start value.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/8174263.js?file=iterate.clj"> </script>
+
+<p>In the example below we use the fib-pair function to generate a sequence of consecutive pairs in the Fibonacci sequence. We then use map to select the first element from the pair. Finally we take the first 5 values.</p>
+
+<p>In the second example we select the 500th value using the nth function.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/8174263.js?file=fibpair.clj"> </script>
+
+<h2 id="macros">Macros</h2>
+
+<p>Being absolutely honest I read the macro section and felt a bit lost as to what it was about. It is in fact an easy enough concept to get your head around I just feel the book doesn’t explain it in an easy to follow fashion. A macro allows the user to extend the compiler with their own code. A couple of examples of built in macros I’ve already used are a semicolon (;) which indicates a comment and a number sign (#) which indicates an anonymous function. We can use the macro defmacro to define our own macro.</p>
+
+<p>Say we  wanted to have a way of saying unless a condition holds carry out an action. The code below shows why we can’t use a function. The print will always occur as parameters are evaluated first.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/8174263.js?file=broken.clj"> </script>
+
+<p>Instead we need to use a macro. test and body are substituted without being evaluated. We don’t want if and not to execute right away so we quote them. Our not test and if are packaged as lists.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/8174263.js?file=unless.clj"> </script>
+
+<p>Expanding it gives</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/8174263.js?file=unless-expand.clj"> </script>
+
+<p>Executing it gives the desired behaviour</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/8174263.js?file=unless-execute.clj"> </script>
+
+<h2 id="homework">Homework</h2>
+<h3 id="find">Find:</h3>
+
+<p><strong>The implementation of some of the commonly used macros in the Clojure language</strong></p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/8174263.js?file=when.clj"> </script>
+
+<p><strong>An example of defining your own lazy sequence</strong></p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/8174263.js?file=lazy-seq.clj"> </script>
+
+<p><strong>The current status of the defrecord and protocol features (these features were still under development as this book was being developed)</strong></p>
+
+<p><a href="http://clojuredocs.org/clojure_core/1.3.0/clojure.core/defrecord">defrecord</a></p>
+
+<p><a href="http://clojuredocs.org/clojure_core/1.3.0/clojure.core/defprotocol">defprotocol</a></p>
+
+<p>This article gives a nice explanation of protocols and defrecord and their use: <a href="http://www.ibm.com/developerworks/java/library/j-clojure-protocols/index.html#datatypes">Solving the Expression Problem with Clojure 1.2</a>. Protocols allow you to add functions to existing types without modifying or recompiling your existing code. defrecord creates a container for structured data that combines the features of maps and classes.</p>
+
+<h3 id="do">Do:</h3>
+
+<p><strong>Implement an unless with an else condition using macros.</strong></p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/8174263.js?file=unless-else.clj"> </script>
+
+<p><strong>Write a type using defrecord that implements a protocol.</strong></p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/8174263.js?file=protocol.clj"> </script>
+
+<p>Check out my code at <a href="https://github.com/heatherjc07/seven_languages_in_seven_days/tree/master/Clojure/Day2">github</a>.</p>
+
+        
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+    <nav class="pagination" role="navigation">
+      
+        <a href="http://localhost:4000/development/clojure-day-1/" class="btn" title="Clojure Day 1">Previous</a>
+      
+      
+        <a href="http://localhost:4000/culture/dont-give-up-on-the-late-bloomer/" class="btn" title="Don't Give Up on The Late Bloomer">Next</a>
+      
+    </nav><!-- /.pagination -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    
+
+<span>&copy; 2017 Heather Campbell. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/so-simple-jekyll-theme/" rel="nofollow">So Simple Theme</a>.</span>
+<div class="social-icons">
+	<a href="https://twitter.com/hcampbell07" title="Heather Campbell on Twitter" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+	
+	
+	
+	
+	
+	
+	<a href="https://github.com/heatherjc07" title="Heather Campbell on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+	
+  
+	
+  <a href="http://localhost:4000/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
+</div><!-- /.social-icons -->
+
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script type="text/javascript">
+  var BASE_URL = 'http://localhost:4000';
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://localhost:4000/assets/js/scripts.min.js"></script>
+
+
+
+
+</body>
+</html>

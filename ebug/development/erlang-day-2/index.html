@@ -1,0 +1,381 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Erlang Day 2 &#8211; Heather Campbell's Blog</title>
+<meta name="description" content="My experience with day two of exploring Erlang through Seven Languages in Seven Weeks.
+
+">
+<meta name="keywords" content="seven languages in seven weeks, erlang, languages">
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Erlang Day 2">
+<meta name="twitter:description" content="My experience with day two of exploring Erlang through Seven Languages in Seven Weeks.
+
+">
+<meta name="twitter:site" content="@hcampbell07">
+<meta name="twitter:creator" content="@hcampbell07">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://localhost:4000/images/">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_GB">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Erlang Day 2">
+<meta property="og:description" content="My experience with day two of exploring Erlang through Seven Languages in Seven Weeks.
+
+">
+<meta property="og:url" content="http://localhost:4000/development/erlang-day-2/">
+<meta property="og:site_name" content="Heather Campbell's Blog">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/development/erlang-day-2/">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Heather Campbell's Blog Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+<!-- Webfonts -->
+<script src="https://use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="http://localhost:4000/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="http://localhost:4000/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://localhost:4000/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+
+<!-- MathJax -->
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body id="post">
+
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop">
+	    <ul>
+      
+		    
+		    <li><a href="http://localhost:4000/about/" >About</a></li>
+		  
+		    
+		    <li><a href="http://localhost:4000/blog/" >Blog</a></li>
+		  
+		    
+		    <li><a href="http://localhost:4000/presentations/" >Presentations</a></li>
+		  
+		    
+		    <li><a href="https://twitter.com/HCampbell07/" target="_blank">Tweets</a></li>
+		  
+		    
+		    <li><a href="http://localhost:4000/search/" >Search</a></li>
+		  
+		<li><a href="http://localhost:4000/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li>
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+<header class="masthead">
+	<div class="wrap">
+      <h1 class="site-title animated fadeIn"><a href="http://localhost:4000/">Heather Campbell's Blog</a></h1>
+		<h2 class="site-description animated fadeIn" itemprop="description">A place to share my thoughts</h2>
+	</div>
+</header><!-- /.masthead -->
+
+<div class="js-menu-screen menu-screen"></div>
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <ul class="entry-tags">
+          <li><a href="http://localhost:4000/tags/#seven languages in seven weeks" title="Pages tagged seven languages in seven weeks">seven languages in seven weeks</a></li><li><a href="http://localhost:4000/tags/#erlang" title="Pages tagged erlang">erlang</a></li><li><a href="http://localhost:4000/tags/#languages" title="Pages tagged languages">languages</a></li>
+        </ul>
+        
+          <h1 class="entry-title">Erlang Day 2</h1>
+        
+      </header>
+      <footer class="entry-meta">
+        
+        
+          <img src="http://localhost:4000/images/bio-photo.jpg" class="bio-photo" alt="Heather Campbell bio photo"></a>
+        
+        <span class="author vcard">By <span class="fn">Heather Campbell</span></span>
+        <span class="entry-date date published"><time datetime="2012-11-01T00:00:00+00:00"><i class="fa fa-calendar-o"></i> November 01, 2012</time></span>
+        
+
+        <span class="social-share-twitter">
+  <a href="https://twitter.com/intent/tweet?hashtags=sevenlanguagesinsevenweeks,erlang,languages&amp;text=Erlang%20Day%202&amp;url=http://localhost:4000/development/erlang-day-2/&amp;via=hcampbell07" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i> Tweet</a>
+</span>
+<span class="social-share-facebook">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/development/erlang-day-2/" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i> Like</a>
+</span>
+<span class="social-share-googleplus">
+  <a href="https://plus.google.com/share?url=http://localhost:4000/development/erlang-day-2/" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> +1</a>
+</span>
+<!-- /.social-share -->
+        
+      </footer>
+      <div class="entry-content">
+        <p><em>My experience with day two of exploring Erlang through <a href="http://pragprog.com/book/btlang/seven-languages-in-seven-weeks" target="_blank">Seven Languages in Seven Weeks</a>.</em></p>
+
+<p>Day 2 for Erlang takes the standard form of looking at working with collections, control structures and functions.</p>
+
+<h2 id="control-structures">Control Structures</h2>
+
+<p>First up is control structures. In Erlang  you are more likely to see a program with lots of case statements than if statements.</p>
+
+<p>Here’s an example of executing code based on a variable value.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5431139.js?file=var_control.erl"> </script>
+
+<p>In the example, the string matched the first clause and returned the atom gold. In the following example we use underscore (_) to match anything.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5431139.js?file=var_control2.erl"> </script>
+
+<p>In the example you can see forth returns the match all atom nothing. Note that all but the last case clause end in a semicolon.</p>
+
+<p>Let’s take a look at the if statement which uses guards, a condition that must be satisfied for a match to succeed. Note: in Erlang if is a function so each case must return a value. If you want to have a catch all else you add a guard which is always true.</p>
+
+<p>e.g. In the following example if X is zero an exception will occur because it doesn’t match any  of the guards.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5431139.js?file=guard.erl"> </script>
+
+<p>We can fix this by adding a catch all else clause.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5431139.js?file=guard2.erl"> </script>
+
+<h2 id="anonymous-functions">Anonymous Functions</h2>
+
+<p>A nice feature of Erlang is the ability to assign functions to variables and pass them around like variables. This makes for some succinct and easy to read code.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5431139.js?file=anon.erl"> </script>
+
+<p>Fun is a keyword used to define an anonymous function. We’re not saying Square is the value returned by the function we’re assigning the function to the variable Square so we can invoke a function simply by specifying the argument list. Erlang supports dynamic typing so we don’t have to worry about return types.</p>
+
+<h2 id="lists-and-higher-order-functions">Lists and Higher-Order Functions</h2>
+
+<p>I’m quickly realising the importance of collections in functional programming. There are lots of different functions you can use to work with collections. Here are some examples of the common ones. In the following example we iterate over the values in a list using the function lists:foreach and print out each of the items in a list.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5431139.js?file=print.erl"> </script>
+
+<p>We can make the syntax cleaner to read by creating an anonymous print function and assigning it to a variable Print.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5431139.js?file=print2.erl"> </script>
+
+<p>map allows you to apply a function to each value in a list to build a list of results. In the following example I use it to create a list of squared values.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5431139.js?file=sqval.erl"> </script>
+
+<p>Again I could rewrite this as</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5431139.js?file=sqval2"> </script>
+
+<p>If you want to limit your list to values that meet a certain criteria you can use list. E.g. day we only wanted values smaller than 3.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5431139.js?file=small.erl"> </script>
+
+<p>It’s also easy to check if all values in a list satisfy the conditions.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5431139.js?file=all.erl"> </script>
+
+<p>or if at least one value satisfies the condition</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5431139.js?file=any.erl"> </script>
+
+<p>An empty list returns true for an all check as all the values in the list match the condition as there are no values while the or check returns false as no values match the condition.</p>
+
+<p>Some handy methods for processing things like headers and footers are takewhile and dropwhile. takewhile takes all the elements at the start of a list while a filter is met while dropwhile discards the elements at the end of a list while a filter is met.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5431139.js?file=list_func.erl"> </script>
+
+<p>Finally lets look at foldl and foldr which are useful for rolling up the results of a function across a list. One of the arguments serves as an accumulator, and the other represents each item. In the example below we’re going to sum up the numbers in a list.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5431139.js?file=fold.erl"> </script>
+
+<p>As we did before we can make this simpler to read using an anonymous function.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5431139.js?file=adder.erl"> </script>
+
+<p>The second version is so much nicer to read.</p>
+
+<h2 id="building-a-list">Building a List</h2>
+
+<p>Using a functional language requires a whole different approach to building a list than a OO language. In the following example we build a list by returning a new list with the squared list item added. We have two clauses. The first handles an empty list and is used to stop recursion. The second splits the list into it’s first element and the rest then builds a list with the first element multiplied by it self plus square_all(rest) as the rest of the list.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5431139.js?file=square.erl"> </script>
+
+<h2 id="list-comprehensions">List Comprehensions</h2>
+
+<p>A list comprehension allows you to change your list into different forms allowing you to carry out multiple transformations at once.</p>
+
+<p>A real life example of when we want to modify a list could be to add tax to a shopping basket of items. Here we have our basket.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5431139.js?file=basket.erl"> </script>
+
+<p>We then define a list comprehension to add the tax to the price. On the left side of the <code class="highlighter-rouge">||</code> we define the tuple we wish to create with total price for item (price multiple by quantity multiplied by tax)On the right hand side we pass in a list and use pattern matching to extract the values from the tuples in our list to populate our definition.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5431139.js?file=with_tax.erl"> </script>
+
+<p>Another example could be to produce a catalogue and a discount catalogue for special customers. In the first list comprehension we are ignoring the quantity to create a catalogue of product and prices. In the second list comprehension we’re using the catalogue and producing a discounted catalogue by dividing the price by 2.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5431139.js?file=catalogue.erl"> </script>
+
+<p>List comprehension provide a concise and very readable syntax which I found easy to get my head around.</p>
+
+<h2 id="do">Do</h2>
+
+<ul>
+  <li>Consider a list of keyword-value tuples, such as <code class="highlighter-rouge">[{erlang, "a functional language"}, {ruby, "an OO language"}]</code>. Write a function that accepts the list and a keyword and returns the associated value for the keyword.</li>
+</ul>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5431139.js?file=key.erl"> </script>
+
+<ul>
+  <li>
+    <p>Consider a shopping list that looks like the following where total_price is quantity times price.</p>
+
+    <p><code class="highlighter-rouge">[{item, quantity, price}, ...].</code> Write a list comprehension that builds a list of items of the form <code class="highlighter-rouge">[{item, total_price}, ...]</code>,</p>
+  </li>
+</ul>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5431139.js?file=price.erl"> </script>
+
+<h3 id="bonus-problem">Bonus problem</h3>
+
+<ul>
+  <li>Write a program that reads a tic-tac-toe board presented as a list or a tuple of size nine. Return the winner (x or o) if a winner has been determined, cat if there are no more possible moves, or no_winner if no player has won yet.</li>
+</ul>
+
+<p>Check out my code at <a href="https://github.com/heatherjc07/seven_languages_in_seven_days/tree/master/Erlang/Day2" target="_blank">github</a></p>
+
+
+        
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+    <nav class="pagination" role="navigation">
+      
+        <a href="http://localhost:4000/development/erlang-day-1/" class="btn" title="Erlang Day 1">Previous</a>
+      
+      
+        <a href="http://localhost:4000/development/erlang-day-3/" class="btn" title="Erlang Day 3">Next</a>
+      
+    </nav><!-- /.pagination -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    
+
+<span>&copy; 2017 Heather Campbell. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/so-simple-jekyll-theme/" rel="nofollow">So Simple Theme</a>.</span>
+<div class="social-icons">
+	<a href="https://twitter.com/hcampbell07" title="Heather Campbell on Twitter" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+	
+	
+	
+	
+	
+	
+	<a href="https://github.com/heatherjc07" title="Heather Campbell on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+	
+  
+	
+  <a href="http://localhost:4000/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
+</div><!-- /.social-icons -->
+
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script type="text/javascript">
+  var BASE_URL = 'http://localhost:4000';
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://localhost:4000/assets/js/scripts.min.js"></script>
+
+
+
+
+</body>
+</html>

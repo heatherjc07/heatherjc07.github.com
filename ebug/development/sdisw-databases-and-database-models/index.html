@@ -1,0 +1,264 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>SDISW: Databases and Database Models &#8211; Heather Campbell's Blog</title>
+<meta name="description" content="This is a really brief post to introduce the databases and database models I’m going to take a look at while working through the book Seven Databases in Seven Weeks.
+
+">
+<meta name="keywords" content="seven databases in seven weeks, nosql, data">
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="SDISW: Databases and Database Models">
+<meta name="twitter:description" content="This is a really brief post to introduce the databases and database models I’m going to take a look at while working through the book Seven Databases in Seven Weeks.
+
+">
+<meta name="twitter:site" content="@hcampbell07">
+<meta name="twitter:creator" content="@hcampbell07">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://localhost:4000/images/">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_GB">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SDISW: Databases and Database Models">
+<meta property="og:description" content="This is a really brief post to introduce the databases and database models I’m going to take a look at while working through the book Seven Databases in Seven Weeks.
+
+">
+<meta property="og:url" content="http://localhost:4000/development/sdisw-databases-and-database-models/">
+<meta property="og:site_name" content="Heather Campbell's Blog">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/development/sdisw-databases-and-database-models/">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Heather Campbell's Blog Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+<!-- Webfonts -->
+<script src="https://use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="http://localhost:4000/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="http://localhost:4000/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://localhost:4000/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+
+<!-- MathJax -->
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body id="post">
+
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop">
+	    <ul>
+      
+		    
+		    <li><a href="http://localhost:4000/about/" >About</a></li>
+		  
+		    
+		    <li><a href="http://localhost:4000/blog/" >Blog</a></li>
+		  
+		    
+		    <li><a href="http://localhost:4000/presentations/" >Presentations</a></li>
+		  
+		    
+		    <li><a href="https://twitter.com/HCampbell07/" target="_blank">Tweets</a></li>
+		  
+		    
+		    <li><a href="http://localhost:4000/search/" >Search</a></li>
+		  
+		<li><a href="http://localhost:4000/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li>
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+<header class="masthead">
+	<div class="wrap">
+      <h1 class="site-title animated fadeIn"><a href="http://localhost:4000/">Heather Campbell's Blog</a></h1>
+		<h2 class="site-description animated fadeIn" itemprop="description">A place to share my thoughts</h2>
+	</div>
+</header><!-- /.masthead -->
+
+<div class="js-menu-screen menu-screen"></div>
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <ul class="entry-tags">
+          <li><a href="http://localhost:4000/tags/#seven databases in seven weeks" title="Pages tagged seven databases in seven weeks">seven databases in seven weeks</a></li><li><a href="http://localhost:4000/tags/#nosql" title="Pages tagged nosql">nosql</a></li><li><a href="http://localhost:4000/tags/#data" title="Pages tagged data">data</a></li>
+        </ul>
+        
+          <h1 class="entry-title">SDISW: Databases and Database Models</h1>
+        
+      </header>
+      <footer class="entry-meta">
+        
+        
+          <img src="http://localhost:4000/images/bio-photo.jpg" class="bio-photo" alt="Heather Campbell bio photo"></a>
+        
+        <span class="author vcard">By <span class="fn">Heather Campbell</span></span>
+        <span class="entry-date date published"><time datetime="2013-01-04T00:00:00+00:00"><i class="fa fa-calendar-o"></i> January 04, 2013</time></span>
+        
+
+        <span class="social-share-twitter">
+  <a href="https://twitter.com/intent/tweet?hashtags=sevendatabasesinsevenweeks,nosql,data&amp;text=SDISW:%20Databases%20and%20Database%20Models&amp;url=http://localhost:4000/development/sdisw-databases-and-database-models/&amp;via=hcampbell07" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i> Tweet</a>
+</span>
+<span class="social-share-facebook">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/development/sdisw-databases-and-database-models/" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i> Like</a>
+</span>
+<span class="social-share-googleplus">
+  <a href="https://plus.google.com/share?url=http://localhost:4000/development/sdisw-databases-and-database-models/" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> +1</a>
+</span>
+<!-- /.social-share -->
+        
+      </footer>
+      <div class="entry-content">
+        <p><em>This is a really brief post to introduce the databases and database models I’m going to take a look at while working through the book <a href="http://pragprog.com/book/rwdata/seven-databases-in-seven-weeks">Seven Databases in Seven Weeks</a>.</em></p>
+
+<h2 id="relational-databases">Relational Databases</h2>
+
+<p>Most of us are familar with <a href="http://en.wikipedia.org/wiki/Relational_database">Relational Databases</a> where data is organised into two dimensional tables made up of columns and rows. We can query tables to return a particular set of information by joining them through common columns and applying certain conditions to limit the data returned. Structured Query Language is used to manage the data within relational database. Relational databases are great if query flexibilty is more important than schema flexibility.</p>
+
+<p><strong>PostgreSQL</strong></p>
+
+<p>PostgreSQL is the first database the book covers. It is an open source RDBMS.The book uses it as a baseline to allow us to compare NoSQL databases with relational databases.</p>
+
+<h2 id="key-value-databases">Key Value Databases</h2>
+
+<p><a href="http://en.wikipedia.org/wiki/NoSQL">Key Value</a> databases are a bit like maps and hashtables where data is stored and accessed via a key. There is no schema and no need for a fixed data model. Some key value databases support complex types like hashes and lists and some provide a means of iterating through keys. The benefit of this type of model is that it can be very performant in certain situations but is not useful if you need to generate complex queries or aggregate data. There are many options available but the book has choosen to cover Redis and Riak.</p>
+
+<p><strong>Redis</strong></p>
+
+<p>Redis supports complex data types like sorted sets and hashes. It also supports basic messaging patterns like <a href="http://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern">publish-subscribe</a> and <a href="http://tutorials.jenkov.com/java-concurrency/blocking-queues.html">blocking queues</a>.It has a particularly robust query mechanism for a Key Value database. It has great performance because it caches writes to memory before committing to disk but the tradeoff is there is an increased risk of data loss if a failure occurs. It is a good choice for caching noncritical data and acting as a message broker.</p>
+
+<p><strong>Riak</strong></p>
+
+<p>Riak allows you to store a range of data as values from very simple text to complex XML. Relationships between keys are handled by named structures called links.It has intelligent data replication and retrieval which make it very fault tolerant. It is very scalable, as you add capacity you get a near-linear performance increase. Riak embraces web constructs like HTTP and REST with a rich API. It is a implementation of Amazon’s <a href="http://aws.amazon.com/dynamodb/">Dynamo</a>.It is the first database in the book which supports advanced querying via mapreduce.</p>
+
+<p>MapReduce is a framework to allow developers to write queries that process large amounts of unstructured data in parallel across a distrubuted cluster of servers. It was created by Google to index their web pages. It makes use of the parallel processing power of distributed systems and reduces bandwidth as the query is carried out where the data resides and the filtered data returned rather than retrieving all the data to the client and carrying out the filtering there.</p>
+
+<p>The map function hands out the work to different nodes in the cluster. The reduce function collates the responses and resolves them into a single value.
+It is fault tolerant. If a node in the cluster fails to report back with its result or status update in a predefined period of time the work is re-assigned to other nodes.</p>
+
+<h2 id="columnar-databases">Columnar Databases</h2>
+
+<p>I’m used to thinking of the storage of data in terms of rows as is the case with relational databases. <a href="http://en.wikipedia.org/wiki/Column-oriented_DBMS">Columnar</a> databases store data for a given column together. What’s the benefits of this? Well it means that the cost of adding a column is inexpensive as it is done on a row by row basis and it also means the cost of aggregating values or updating the values for a column is less than a relational database. However the cost of adding a row to a columnar database or retrieving the values for a large number of columns is greater than for a relational database. This highlights not only do you need to think about what data you are planning to store, you also need to think about how this data will be used.</p>
+
+<p><strong>HBase</strong></p>
+
+<p>Created by Apache and based on their mapreduce engine Hadoop, HBase has tables, columns and rows so will probably be the most familiar feeling of the non relational databases covered in the book . It is based on Google’s BigTable paper which describes Google’s distributed storage system, designed to handle large volumes of data. It’s versioning and compression support set it apart from it’s competitors in the big data space.</p>
+
+<h2 id="document-databases">Document Databases</h2>
+
+<p>As the name suggests <a href="http://en.wikipedia.org/wiki/Document-oriented_database">Document</a> databases are built to store document orientated data or semi structured data. The document is like a hash of information with id fields pointing to values. The value can be a nested structure. Documents can be retrieved by their id and the values they contain. The book suggests that their are bigger differences between the various document databases than some of the other database types. They take different approaches to things like indexing, adhoc querying,replication and consistency. Therefore in order to make the right choice you need to be aware of the differences and trade offs and find the right one for the structure of your data and how you intend to use it.</p>
+
+<p><strong>MongoDB</strong></p>
+
+<p>MongoDB is designed to handle large quantities of data. It doesn’t support ACID transactions but you can do certain atomic read-write operations provided they are within the same document. MongoDB has a dynamic schema meaning all documents in a collection don’t have to have the same fields. You use JavaScript to query it and it supports a range of queries from basic to complex mapreduce jobs. It’s documents are stored in a JSON format. It places emphasis on ensuring it’s data remains consistent.</p>
+
+<p><strong>CouchDB</strong></p>
+
+<p>As I found out while reading “Seven Languages in Seven Weeks” CouchDB is written in Erlang, one of the functional languages the book covered. It is designed to be highly available and aimed at a wide variety of deployment scenarios, from the datacenter to the desktop, on down to the smartphone. CouchDB’s native query language is JavaScript and uses JSON for it’s documents.</p>
+
+<h2 id="graph-databases">Graph Databases</h2>
+
+<p><a href="http://en.wikipedia.org/wiki/Graph_database">Graph</a> databases are ideal for storing highly interconnected data in an accessible manner. They are suited to managing adhoc and changing data.They are made up of nodes and the relationships between the nodes, both of which can have properties that store data.</p>
+
+<p><strong>Neo4J</strong></p>
+
+<p>Neo4J is ideally suited to intricately linked data. One common use is in social networking sites. It supports ACID transactions.</p>
+
+<p><em>In the following posts I’ll write about what I’ve learnt each day and how I’ve approached the exercises set in the book.</em></p>
+
+
+        
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+    <nav class="pagination" role="navigation">
+      
+        <a href="http://localhost:4000/books/nosql/" class="btn" title="NoSQL">Previous</a>
+      
+      
+        <a href="http://localhost:4000/development/10gen-online-mongodb-courses/" class="btn" title="10gen Online MongoDB Courses">Next</a>
+      
+    </nav><!-- /.pagination -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    
+
+<span>&copy; 2017 Heather Campbell. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/so-simple-jekyll-theme/" rel="nofollow">So Simple Theme</a>.</span>
+<div class="social-icons">
+	<a href="https://twitter.com/hcampbell07" title="Heather Campbell on Twitter" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+	
+	
+	
+	
+	
+	
+	<a href="https://github.com/heatherjc07" title="Heather Campbell on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+	
+  
+	
+  <a href="http://localhost:4000/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
+</div><!-- /.social-icons -->
+
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script type="text/javascript">
+  var BASE_URL = 'http://localhost:4000';
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://localhost:4000/assets/js/scripts.min.js"></script>
+
+
+
+
+</body>
+</html>

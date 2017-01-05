@@ -1,0 +1,743 @@
+[
+
+  
+    {
+      "title"			: "Back to Work",
+      "link"			: "http://localhost:4000/back-to-work/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "Review: The Phoenix Project",
+      "link"			: "http://localhost:4000/books/review-the-phoenix-project/",
+      "excerpt"		: "The Phoenix project is a fictitious novel which follows Bill in his new role as VP of IT operations at Parts Unlimited."
+    }
+  
+
+  
+    ,{
+      "title"			: "Reading Challenge",
+      "link"			: "http://localhost:4000/books/reading-challenge/",
+      "excerpt"		: "Hard to believe I’m nearly 2 months into maternity leave. The days are flying in. Marc arrived on the 15th December and I’m now well outnumbered 3 boys to 1 girl."
+    }
+  
+
+  
+    ,{
+      "title"			: "Developer Tea",
+      "link"			: "http://localhost:4000/trends/developer-tea/",
+      "excerpt"		: "Over the past week I’ve started listening to the Developer Tea podcast. None of the episodes are long with each one averaging less than 20 mins. A lot of the podcasts I enjoy are an hour or more in length so it is a nice addition to have one which is shorter for when I want a quick burst of inspiration."
+    }
+  
+
+  
+    ,{
+      "title"			: "Functional Programming with Java",
+      "link"			: "http://localhost:4000/tutorials/functional-programming-with-java/",
+      "excerpt"		: "I just completed Jessica Kerr’s Pluralsight course Functional Programming with Java. It’s not the first time I’ve played about with Java 8 and its functional features or functional programming in general. I still found the course useful especially as I applied what it covered to a project I worked on several years ago which was purely Object Orientated. This gave me a chance to put it in to practice and get a feel of the benefits this additional functionality provided."
+    }
+  
+
+  
+    ,{
+      "title"			: "Making Time to Talk",
+      "link"			: "http://localhost:4000/culture/making-time-to-talk/",
+      "excerpt"		: "I recently finished a project and it made me think about the difference taking time to communicate can make to a person. We are always talking about the importance of not calling people resources. The need to make them feel valued. All too often it is easy to get caught up in dramatic gestures  and forget about the impact of day to day interactions."
+    }
+  
+
+  
+    ,{
+      "title"			: "Why I'm Bought in to Coaching",
+      "link"			: "http://localhost:4000/skills/why-im-bought-in-to-coaching/",
+      "excerpt"		: "Last week I was lucky enough to be sent on a two day coaching course led by Bryan Dunlop. I’d wanted to go on this for a while as I’ve benefited from being coached in the past. I have a number of people who I currently coach but I was looking forward to some formal training to help me maximise the positive impact I could make. It was a brilliant couple of days with lots of practical to get experience applying what we had learnt."
+    }
+  
+
+  
+    ,{
+      "title"			: "I Know How She Does It",
+      "link"			: "http://localhost:4000/books/i-know-how-she-does-it/",
+      "excerpt"		: "Early on in my pregnancy I was having one of those moments where I wondered how I was going to manage two small people and a career. I’m competitive and want to do well but at the same time my mum gave me and my sister a great childhood staying at home with us so I value spending quality time with my children. I came across I Know How She Does It by Laura Vanderkam and I was interested to see how other women carve out their time."
+    }
+  
+
+  
+    ,{
+      "title"			: "Just Trying Not To Lean Out",
+      "link"			: "http://localhost:4000/life/just-trying-not-to-lean-out/",
+      "excerpt"		: "Long time no post. Over the past few months I’ve been getting to grips with being pregnant again. Turns out a girl can forget what it is like when you leave a 4 year gap between children. I can’t complain as I have had it pretty easy both times. Still there are definitely differences this time. With a four year old running about chances to rest up are hard to find. Luke combined with a role with more responsibility have left me feeling pretty tired and this time I didn’t escape the dreaded morning sickness. Now I’m in my second trimester I can feel my energy coming back and the thought of travel doesn’t fill me with dread (as it did when I was trying to not succumb to sickness)"
+    }
+  
+
+  
+    ,{
+      "title"			: "Does Everyone Know They're Empowered?",
+      "link"			: "http://localhost:4000/culture/does-everyone-know-theyre-empowered/",
+      "excerpt"		: "I’ve just finishing reading The Decision Maker based on a recommendation in Kate Matsudaira’s blog post. Highly recommend it as a means of helping anyone understand the benefits of empowerment and the stumbling blocks you’ll experience along the way. Being fiction it is easy to read and remember the message it delivers."
+    }
+  
+
+  
+    ,{
+      "title"			: "Review: Commitment",
+      "link"			: "http://localhost:4000/books/review-commitment/",
+      "excerpt"		: "Over the past day I’ve been reading Commitment by Olav Maassen, Chris Matts and Chris Geary."
+    }
+  
+
+  
+    ,{
+      "title"			: "Attitude",
+      "link"			: "http://localhost:4000/development/attitude/",
+      "excerpt"		: "With just hours left before 2015 a final post driven by the events of the past week. Over the Christmas hols I’ve experienced going from the best feeling in the world to one of the saddest points in my life and it got me thinking about the power of having the right attitude."
+    }
+  
+
+  
+    ,{
+      "title"			: "If Something's Important Make it Visible",
+      "link"			: "http://localhost:4000/agile/if-somethings-important-make-it-visible/",
+      "excerpt"		: "One of the things I’ve learnt over the past year is the power of making things visible to people. Get it up on the wall where it can’t be ignored. That way everyday the team is reminded of it and when it is staring you in the face you tend to take action on it."
+    }
+  
+
+  
+    ,{
+      "title"			: "Sound Learning Advice",
+      "link"			: "http://localhost:4000/learning/sound-learning-advice/",
+      "excerpt"		: "With so much interesting stuff happening in technology it can be hard to know where to start when trying to keep up to date. It can overwhelm you to the point where you don’t start. If you’re looking for some sound advice check out Trisha Gee’s post on Staying ahead of the curve."
+    }
+  
+
+  
+    ,{
+      "title"			: "Review: Talking with Tech Leads",
+      "link"			: "http://localhost:4000/review-talking-with-tech-leads/",
+      "excerpt"		: "A couple of weeks ago I was having a browse around the books on Leanpub and I came across Talking with Tech Leads by Patrick Kua. The book contains 35 interviews with Tech Leads from first timers to experienced pros. It looks at how they balance the technical and non technical demands. The interviews illustrate how the reality of being a tech lead differs from their expectations. The tech leads talk about the skills they’ve had to develop along the way and the lessons they’ve learnt. It is an easy read due to the interview format. I would recommend it to senior developers looking to make the transition as it is an insight into what a day being a tech lead involves."
+    }
+  
+
+  
+    ,{
+      "title"			: "Review: Show Your Work!",
+      "link"			: "http://localhost:4000/books/review-show-your-work/",
+      "excerpt"		: "I found Show Your Work! by Austin Kleon an inspiration for getting out there and sharing what you know and do. It’s an easy to read and digest book, split into 10 chapters, each packed with beautiful illustrations."
+    }
+  
+
+  
+    ,{
+      "title"			: "The Little Book of Lunch",
+      "link"			: "http://localhost:4000/the-little-book-of-lunch/",
+      "excerpt"		: "Recently I thought it would be good to start sharing things that help me to be a happy, healthy programmer. This post falls under that category and is a review of The Little Book of Lunch."
+    }
+  
+
+  
+    ,{
+      "title"			: "Scenius",
+      "link"			: "http://localhost:4000/scenius/",
+      "excerpt"		: "The first chapter in Austin Kleon’s Show Your Work! introduced me to a brilliant word “Scenius” which he credited muscian Brian Eno with creating. It’s the argument that no great genius existed in a vacuum. Instead they were part of a scene. Interacting with other people, sharing ideas, building on what others had come up with."
+    }
+  
+
+  
+    ,{
+      "title"			: "Invention Machine",
+      "link"			: "http://localhost:4000/invention-machine/",
+      "excerpt"		: "  Don’t think of your website as a self-promotion machine, instead think of it as a self-invention machine. Fill your website with your work and your ideas and the stuff you care about. Austin Kleon, Show Your Work!"
+    }
+  
+
+  
+    ,{
+      "title"			: "Review: Driving Technical Change",
+      "link"			: "http://localhost:4000/review-driving-technical-change/",
+      "excerpt"		: "I always enjoy books published by the Pragmatic Programmers and Driving Technical Change by Terrence Ryan was no exception. The premise of the book is that people don’t always adopt good ideas simply because they are a good idea instead we need to put some thought into how to sell the idea in order to increase the chance of it being adopted. People need to feel the investment of their time/effort/money is going to reap reward."
+    }
+  
+
+  
+    ,{
+      "title"			: "Weekly Roundup May 27th 2014",
+      "link"			: "http://localhost:4000/weekly-roundup-3/",
+      "excerpt"		: "What Have I Been Reading"
+    }
+  
+
+  
+    ,{
+      "title"			: "Weekly Roundup May 11th 2014",
+      "link"			: "http://localhost:4000/roundup/weekly-roundup-2/",
+      "excerpt"		: "What Have I Been Listening to?"
+    }
+  
+
+  
+    ,{
+      "title"			: "Weekly Roundup May 4th 2014",
+      "link"			: "http://localhost:4000/roundup/weekly-roundup-1/",
+      "excerpt"		: "What Have I Been Reading?"
+    }
+  
+
+  
+    ,{
+      "title"			: "Weekly Roundup  April 7th 2014",
+      "link"			: "http://localhost:4000/roundup/weekly-roundup/",
+      "excerpt"		: "My daily train journey in and out of work gives me time to listen to podcasts, read articles and tweets. I’ve decided to start sharing each week things which caught my eye. I admit it’s partly for my benefit to record them so I can come back to them in the future. Hopefully you’ll find them of some benefit too."
+    }
+  
+
+  
+    ,{
+      "title"			: "Don't Let a Lack of Time be an Excuse",
+      "link"			: "http://localhost:4000/development/dont-let-a-lack-of-time-be-an-excuse/",
+      "excerpt"		: "There are times when I feel overwhelmed at the amount of things I want to fit into my day versus the time I have spare to look at them. Once I factor work, Luke, husband, dog and home in I don’t have a load of me time to do what I want. I was feeling a bit like this the other day when a brilliantly timed email popped into my inbox from Popforms titled ‘Your life is a series of small investments. Are yours adding up?’."
+    }
+  
+
+  
+    ,{
+      "title"			: "A Fresh Look",
+      "link"			: "http://localhost:4000/a-fresh-look/",
+      "excerpt"		: "I’ve been a bit quiet over the past few months mostly because I’ve been flat out between Luke and work. For a while I’ve wanted to change the look and feel of my site and I finally got some time over the past week to do it. Looking forwards to getting back to some more regular posting now."
+    }
+  
+
+  
+    ,{
+      "title"			: "reveal.js",
+      "link"			: "http://localhost:4000/tutorial/revealjs/",
+      "excerpt"		: "Fed up with Powerpoint I decided to take a look at reveal.js to see how simple it would be to put together a presentation with it and I found it really easy to get up and running with. reveal.js is a framework for creating presentations using html. If you come from a coding background and are used to working with CSS, HTML and JavaScript you’ve got all the skills to start creating beautiful presentations. There is also an online graphical interface for noncoders or anyone who prefers that."
+    }
+  
+
+  
+    ,{
+      "title"			: "WWC Belfast: Intro to Ruby",
+      "link"			: "http://localhost:4000/presentations/wwc-belfast-intro-to-ruby/",
+      "excerpt"		: "At the start of January I got the chance to present at the Belfast branch of Women Who Code.It was my first go at running a workshop style session where the audience had a go at coding and I did some live typing. Definitely harder to pull off than an all talking presentation but a great experience. There was a good turn out and it was great to meet other women working in firms around Belfast and studying IT at uni."
+    }
+  
+
+  
+    ,{
+      "title"			: "Real Happiness at Work",
+      "link"			: "http://localhost:4000/books/real-happiness-at-work/",
+      "excerpt"		: "When I was pregnant and during Luke’s birth I found visualization and breathing techniques really useful. They helped me to focus and stay relaxed. I highly recommend Pregnancy Health Yoga which is a DVD aimed at pregnant women."
+    }
+  
+
+  
+    ,{
+      "title"			: "Don't Give Up on The Late Bloomer",
+      "link"			: "http://localhost:4000/culture/dont-give-up-on-the-late-bloomer/",
+      "excerpt"		: "This post was inspired by a link one of the guys in my company put up on twitter, cheers Ciaran. The article, by Katie Siegel, argues that instead of seeing people who found a love for programming later than early teens as having missed the boat or too late to make an impact we should recognise their passion and encourage them to develop and innovate."
+    }
+  
+
+  
+    ,{
+      "title"			: "Clojure Day 2",
+      "link"			: "http://localhost:4000/development/clojure-day-2/",
+      "excerpt"		: "My experience with day two of exploring Clojure through Seven Languages in Seven Weeks."
+    }
+  
+
+  
+    ,{
+      "title"			: "Clojure Day 1",
+      "link"			: "http://localhost:4000/development/clojure-day-1/",
+      "excerpt"		: "My experience with day one of exploring Clojure through Seven Languages in Seven Weeks."
+    }
+  
+
+  
+    ,{
+      "title"			: "Agile Weekly: Prescriptive Coaching?",
+      "link"			: "http://localhost:4000/agile/agile-weekly-prescriptive-coaching/",
+      "excerpt"		: "Over the past month or so I’ve started to listen to podcasts on the train to and from Belfast. One I came across the other day was Agile Weekly. I’ve just finished listening to their podcast called “Prescriptive Coaching?”. It was an interesting discussion on how by being prescriptive about certain things as a coach you can actually help empower developers to take action to shape and deliver their project."
+    }
+  
+
+  
+    ,{
+      "title"			: "Get Involved!",
+      "link"			: "http://localhost:4000/reviews/get-involved/",
+      "excerpt"		: "I finally caved in this week and treated myself to a pluralsight subscription. The final sweetener was when it acquired Tekpub as there were a number of courses on Tekpub I fancied including the subject of this post Get Involved!."
+    }
+  
+
+  
+    ,{
+      "title"			: "Women Who Code Belfast",
+      "link"			: "http://localhost:4000/development/women-who-code-belfast/",
+      "excerpt"		: "Women Who Code has arrived in Belfast with the first event, a delve into design patterns, taking place tomorrow night."
+    }
+  
+
+  
+    ,{
+      "title"			: "vJUG",
+      "link"			: "http://localhost:4000/meetups/vjug/",
+      "excerpt"		: "If, like me, you’ve no local JUG you’ll be pleased to hear about the creation of vJUG a Virtual Java User Group where you can watch presentations and interact in real time with those presenting and attending. You can join online via their meetup group. The first event took place last week with Trisha Gee explaining why “Design is a Process, Not a Document” and was a real success. A number of future events are already planned with “Drive by Contributions” A GitHub session by Brent Beer and Matthew McCullough taking place tomorrow. Check it out!"
+    }
+  
+
+  
+    ,{
+      "title"			: "Cultivating Female Talent",
+      "link"			: "http://localhost:4000/culture/cultivating-female-talent/",
+      "excerpt"		: "Computing is an amazing field to work in. There are a wide range of roles available, new technologies and methodologies are constantly being developed and there are opportunities to develop systems, apps and sites that can make a real difference to peoples’ lives yet there is still a lack of women working in and choosing to study computing. A lot of attention is focused on how to get more women into the field but another equally important topic which doesn’t always get addressed is how to make the most of the female work force you do attract."
+    }
+  
+
+  
+    ,{
+      "title"			: "Fakes",
+      "link"			: "http://localhost:4000/technologies/fakes/",
+      "excerpt"		: "I recently came across Microsoft Fakes which can help you when doing TDD to isolate the code under test. Initially I thought it was only available with Visual Studio Ultimate Edition but if you install Visual Studio Update 2 it is now available in the premium edition as well."
+    }
+  
+
+  
+    ,{
+      "title"			: "Do Your Homework",
+      "link"			: "http://localhost:4000/development/do-your-homework/",
+      "excerpt"		: "I want to take a quick look at some of the things I learnt from chapter four of pushback. This chapter covers what Selena Rezvani sees as the second stage of negotiation, doing you homework and preparing for the negotiation."
+    }
+  
+
+  
+    ,{
+      "title"			: "Prepare Psychologically",
+      "link"			: "http://localhost:4000/development/prepare-psychologically/",
+      "excerpt"		: "Here’s a quick summary of some of the things that really resonated with me in chapter three of pushback. This chapter covered the first stage of negotiation, preparing and getting yourself in the right head space."
+    }
+  
+
+  
+    ,{
+      "title"			: "Review: AOP in .NET.",
+      "link"			: "http://localhost:4000/books/review-aop-in-net/",
+      "excerpt"		: "A few months ago I got the chance to get involved as a Manning Reviewer for AOP in .NET by Matthew Groves. It was a great chance to see the effort and evolution that goes into a book before it comes out in print. Plus I got a chance to learn AOP, Aspect Orientated Programming, in .NET, having previously only used it in Java."
+    }
+  
+
+  
+    ,{
+      "title"			: "Finding Your Pushback Style",
+      "link"			: "http://localhost:4000/development/finding-your-pushback-style/",
+      "excerpt"		: "Just a really quick post on some of the things I found interesting in the chapter on “Finding Your Pushback Style” from Pushback by Selena Rezvani."
+    }
+  
+
+  
+    ,{
+      "title"			: "Pushback",
+      "link"			: "http://localhost:4000/development/pushback/",
+      "excerpt"		: "Having the confidence to ask for what your want and articulating your case in a compelling manner are key to getting on in all parts of your life both inside and outside of work. Sometimes we talk ourselves out of asking for things whether it be a concern over damaging relationships, a lack of belief that we don’t deserve it or a fear of asking for a more challenging role in case we fail."
+    }
+  
+
+  
+    ,{
+      "title"			: "Leaning In",
+      "link"			: "http://localhost:4000/culture/leaning-in/",
+      "excerpt"		: "When my husband and I first decided to try for a family I had no idea of the impact Luke would have on my life. You have no concept of the love you are going to feel or the lengths you would go to in order to see your child be happy and flourish."
+    }
+  
+
+  
+    ,{
+      "title"			: "Rapid Presentation Layer Development with Play",
+      "link"			: "http://localhost:4000/tutorial/rapid-presentation-layer-development-with-play/",
+      "excerpt"		: "One of the really nice features of Play is its template engine. It’s something I made use of heavily in my latest piece of work developing a proof of concept for a customer. The template engine allows you to create reusable blocks of layout which you can use across multiple pages in your site. It’s really easy to get started with templates as they don’t require you to learn a new language. Mine consisted of Scala and HTML."
+    }
+  
+
+  
+    ,{
+      "title"			: "Explaining Languages through Storytelling",
+      "link"			: "http://localhost:4000/skills/explaining-languages-through-storytelling/",
+      "excerpt"		: "Around the time I started up the original version of this blog on Blogger I went on a search for females in technology and I came across Carin Meier and I’ve been enjoying her tweets ever since. If you have an interest in Clojure you’ll particularly enjoy following her. Carin’s passion for Clojure and programming drones with it shines through."
+    }
+  
+
+  
+    ,{
+      "title"			: "Global Settings in Scala",
+      "link"			: "http://localhost:4000/tutorial/global-settings-in-scala/",
+      "excerpt"		: "In a recent Scala Play! project I wanted to carry out certain things on starting up and shutting down my application. Typical things like starting up and cleaning up resources. This is how I came across the Global Object. This gives you a hook into certain events like starting and stopping, when the user requests an action which doesn’t exist and allows you to define code which is run when they occur."
+    }
+  
+
+  
+    ,{
+      "title"			: "MongoDB and AWS",
+      "link"			: "http://localhost:4000/presentations/mongodb-and-aws/",
+      "excerpt"		: "I came across this talk on using MongoDB with Amazon Web Services. It is focused around how you can achieve simplicity, stability and scalability through using the two together. For anyone interested in getting a feel for how you go about using MongoDB on AWS and why they are a good fit it is well worth a look."
+    }
+  
+
+  
+    ,{
+      "title"			: "Jumping In",
+      "link"			: "http://localhost:4000/development/jumping-in/",
+      "excerpt"		: "Today I delivered the second of my WhiteBag sessions on NoSQL in work and it was a great feeling. To understand fully why I need to go back a bit to my school days. On one occasion I remember my French teacher giving off that  I was too timid to turn the page in my book in case I did it at the wrong time. I was that shy. I hated having everyone’s attention on me and the thought of getting something wrong and embarrassing myself in front of people meant I avoided offering an answer. To be honest it didn’t hold me back too much at school but in recent times I’ve really felt it is affecting me reaching my true potential."
+    }
+  
+
+  
+    ,{
+      "title"			: "10gen MongoDB Courses: My Experience So Far",
+      "link"			: "http://localhost:4000/development/10gen-mongodb-courses-my-experience-so-far/",
+      "excerpt"		: "I’ve been a bit quiet over the past few weeks so here is a quick post to explain what I’ve been up to."
+    }
+  
+
+  
+    ,{
+      "title"			: "MongoDB Day 1 (CRUD Part 3: Update)",
+      "link"			: "http://localhost:4000/development/mongodb-day-1-crud-part-3-update/",
+      "excerpt"		: "My experience of Day 1 with MongoDB in Seven Databases In Seven Weeks."
+    }
+  
+
+  
+    ,{
+      "title"			: "MongoDB Day 1 (CRUD Part 2: Read)",
+      "link"			: "http://localhost:4000/development/mongodb-day-1-crud-part-2-read/",
+      "excerpt"		: "My experience of Day 1 with MongoDB in Seven Databases In Seven Weeks."
+    }
+  
+
+  
+    ,{
+      "title"			: "MongoDB Day 1 (Intro)",
+      "link"			: "http://localhost:4000/development/mongodb-day-1-intro/",
+      "excerpt"		: "My experience of Day 1 with MongoDB in Seven Databases In Seven Weeks."
+    }
+  
+
+  
+    ,{
+      "title"			: "MongoDB Day 1 (CRUD Part 1: Create)",
+      "link"			: "http://localhost:4000/development/mongodb-day-1-crud-part-1-create/",
+      "excerpt"		: "My experience of Day 1 with MongoDB in Seven Databases In Seven Weeks."
+    }
+  
+
+  
+    ,{
+      "title"			: "Neo4j Day 1 (Gremlin)",
+      "link"			: "http://localhost:4000/development/neo4j-day-1-gremlin/",
+      "excerpt"		: "My experience with Day 1 of Neo4j in Seven Databases in Seven Days."
+    }
+  
+
+  
+    ,{
+      "title"			: "Neo4j Day 1 (Installing and Exploring the Web GUI)",
+      "link"			: "http://localhost:4000/development/neo4j-day-1-installing-and-exploring-the-web-gui/",
+      "excerpt"		: "My experience with Day 1 of Neo4j in Seven Database in Seven Weeks."
+    }
+  
+
+  
+    ,{
+      "title"			: "10gen Online MongoDB Courses",
+      "link"			: "http://localhost:4000/development/10gen-online-mongodb-courses/",
+      "excerpt"		: "I’ve signed up for 10gen’s online training courses. Two of the courses started this week. One from a developer perspective, learning about creating a blog with MongoDB using python, and the other from a DBA perspective. There is also one near the end of February using Java and MongoDB which I plan to take a look at. I’ll let you know how they go and whether I’d recommend them. I find it really useful at times having deadlines whether imposed by others like these courses or by myself, e.g. by committing to a talk about a subject. With so many things vying for my time it can be easy to make excuses for not getting round to looking at things. Deadlines give me the kick up the backside I need to get things done."
+    }
+  
+
+  
+    ,{
+      "title"			: "SDISW: Databases and Database Models",
+      "link"			: "http://localhost:4000/development/sdisw-databases-and-database-models/",
+      "excerpt"		: "This is a really brief post to introduce the databases and database models I’m going to take a look at while working through the book Seven Databases in Seven Weeks."
+    }
+  
+
+  
+    ,{
+      "title"			: "NoSQL",
+      "link"			: "http://localhost:4000/books/nosql/",
+      "excerpt"		: "A big buzz word at the moment is NoSQL. It’s a grouping for databases which don’t adher to the relational database management system model. In the past you’ve probably used a range of different RDBMS like Sybase, Oracle and Microsoft SQL Server, and forced your data to fit in the relational model. NoSQL doesn’t mean no more relational databases. Instead it means there are a range of different models and database options to meet your particular domain needs."
+    }
+  
+
+  
+    ,{
+      "title"			: "The 3 Pillars of Personal Effectiveness",
+      "link"			: "http://localhost:4000/books/the-3-pillars-of-personal-effectiveness/",
+      "excerpt"		: "While having a look around InfoQ recently I came across the book 3 Pillars of Personal Effectiveness by Troels Richter. As someone full of enthusism with lots of things I want to look at but limited time I’m constantly striving for ways to become more effective in the time I do have. One thing that really caught my eye in the book was the idea of a personal kanban board. It seems like a great way to capture the things I want to do/achieve and make sure I complete them so I’m going to give it a go."
+    }
+  
+
+  
+    ,{
+      "title"			: "Communication",
+      "link"			: "http://localhost:4000/development/communication/",
+      "excerpt"		: "My ability to communicate effectively especially to a larger audience is something I’m continually working on. Its part of the reason why I’ve volunteered to present so much recently in work, combined with the fact that I’ve been inspired by what I’ve been working on both at work and in my spare time.I’m naturally a shy person who doesn’t particularly enjoy being the centre of attention so talking to an audience especially about something that splits opinion or which people disagree with my view on is something I’m not particularly comfortable doing. I know however it is a key part of being a good developer especially if you want to progress. Currently I’m in the process of desensitising myself to the fear of criticism by taking every opportunity to present and lead and I can definitely feel it becoming easier."
+    }
+  
+
+  
+    ,{
+      "title"			: "Erlang Day 3",
+      "link"			: "http://localhost:4000/development/erlang-day-3/",
+      "excerpt"		: "My experience with day three of exploring Erlang through Seven Languages in Seven Weeks."
+    }
+  
+
+  
+    ,{
+      "title"			: "Erlang Day 2",
+      "link"			: "http://localhost:4000/development/erlang-day-2/",
+      "excerpt"		: "My experience with day two of exploring Erlang through Seven Languages in Seven Weeks."
+    }
+  
+
+  
+    ,{
+      "title"			: "Erlang Day 1",
+      "link"			: "http://localhost:4000/development/erlang-day-1/",
+      "excerpt"		: "My experience with day one of exploring Erlang through Seven Languages in Seven Weeks."
+    }
+  
+
+  
+    ,{
+      "title"			: "Prolog Day 3",
+      "link"			: "http://localhost:4000/development/prolog-day-3/",
+      "excerpt"		: "My experience with day three of exploring Prolog through Seven Languages in Seven Weeks."
+    }
+  
+
+  
+    ,{
+      "title"			: "Final Thoughts on Three Days of Prolog",
+      "link"			: "http://localhost:4000/development/final-thoughts-on-three-days-of-prolog/",
+      "excerpt"		: "My experience with three days of exploring Prolog through Seven Languages in Seven Weeks."
+    }
+  
+
+  
+    ,{
+      "title"			: "Prolog Day 2",
+      "link"			: "http://localhost:4000/development/prolog-day-2/",
+      "excerpt"		: "My experience with day two of exploring Prolog through Seven Languages in Seven Weeks."
+    }
+  
+
+  
+    ,{
+      "title"			: "Final Thoughts on Three Days of Io",
+      "link"			: "http://localhost:4000/development/final-thoughts-on-three-days-of-io/",
+      "excerpt"		: "My experience of  three days of exploring Io through Seven Languages in Seven Weeks."
+    }
+  
+
+  
+    ,{
+      "title"			: "Prolog Day 1",
+      "link"			: "http://localhost:4000/development/prolog-day-1/",
+      "excerpt"		: "My experience with day one of exploring Prolog through Seven Languages in Seven Weeks."
+    }
+  
+
+  
+    ,{
+      "title"			: "Io Day 2",
+      "link"			: "http://localhost:4000/development/io-day-2/",
+      "excerpt"		: "My experience with day two of exploring Io through Seven Languages in Seven Weeks."
+    }
+  
+
+  
+    ,{
+      "title"			: "Io Day 3",
+      "link"			: "http://localhost:4000/development/io-day-3/",
+      "excerpt"		: "My experience with day three of exploring Io through Seven Languages in Seven Weeks."
+    }
+  
+
+  
+    ,{
+      "title"			: "Ruby Day 3",
+      "link"			: "http://localhost:4000/development/ruby-day-3/",
+      "excerpt"		: "My experience with day three of exploring Ruby through Seven Languages in Seven Weeks."
+    }
+  
+
+  
+    ,{
+      "title"			: "Final Thoughts on Three Days of Ruby",
+      "link"			: "http://localhost:4000/development/final-thoughts-on-three-days-of-ruby/",
+      "excerpt"		: "A summary of my last 3 days exploring Ruby through Seven Languages in Seven Weeks."
+    }
+  
+
+  
+    ,{
+      "title"			: "Ruby Day 2",
+      "link"			: "http://localhost:4000/development/ruby-day-2/",
+      "excerpt"		: "My experience with day two of exploring Ruby through Seven Languages in Seven Weeks."
+    }
+  
+
+  
+    ,{
+      "title"			: "Io Day 1",
+      "link"			: "http://localhost:4000/development/io-day-1/",
+      "excerpt"		: "My experience with day one of exploring Io through Seven Languages in Seven Weeks."
+    }
+  
+
+  
+    ,{
+      "title"			: "Seven Languages in Seven Weeks",
+      "link"			: "http://localhost:4000/books/seven-languages-in-seven-weeks/",
+      "excerpt"		: "I’ve just started to look at Seven Languages in Seven Weeks, a book written by Bruce A. Tate for the Pragmatic Bookshelf. I like the idea behind the book. Rather than a very basic ‘Hello World’ type introduction the aim of the book is to give you a real feel for each of the languages, their strengths and the idea behind them."
+    }
+  
+
+  
+    ,{
+      "title"			: "Ruby Day 1",
+      "link"			: "http://localhost:4000/development/ruby-day-1/",
+      "excerpt"		: "My experience with day one of exploring Ruby through Seven Languages in Seven Weeks."
+    }
+  
+
+  
+    ,{
+      "title"			: "Some Soft Skill Reading",
+      "link"			: "http://localhost:4000/books/some-soft-skill-reading/",
+      "excerpt"		: "As part of my drive to improve my soft skills in order to progress in my career I’ve started reading Dave Hendricksen’s 12 Essential Skills for Software Architects. This book talks about the key soft skills required to allow a technically gifted person to progress to the upper ranks in their company. As you move up in the organisation technical ability is no longer enough. It needs to be matched with the ability to manage and lead. Also in order to succeed you need to have built good relations with those that influence decisions."
+    }
+  
+
+  
+    ,{
+      "title"			: "Gracious Behaviour",
+      "link"			: "http://localhost:4000/development/gracious-behaviour/",
+      "excerpt"		: "The first of the relationship skills Hendricksen mentions in his book 12 Essential Skills for Software Architects is Gracious Behaviour. Easy when you’re dealing with someone pleasant not so easy in other circumstances."
+    }
+  
+
+  
+    ,{
+      "title"			: "When Your Soft Skills Get Called Into Question",
+      "link"			: "http://localhost:4000/development/when-your-soft-skills-get-called-into-question/",
+      "excerpt"		: "I’m at the stage in my career where I want to take it to the next level and that is the stage where the ability to manage becomes important. As well as having excellent technical skills soft skills become more important in order to enable you to get the best out of your colleagues, vendors and customers."
+    }
+  
+
+  
+    ,{
+      "title"			: "JavaScript MicroFrameworks",
+      "link"			: "http://localhost:4000/trends/javascript-microframeworks/",
+      "excerpt"		: "Micro-Frameworks are frameworks developed to provide a particular piece of functionality and do it really well. Thomas Fuchs has created a site, microjs ,to help make people aware of the best Micro-Frameworks and show how compact and powerful they can be. His aim is to encourage people to make an active choice about the right JavaScript Framework for their project and not just plump for the current defacto choice. I intend to take a look  through some of the frameworks and read the code behind a few of them with the aim to improving my knowledge and understanding of JavaScript . I’m hoping reading the code behind a well written Micro-Framework will be an education in how to write good JavaScript because of their size and the fact they focus on one problemThere are two main reasons why you would look at using Micro-Frameworks. The first is to give you functionality which your main framework does not provide. Here you would use it in addition to your main framework. The second is if you feel that the cost on performance of using a large library, which provides a range of functionality, is too high for the benefits it gives you. Perhaps you only require a small subset of the power it provides. With the performance of websites being an important factor in retaining customers it’s natural that developers are looking for ways to reduce the amount of code loading to improve page load times. In this case a micro framework or combination of micro frameworks to create a custom framework might prove the best solution.When selecting a Micro-Framework for either reason a developer must remember to consider all of the factors they would normally look at when selecting a framework. These include:"
+    }
+  
+
+  
+    ,{
+      "title"			: "Technology Radar March 2012",
+      "link"			: "http://localhost:4000/trends/technology-radar-march-2012/",
+      "excerpt"		: "Thoughtworks produce a document to make people aware of the trends affecting the IT market. I thought I would take a look through the March edition to help me identify some (ahem a lot of) new areas to look at over the coming weeks."
+    }
+  
+
+  
+    ,{
+      "title"			: "Last Responsible Moment",
+      "link"			: "http://localhost:4000/skills/last-responsible-moment/",
+      "excerpt"		: "One of the terms mentioned around Emergent Design in the ThoughtWorks Technology Radar is the Lean Software Principle of Last Responsible Moment. The theory behind last responsible moment is that you should defer decision making to the last responsible moment in order to gain flexibility in the choices you have later. Sometimes people forget there is an option other than making a decision and that is making no decision until they have the information they need to make an informed choice."
+    }
+  
+
+  
+    ,{
+      "title"			: "Social Relationship Marketing",
+      "link"			: "http://localhost:4000/skills/social-relationship-marketing/",
+      "excerpt"		: "Oracle demoed their cloud social relationship management tools as part of their announcement last night. It really highlighted to me the importance of companies (and individuals) being aware of the various social networks available and how they can make use of them to build relationships with current and future customers, business partners and employers and send out a consistent marketing message."
+    }
+  
+
+  
+    ,{
+      "title"			: "Oracle Cloud Event",
+      "link"			: "http://localhost:4000/products/oracle-cloud-event/",
+      "excerpt"		: "Last night the Oracle CEO, Larry Ellison, announced that Oracle Cloud and Oracle Platinum Services are now available. There were lots of jokes, jabs at the competition and throwing around of key cloud terms. Here is a summary of what he talked about."
+    }
+  
+
+  
+    ,{
+      "title"			: "The Process of Selecting a Product",
+      "link"			: "http://localhost:4000/skills/the-process-of-selecting-a-product/",
+      "excerpt"		: "Before heading off on maternity leave I was involved in looking at BPM products for a product we are developing. During this process I got a better understanding of how to go about selecting a product."
+    }
+  
+
+  
+    ,{
+      "title"			: "Creating a Custom Annotation",
+      "link"			: "http://localhost:4000/tutorial/creating-a-custom-annotation/",
+      "excerpt"		: "JSR 303 provides a set of built-in validations but there will be times when you need to create your own validation annotation. Thankfully the specification was written with that in mind and it is relatively simple to write a custom validation annotation."
+    }
+  
+
+  
+    ,{
+      "title"			: "Passionate Programmer",
+      "link"			: "http://localhost:4000/books/passionate-programmer/",
+      "excerpt"		: "No it’s not an erotic novel about an excitable programmer but a guide to how you can refind your passion for IT and programming in particular."
+    }
+  
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    ,{
+      "title"			: "About Me",
+      "link"			: "http://localhost:4000/about/",
+      "excerpt"		: ""
+    }
+  
+
+  
+
+  
+    ,{
+      "title"			: "My Presentations",
+      "link"			: "http://localhost:4000/presentations/",
+      "excerpt"		: ""
+    }
+  
+
+  
+
+  
+
+  
+
+]

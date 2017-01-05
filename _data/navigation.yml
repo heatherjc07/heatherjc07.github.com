@@ -1,0 +1,17 @@
+# Site navigation links
+
+- title: About
+  url: /about/
+
+- title: Blog
+  url: /blog/
+
+- title: Presentations
+  url: /presentations/
+
+- title: Tweets
+  url: https://twitter.com/HCampbell07/
+  external: true
+
+- title: Search
+  url: /search/

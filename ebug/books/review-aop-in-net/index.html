@@ -1,0 +1,227 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Review: AOP in .NET. &#8211; Heather Campbell's Blog</title>
+<meta name="description" content="A few months ago I got the chance to get involved as a Manning Reviewer for AOP in .NET by Matthew Groves. It was a great chance to see the effort and evolution that goes into a book before it comes out in print. Plus I got a chance to learn AOP, Aspect Orientated Programming, in .NET, having previously only used it in Java.
+
+">
+<meta name="keywords" content="AOP, C#, review">
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Review: AOP in .NET.">
+<meta name="twitter:description" content="A few months ago I got the chance to get involved as a Manning Reviewer for AOP in .NET by Matthew Groves. It was a great chance to see the effort and evolution that goes into a book before it comes out in print. Plus I got a chance to learn AOP, Aspect Orientated Programming, in .NET, having previously only used it in Java.
+
+">
+<meta name="twitter:site" content="@hcampbell07">
+<meta name="twitter:creator" content="@hcampbell07">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://localhost:4000/images/">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_GB">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Review: AOP in .NET.">
+<meta property="og:description" content="A few months ago I got the chance to get involved as a Manning Reviewer for AOP in .NET by Matthew Groves. It was a great chance to see the effort and evolution that goes into a book before it comes out in print. Plus I got a chance to learn AOP, Aspect Orientated Programming, in .NET, having previously only used it in Java.
+
+">
+<meta property="og:url" content="http://localhost:4000/books/review-aop-in-net/">
+<meta property="og:site_name" content="Heather Campbell's Blog">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/books/review-aop-in-net/">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Heather Campbell's Blog Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+<!-- Webfonts -->
+<script src="https://use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="http://localhost:4000/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="http://localhost:4000/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://localhost:4000/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+
+<!-- MathJax -->
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body id="post">
+
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop">
+	    <ul>
+      
+		    
+		    <li><a href="http://localhost:4000/about/" >About</a></li>
+		  
+		    
+		    <li><a href="http://localhost:4000/blog/" >Blog</a></li>
+		  
+		    
+		    <li><a href="http://localhost:4000/presentations/" >Presentations</a></li>
+		  
+		    
+		    <li><a href="https://twitter.com/HCampbell07/" target="_blank">Tweets</a></li>
+		  
+		    
+		    <li><a href="http://localhost:4000/search/" >Search</a></li>
+		  
+		<li><a href="http://localhost:4000/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li>
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+<header class="masthead">
+	<div class="wrap">
+      <h1 class="site-title animated fadeIn"><a href="http://localhost:4000/">Heather Campbell's Blog</a></h1>
+		<h2 class="site-description animated fadeIn" itemprop="description">A place to share my thoughts</h2>
+	</div>
+</header><!-- /.masthead -->
+
+<div class="js-menu-screen menu-screen"></div>
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <ul class="entry-tags">
+          <li><a href="http://localhost:4000/tags/#AOP" title="Pages tagged AOP">AOP</a></li><li><a href="http://localhost:4000/tags/#C#" title="Pages tagged C#">C#</a></li><li><a href="http://localhost:4000/tags/#review" title="Pages tagged review">review</a></li>
+        </ul>
+        
+          <h1 class="entry-title">Review: AOP in .NET.</h1>
+        
+      </header>
+      <footer class="entry-meta">
+        
+        
+          <img src="http://localhost:4000/images/bio-photo.jpg" class="bio-photo" alt="Heather Campbell bio photo"></a>
+        
+        <span class="author vcard">By <span class="fn">Heather Campbell</span></span>
+        <span class="entry-date date published"><time datetime="2013-07-15T00:00:00+01:00"><i class="fa fa-calendar-o"></i> July 15, 2013</time></span>
+        
+
+        <span class="social-share-twitter">
+  <a href="https://twitter.com/intent/tweet?hashtags=AOP,C#,review&amp;text=Review:%20AOP%20in%20.NET.&amp;url=http://localhost:4000/books/review-aop-in-net/&amp;via=hcampbell07" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i> Tweet</a>
+</span>
+<span class="social-share-facebook">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/books/review-aop-in-net/" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i> Like</a>
+</span>
+<span class="social-share-googleplus">
+  <a href="https://plus.google.com/share?url=http://localhost:4000/books/review-aop-in-net/" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> +1</a>
+</span>
+<!-- /.social-share -->
+        
+      </footer>
+      <div class="entry-content">
+        <p>A few months ago I got the chance to get involved as a Manning Reviewer for <a href="http://www.manning.com/groves/">AOP in .NET</a> by Matthew Groves. It was a great chance to see the effort and evolution that goes into a book before it comes out in print. Plus I got a chance to learn AOP, Aspect Orientated Programming, in .NET, having previously only used it in Java.</p>
+
+<p>For those of you unfamiliar with Aspect Orientated Programming it is a means of modularising your cross cutting concerns, i.e. things like logging, auditing which are used throughout your application, and applying them to specific points in your code. It helps avoid repetition and tangling of code, where you end up mixing code for things like logging in with your business logic. It makes your code cleaner and easier to maintain.</p>
+
+<p><a href="http://www.manning.com/groves/">AOP in .NET</a> is a great introduction to AOP. Assuming no prior knowledge it provides clear explanations of concepts and terms.</p>
+
+<p>Throughout the book new concepts are demonstrated using example code. One of the early code examples, which I found particularly powerful, takes the user via a series of refactoring exercises from code without AOP through to code using it. You couldn’t get a clearer explanation of the benefits of AOP. I found all the code examples in the book well thought out and relevant, covering the kind of features you’d be using AOP to implement in real life projects. I also like the fact the book covers how to unit test aspects.</p>
+
+<p>The code examples are in C# and Groves demonstrates two AOP tools <a href="http://www.postsharp.net/">PostSharp</a> and <a href="http://www.castleproject.org/projects/dynamicproxy/">Castle DynamicProxy</a>. PostSharp uses annotations and compile time weaving while Castle DynamicProxy generates proxies on the fly at runtime. Groves outlines the benefits and limitations of both tools, leaving it up to the reader to make an informed choice as to which is the right tool for their project.</p>
+
+<p>I think <a href="http://www.manning.com/groves/">AOP in .NET</a> is a good introduction to AOP which moves at a pace which is easy for a beginner to follow and allows them to gain a clear understanding as to why an example is being coded in a particular way. This may feel slow to those with previous AOP knowledge or experienced coders.</p>
+
+<p>Manning have kindly provided a discount code <strong>msrev071513</strong> which will save you 43% off <a href="http://www.manning.com/groves/">AOP in .NET</a>. It can also be redeemed against 4 other titles:</p>
+
+<ul>
+  <li><a href="http://www.manning.com/sessa/">50 Android Hacks</a></li>
+  <li><a href="http://www.manning.com/pbrown3/">Windows Store App Development</a></li>
+  <li><a href="http://www.manning.com/mevans/">Arduino in Action</a></li>
+  <li><a href="http://www.manning.com/carlson/">Redis in Action</a></li>
+</ul>
+
+        
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+    <nav class="pagination" role="navigation">
+      
+        <a href="http://localhost:4000/development/finding-your-pushback-style/" class="btn" title="Finding Your Pushback Style">Previous</a>
+      
+      
+        <a href="http://localhost:4000/development/prepare-psychologically/" class="btn" title="Prepare Psychologically">Next</a>
+      
+    </nav><!-- /.pagination -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    
+
+<span>&copy; 2017 Heather Campbell. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/so-simple-jekyll-theme/" rel="nofollow">So Simple Theme</a>.</span>
+<div class="social-icons">
+	<a href="https://twitter.com/hcampbell07" title="Heather Campbell on Twitter" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+	
+	
+	
+	
+	
+	
+	<a href="https://github.com/heatherjc07" title="Heather Campbell on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+	
+  
+	
+  <a href="http://localhost:4000/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
+</div><!-- /.social-icons -->
+
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script type="text/javascript">
+  var BASE_URL = 'http://localhost:4000';
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://localhost:4000/assets/js/scripts.min.js"></script>
+
+
+
+
+</body>
+</html>

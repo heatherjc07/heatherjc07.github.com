@@ -1,0 +1,295 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Ruby Day 3 &#8211; Heather Campbell's Blog</title>
+<meta name="description" content="My experience with day three of exploring Ruby through Seven Languages in Seven Weeks.
+
+">
+<meta name="keywords" content="seven languages in seven weeks, ruby, languages">
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Ruby Day 3">
+<meta name="twitter:description" content="My experience with day three of exploring Ruby through Seven Languages in Seven Weeks.
+
+">
+<meta name="twitter:site" content="@hcampbell07">
+<meta name="twitter:creator" content="@hcampbell07">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://localhost:4000/images/">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_GB">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ruby Day 3">
+<meta property="og:description" content="My experience with day three of exploring Ruby through Seven Languages in Seven Weeks.
+
+">
+<meta property="og:url" content="http://localhost:4000/development/ruby-day-3/">
+<meta property="og:site_name" content="Heather Campbell's Blog">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/development/ruby-day-3/">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Heather Campbell's Blog Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+<!-- Webfonts -->
+<script src="https://use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="http://localhost:4000/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="http://localhost:4000/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://localhost:4000/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+
+<!-- MathJax -->
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body id="post">
+
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop">
+	    <ul>
+      
+		    
+		    <li><a href="http://localhost:4000/about/" >About</a></li>
+		  
+		    
+		    <li><a href="http://localhost:4000/blog/" >Blog</a></li>
+		  
+		    
+		    <li><a href="http://localhost:4000/presentations/" >Presentations</a></li>
+		  
+		    
+		    <li><a href="https://twitter.com/HCampbell07/" target="_blank">Tweets</a></li>
+		  
+		    
+		    <li><a href="http://localhost:4000/search/" >Search</a></li>
+		  
+		<li><a href="http://localhost:4000/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li>
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+<header class="masthead">
+	<div class="wrap">
+      <h1 class="site-title animated fadeIn"><a href="http://localhost:4000/">Heather Campbell's Blog</a></h1>
+		<h2 class="site-description animated fadeIn" itemprop="description">A place to share my thoughts</h2>
+	</div>
+</header><!-- /.masthead -->
+
+<div class="js-menu-screen menu-screen"></div>
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <ul class="entry-tags">
+          <li><a href="http://localhost:4000/tags/#seven languages in seven weeks" title="Pages tagged seven languages in seven weeks">seven languages in seven weeks</a></li><li><a href="http://localhost:4000/tags/#ruby" title="Pages tagged ruby">ruby</a></li><li><a href="http://localhost:4000/tags/#languages" title="Pages tagged languages">languages</a></li>
+        </ul>
+        
+          <h1 class="entry-title">Ruby Day 3</h1>
+        
+      </header>
+      <footer class="entry-meta">
+        
+        
+          <img src="http://localhost:4000/images/bio-photo.jpg" class="bio-photo" alt="Heather Campbell bio photo"></a>
+        
+        <span class="author vcard">By <span class="fn">Heather Campbell</span></span>
+        <span class="entry-date date published"><time datetime="2012-09-04T00:00:00+01:00"><i class="fa fa-calendar-o"></i> September 04, 2012</time></span>
+        
+
+        <span class="social-share-twitter">
+  <a href="https://twitter.com/intent/tweet?hashtags=sevenlanguagesinsevenweeks,ruby,languages&amp;text=Ruby%20Day%203&amp;url=http://localhost:4000/development/ruby-day-3/&amp;via=hcampbell07" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i> Tweet</a>
+</span>
+<span class="social-share-facebook">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/development/ruby-day-3/" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i> Like</a>
+</span>
+<span class="social-share-googleplus">
+  <a href="https://plus.google.com/share?url=http://localhost:4000/development/ruby-day-3/" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> +1</a>
+</span>
+<!-- /.social-share -->
+        
+      </footer>
+      <div class="entry-content">
+        <p><em>My experience with day three of exploring Ruby through <a href="http://pragprog.com/book/btlang/seven-languages-in-seven-weeks" target="_blank">Seven Languages in Seven Weeks</a>.</em></p>
+
+<p>The third day takes you past the standard features to look at solving non trivial problems with Ruby. It focuses on Metaprogramming - writing programs that write programs.</p>
+
+<p>An example of the use of metaprogramming is in ActiveRecord, a piece of rails used to connect business objects and database tables.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5250428.js?file=active.rb"> </script>
+
+<p>The has_many method adds all the instance variables and methods needed to establish a many to one relationship. has_one adds all the instance variables and methods needed to establish a one to one relationship. The methods read like English making them easy to understand.</p>
+
+<h2 id="open-classes">Open Classes</h2>
+
+<p>You have the ability to change the definition of any class at any time e.g. to add behaviour. For example we might want to add a common blank? method across two classes to allow us to check strings.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5250428.js?file=open.rb"> </script>
+
+<p>The classes have already been defined so this invocation modifies the classes adding a blank? method. We then make use of ducktyping as we check an array for blank elements. It doesn’t matter if the element is a nil or a String as both support the blank? behaviour.
+The ability to redefine can make for very readable code but you need to use it responsibly.</p>
+
+<p>You may have heard of DSL, Domain Specific Languages, a language created to represent information for a particular domain. Open classes in Ruby can be useful in creating a DSL e.g. expressing units in a language relevant to your business domain.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5250428.js?file=dsl.rb"> </script>
+
+<h2 id="methodmissing">method_missing</h2>
+
+<p>If Ruby goes to call a method and finds it doesn’t exist it calls a debug method method_missing which prints out some diagnostic information. It can aid with debugging but it can also be overridden to provide some very expressive syntax. 
+e.g. representing Roman numerals 
+Could create a method and have syntax like</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5250428.js?file=roman_num1.rb"> </script>
+
+<p>However you can create even easier read syntax overriding the method_missing method</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5250428.js?file=roman_num2.rb"> </script>
+
+<p>We take the name of the method called and convert it to a string. We then handle special cases like 4, 9 etc. by converting from the 5 - 1 syntax (IV) or 10 -1 syntax (IX) to one which is easily added up i.e. 4 value 1’s and a 5 value and 4 value 1s. We then calculate the total amount converting characters to their numeric equivalent. It comes at price because now if we are missing a method Ruby won’t be able to tell us. The class would need to be enhanced to make sure it was accepting valid Roman numerals.</p>
+
+<h2 id="modules">Modules</h2>
+
+<p>I found it hard understanding the Modules part of the chapter so I looked elsewhere for some examples to help build my understanding. I’ve taken some examples from ‘Ruby Best Practices’</p>
+
+<p>Modules can be used for namespacing. e.g. in the example below both XML and PDF have document classes.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5250428.js?file=module.rb"> </script>
+
+<p>As previously discussed in my Ruby Day 2 blog modules can be used to add behaviour to classes by including a module. E.g. providing methods to allow objects to be ordered, comparable and enumerable modules.</p>
+
+<p>You can also extend the behaviour of the class itself by extending it with a module. include makes the module’s methods available to the instance of a class, while extend makes these methods available to the class itself.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5250428.js?file=roar.rb"> </script>
+
+<p>The following bit of code mixes the methods defined by Greeter directly into the Greeter object itself.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5250428.js?file=greeter.rb"> </script>
+
+<h2 id="self-study">Self Study</h2>
+
+<p>Modify the CSV application to support an each method to return a CsvRow object. Use method_missing on that CsvRow to return the value for the column for a given heading.
+For example, for the file:
+one, two
+lions, tigers
+allow an API that works like this: 
+csv = RubyCsv.new
+csv.each {|row| puts row.one}
+This should print “lions”.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5250428.js?file=csv.rb"> </script>
+
+<p>Check out my code at <a href="https://github.com/heatherjc07/seven_languages_in_seven_days/tree/master/Ruby/Day3" target="_blank">github</a></p>
+
+
+        
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+    <nav class="pagination" role="navigation">
+      
+        <a href="http://localhost:4000/development/final-thoughts-on-three-days-of-ruby/" class="btn" title="Final Thoughts on Three Days of Ruby">Previous</a>
+      
+      
+        <a href="http://localhost:4000/development/io-day-3/" class="btn" title="Io Day 3">Next</a>
+      
+    </nav><!-- /.pagination -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    
+
+<span>&copy; 2017 Heather Campbell. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/so-simple-jekyll-theme/" rel="nofollow">So Simple Theme</a>.</span>
+<div class="social-icons">
+	<a href="https://twitter.com/hcampbell07" title="Heather Campbell on Twitter" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+	
+	
+	
+	
+	
+	
+	<a href="https://github.com/heatherjc07" title="Heather Campbell on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+	
+  
+	
+  <a href="http://localhost:4000/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
+</div><!-- /.social-icons -->
+
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script type="text/javascript">
+  var BASE_URL = 'http://localhost:4000';
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://localhost:4000/assets/js/scripts.min.js"></script>
+
+
+
+
+</body>
+</html>

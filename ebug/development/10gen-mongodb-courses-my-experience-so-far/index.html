@@ -1,0 +1,216 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>10gen MongoDB Courses: My Experience So Far &#8211; Heather Campbell's Blog</title>
+<meta name="description" content="I’ve been a bit quiet over the past few weeks so here is a quick post to explain what I’ve been up to.
+
+">
+<meta name="keywords" content="10gen, mongodb, online courses, nosql, databases">
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="10gen MongoDB Courses: My Experience So Far">
+<meta name="twitter:description" content="I’ve been a bit quiet over the past few weeks so here is a quick post to explain what I’ve been up to.
+
+">
+<meta name="twitter:site" content="@hcampbell07">
+<meta name="twitter:creator" content="@hcampbell07">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://localhost:4000/images/">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_GB">
+<meta property="og:type" content="article">
+<meta property="og:title" content="10gen MongoDB Courses: My Experience So Far">
+<meta property="og:description" content="I’ve been a bit quiet over the past few weeks so here is a quick post to explain what I’ve been up to.
+
+">
+<meta property="og:url" content="http://localhost:4000/development/10gen-mongodb-courses-my-experience-so-far/">
+<meta property="og:site_name" content="Heather Campbell's Blog">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/development/10gen-mongodb-courses-my-experience-so-far/">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Heather Campbell's Blog Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+<!-- Webfonts -->
+<script src="https://use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="http://localhost:4000/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="http://localhost:4000/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://localhost:4000/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+
+<!-- MathJax -->
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body id="post">
+
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop">
+	    <ul>
+      
+		    
+		    <li><a href="http://localhost:4000/about/" >About</a></li>
+		  
+		    
+		    <li><a href="http://localhost:4000/blog/" >Blog</a></li>
+		  
+		    
+		    <li><a href="http://localhost:4000/presentations/" >Presentations</a></li>
+		  
+		    
+		    <li><a href="https://twitter.com/HCampbell07/" target="_blank">Tweets</a></li>
+		  
+		    
+		    <li><a href="http://localhost:4000/search/" >Search</a></li>
+		  
+		<li><a href="http://localhost:4000/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li>
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+<header class="masthead">
+	<div class="wrap">
+      <h1 class="site-title animated fadeIn"><a href="http://localhost:4000/">Heather Campbell's Blog</a></h1>
+		<h2 class="site-description animated fadeIn" itemprop="description">A place to share my thoughts</h2>
+	</div>
+</header><!-- /.masthead -->
+
+<div class="js-menu-screen menu-screen"></div>
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <ul class="entry-tags">
+          <li><a href="http://localhost:4000/tags/#10gen" title="Pages tagged 10gen">10gen</a></li><li><a href="http://localhost:4000/tags/#mongodb" title="Pages tagged mongodb">mongodb</a></li><li><a href="http://localhost:4000/tags/#online courses" title="Pages tagged online courses">online courses</a></li><li><a href="http://localhost:4000/tags/#nosql" title="Pages tagged nosql">nosql</a></li><li><a href="http://localhost:4000/tags/#databases" title="Pages tagged databases">databases</a></li>
+        </ul>
+        
+          <h1 class="entry-title">10gen MongoDB Courses: My Experience So Far</h1>
+        
+      </header>
+      <footer class="entry-meta">
+        
+        
+          <img src="http://localhost:4000/images/bio-photo.jpg" class="bio-photo" alt="Heather Campbell bio photo"></a>
+        
+        <span class="author vcard">By <span class="fn">Heather Campbell</span></span>
+        <span class="entry-date date published"><time datetime="2013-03-04T00:00:00+00:00"><i class="fa fa-calendar-o"></i> March 04, 2013</time></span>
+        
+
+        <span class="social-share-twitter">
+  <a href="https://twitter.com/intent/tweet?hashtags=10gen,mongodb,onlinecourses,nosql,databases&amp;text=10gen%20MongoDB%20Courses:%20My%20Experience%20So%20Far&amp;url=http://localhost:4000/development/10gen-mongodb-courses-my-experience-so-far/&amp;via=hcampbell07" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i> Tweet</a>
+</span>
+<span class="social-share-facebook">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/development/10gen-mongodb-courses-my-experience-so-far/" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i> Like</a>
+</span>
+<span class="social-share-googleplus">
+  <a href="https://plus.google.com/share?url=http://localhost:4000/development/10gen-mongodb-courses-my-experience-so-far/" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> +1</a>
+</span>
+<!-- /.social-share -->
+        
+      </footer>
+      <div class="entry-content">
+        <p>I’ve been a bit quiet over the past few weeks so here is a quick post to explain what I’ve been up to.</p>
+
+<p>Well I’ve completed the first 6 weeks of two of <a href="http://www.10gen.com/">10gen</a>’s MongoDB courses: <a href="https://education.10gen.com/courses/10gen/M101P/2013_Spring/about">MongoDB for Developers</a> and <a href="https://education.10gen.com/courses/10gen/M102/2013_Spring/about">MongoDB for DBAs</a> and I have to say it’s been a brilliant experience. I’ve found the quality of the materials excellent and the level of the assignments just right. They build up in difficulty and in particular I found the aggregation assignments required some serious thought but they weren’t impossible in the time I had available. Not meaning to harp on about the whole working mum thing but with a job, house and toddler I’ve limited time to spare so it’s great to find a course that fits in and has really delivered in terms of content.</p>
+
+<p>Each weeks content is split into lots of small video tutorials. I found this particularly helpful as I could fit in one when I got a spare 5 minutes. At the end of most of them is a quiz question which makes you aware of whether you’ve actually been taking things in. Each week you have a number of assignments to complete. This can range between 3 and 5 tasks and you can have up to 3 submits for each. Next week is the final week and is a project.</p>
+
+<p>In terms of what was covered it ranged from the basic CRUD, performance and structuring of documents to more complex topics like the aggregation framework, replication and sharding. Some people might feel that topics could have been covered with less videos but I feel that the way the information was delivered allowed me to build a real understanding of how to use MongoDB and left me feeling confident that I could explain what I’ve learnt to others and put it into practice. After I complete next week I hope to get a load of blogs out on what I’ve learnt.</p>
+
+<p>If you get the chance to do a 10gen course in the future, based on my experience with the two I’ve worked through, I’d definitely recommend it.</p>
+
+        
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+    <nav class="pagination" role="navigation">
+      
+        <a href="http://localhost:4000/development/mongodb-day-1-crud-part-3-update/" class="btn" title="MongoDB Day 1 (CRUD Part 3: Update)">Previous</a>
+      
+      
+        <a href="http://localhost:4000/development/jumping-in/" class="btn" title="Jumping In">Next</a>
+      
+    </nav><!-- /.pagination -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    
+
+<span>&copy; 2017 Heather Campbell. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/so-simple-jekyll-theme/" rel="nofollow">So Simple Theme</a>.</span>
+<div class="social-icons">
+	<a href="https://twitter.com/hcampbell07" title="Heather Campbell on Twitter" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+	
+	
+	
+	
+	
+	
+	<a href="https://github.com/heatherjc07" title="Heather Campbell on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+	
+  
+	
+  <a href="http://localhost:4000/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
+</div><!-- /.social-icons -->
+
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script type="text/javascript">
+  var BASE_URL = 'http://localhost:4000';
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://localhost:4000/assets/js/scripts.min.js"></script>
+
+
+
+
+</body>
+</html>
