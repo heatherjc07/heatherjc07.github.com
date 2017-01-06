@@ -24,6 +24,10 @@
     > a {
       border-bottom-width: 0; /* remove underlines from items in post indexes */
     }
+
+    a { 
+     color: $coral;
+    }
   }
 
   a > span {
@@ -44,6 +48,7 @@
   .excerpt {
     display: block;
     float: none;
+    color: black;
     @include font-size(14, no, 16);
 
     @include media($medium) {

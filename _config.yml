@@ -5,7 +5,8 @@ locale: en_GB
 description: A place to share my thoughts 
 logo: 
 search: true
-url: https://heatherjcampbell.com #http://localhost:4000
+#url: http://localhost:4000 
+url: https://heatherjcampbell.com 
 
 # Jekyll configuration
 
@@ -43,7 +44,7 @@ owner:
   twitter: hcampbell07
   github: heatherjc07
   stackexchange: #http://stackoverflow.com/users/123456/username
-  linkedin: #username
+  linkedin: heather-campbell-8b1986a
   instagram: #username
   flickr: #username
   tumblr: #username
