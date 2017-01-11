@@ -46,7 +46,7 @@ The topics covered include:
 * **Callings:** What a calling is. How to identify your's and pursue it. Not being put off by a lack of skills/experience (this can be developed) or lack of time (it doesn't have to engulf your whole life)
 
 
-* **Let it Be Easy: **The value of reframing goals to be kinder. An examples of this is moving from "Clean up my messy house" to "Keeping the house organised enough that it supports the sense of calm I want each day". Moving from criticism to self care. Putting support in place to help you succeed rather than relying on willpower.  
+* **Let it Be Easy:** The value of reframing goals to be kinder. An examples of this is moving from "Clean up my messy house" to "Keeping the house organised enough that it supports the sense of calm I want each day". Moving from criticism to self care. Putting support in place to help you succeed rather than relying on willpower.  
 
 
 * **Joining the New Transition Team:** Recognising that we have the ability to change how things are done. We bring a different perspective and way of doing things.
