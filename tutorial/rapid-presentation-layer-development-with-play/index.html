@@ -1,0 +1,286 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Rapid Presentation Layer Development with Play &#8211; Heather Campbell's Blog</title>
+<meta name="description" content="One of the really nice features of Play is its template engine. It’s something I made use of heavily in my latest piece of work developing a proof of concept for a customer. The template engine allows you to create reusable blocks of layout which you can use across multiple pages in your site. It’s really easy to get started with templates as they don’t require you to learn a new language. Mine consisted of Scala and HTML.
+
+">
+<meta name="keywords" content="scala, play, development">
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Rapid Presentation Layer Development with Play">
+<meta name="twitter:description" content="One of the really nice features of Play is its template engine. It’s something I made use of heavily in my latest piece of work developing a proof of concept for a customer. The template engine allows you to create reusable blocks of layout which you can use across multiple pages in your site. It’s really easy to get started with templates as they don’t require you to learn a new language. Mine consisted of Scala and HTML.
+
+">
+<meta name="twitter:site" content="@hcampbell07">
+<meta name="twitter:creator" content="@hcampbell07">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://heatherjcampbell.com/images/">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_GB">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Rapid Presentation Layer Development with Play">
+<meta property="og:description" content="One of the really nice features of Play is its template engine. It’s something I made use of heavily in my latest piece of work developing a proof of concept for a customer. The template engine allows you to create reusable blocks of layout which you can use across multiple pages in your site. It’s really easy to get started with templates as they don’t require you to learn a new language. Mine consisted of Scala and HTML.
+
+">
+<meta property="og:url" content="http://heatherjcampbell.com/tutorial/rapid-presentation-layer-development-with-play/">
+<meta property="og:site_name" content="Heather Campbell's Blog">
+
+
+
+
+
+<link rel="canonical" href="http://heatherjcampbell.com/tutorial/rapid-presentation-layer-development-with-play/">
+<link href="http://heatherjcampbell.com/feed.xml" type="application/atom+xml" rel="alternate" title="Heather Campbell's Blog Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://heatherjcampbell.com/assets/css/main.css">
+<!-- Webfonts -->
+<script src="https://use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="http://heatherjcampbell.com/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="http://heatherjcampbell.com/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://heatherjcampbell.com/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+
+<!-- MathJax -->
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://heatherjcampbell.com/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://heatherjcampbell.com/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://heatherjcampbell.com/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://heatherjcampbell.com/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://heatherjcampbell.com/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://heatherjcampbell.com/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body id="post">
+
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop">
+	    <ul>
+      
+		    
+		    <li><a href="http://heatherjcampbell.com/about/" >About</a></li>
+		  
+		    
+		    <li><a href="http://heatherjcampbell.com/blog/" >Blog</a></li>
+		  
+		    
+		    <li><a href="http://heatherjcampbell.com/presentations/" >Presentations</a></li>
+		  
+		    
+		    <li><a href="https://twitter.com/HCampbell07/" target="_blank">Tweets</a></li>
+		  
+		    
+		    <li><a href="http://heatherjcampbell.com/search/" >Search</a></li>
+		  
+		<li><a href="http://heatherjcampbell.com/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li>
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+<header class="masthead">
+	<div class="wrap">
+      <h1 class="site-title animated fadeIn"><a href="http://heatherjcampbell.com/">Heather Campbell's Blog</a></h1>
+		<h2 class="site-description animated fadeIn" itemprop="description">A place to share my thoughts</h2>
+	</div>
+</header><!-- /.masthead -->
+
+<div class="js-menu-screen menu-screen"></div>
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <ul class="entry-tags">
+          <li><a href="http://heatherjcampbell.com/tags/#scala" title="Pages tagged scala">scala</a></li><li><a href="http://heatherjcampbell.com/tags/#play" title="Pages tagged play">play</a></li><li><a href="http://heatherjcampbell.com/tags/#development" title="Pages tagged development">development</a></li>
+        </ul>
+        
+          <h1 class="entry-title">Rapid Presentation Layer Development with Play</h1>
+        
+      </header>
+      <footer class="entry-meta">
+        
+        
+          <img src="http://heatherjcampbell.com/images/bio-photo.jpg" class="bio-photo" alt="Heather Campbell bio photo"></a>
+        
+        <span class="author vcard">By <span class="fn">Heather Campbell</span></span>
+        <span class="entry-date date published"><time datetime="2013-06-28T00:00:00+01:00"><i class="fa fa-calendar-o"></i> June 28, 2013</time></span>
+        
+
+        <span class="social-share-twitter">
+  <a href="https://twitter.com/intent/tweet?hashtags=scala,play,development&amp;text=Rapid%20Presentation%20Layer%20Development%20with%20Play&amp;url=http://heatherjcampbell.com/tutorial/rapid-presentation-layer-development-with-play/&amp;via=hcampbell07" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i> Tweet</a>
+</span>
+<span class="social-share-facebook">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://heatherjcampbell.com/tutorial/rapid-presentation-layer-development-with-play/" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i> Like</a>
+</span>
+<span class="social-share-googleplus">
+  <a href="https://plus.google.com/share?url=http://heatherjcampbell.com/tutorial/rapid-presentation-layer-development-with-play/" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> +1</a>
+</span>
+<!-- /.social-share -->
+        
+      </footer>
+      <div class="entry-content">
+        <p>One of the really nice features of Play is its <a href="http://www.playframework.com/documentation/2.1.1/ScalaTemplates">template engine</a>. It’s something I made use of heavily in my latest piece of work developing a proof of concept for a customer. The template engine allows you to create reusable blocks of layout which you can use across multiple pages in your site. It’s really easy to get started with templates as they don’t require you to learn a new language. Mine consisted of Scala and HTML.</p>
+
+<p>Examples of things I ended up using templates for included:</p>
+
+<ul>
+  <li>The main page layout</li>
+  <li>Headers</li>
+  <li>Footers</li>
+  <li>Navigation menu</li>
+  <li>Form elements</li>
+  <li>Table</li>
+</ul>
+
+<p>Lets take a look at a couple of simple examples.</p>
+
+<h2 id="the-main-page-layout">The main page layout</h2>
+
+<p>Lets look at a very basic example of using a template for our common page structure. In the example below I’ve created a template to represent the basic structure of my site. In reality this would probably include more HTML. It accepts three parameters, a title, script (any additional JavaScript, CSS the  page requires) and content (content for the body of the page).</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5887732.js?file=main.scala.html"> </script>
+
+<p>I can then use the main template to create different views in my application. The first example is a common error page. The title is an input parameter, I’m not including any additional script and my contents are an html paragraph with the error message.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5887732.js?file=error.scala.html"> </script>
+
+<p>When you create a template it is compiled as a Scala function with the following naming convention:</p>
+
+<p>A template called views/error.scala.html would generate a function called views.html.error. I could call the error template from my controller using the following syntax</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>views.html.error("My title","My error")
+</code></pre></div></div>
+
+<p>The second example is a message page with additional JavaScript include and html.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5887732.js?file=message.scala.html"> </script>
+
+<h2 id="a-common-page-element">A common page element</h2>
+
+<p>Templates can also be used for common page elements. For example in  each of my pages with a form I might want to display an error summary if the information entered was incorrect. I would probably want this to take a standard format so it would be a good candidate for creating a template. The template accepts a sequence of form errors and for each error creates a list item displaying the message and a link to the relevant form element.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5887732.js?file=errorSummary.scala.html"> </script>
+
+<h2 id="a-common-form-element">A common form element</h2>
+
+<p>Play provides <a href="http://www.playframework.com/documentation/2.1.1/ScalaFormHelpers">form template helpers</a> to assist in the development of forms. Taking a look at the source for these can help you understand how to create your own like the inputDatePicker field template below.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5887732.js?file=inputDatePicker.scala.html"> </script>
+
+<p>I would use this in a form within a template.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@inputDatePicker(
+   field = form("dateOfBirth"),
+   args = '_label -&gt; "Date", 
+ '_mandatory -&gt; true
+   )
+</code></pre></div></div>
+
+<h2 id="why-do-it">Why do it?</h2>
+<p>Taking the time at the start of development to identify the repeating elements in the presentation layer of your site and modelling them as templates can:</p>
+
+<ol>
+  <li>Improve your speed of development</li>
+  <li>Help create a consistent look and feel for your site</li>
+  <li>Reduce the overhead to modify the structure of the pages in your site</li>
+  <li>Reduce the overhead of adding to your site</li>
+</ol>
+
+<p>I hope this post gave you a few ideas for how you can use them in your next application.</p>
+
+
+        
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+    <nav class="pagination" role="navigation">
+      
+        <a href="http://heatherjcampbell.com/skills/explaining-languages-through-storytelling/" class="btn" title="Explaining Languages through Storytelling">Previous</a>
+      
+      
+        <a href="http://heatherjcampbell.com/culture/leaning-in/" class="btn" title="Leaning In">Next</a>
+      
+    </nav><!-- /.pagination -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    
+
+<span>&copy; 2019 Heather Campbell. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/so-simple-jekyll-theme/" rel="nofollow">So Simple Theme</a>.</span>
+<div class="social-icons">
+	<a href="https://twitter.com/hcampbell07" title="Heather Campbell on Twitter" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+	
+	
+	<a href="https://linkedin.com/in/heather-campbell-8b1986a" title="Heather Campbell on LinkedIn" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+	
+	
+	
+	<a href="https://github.com/heatherjc07" title="Heather Campbell on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+	
+  
+	
+  <a href="http://heatherjcampbell.com/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
+</div><!-- /.social-icons -->
+
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script type="text/javascript">
+  var BASE_URL = 'http://heatherjcampbell.com';
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://heatherjcampbell.com/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://heatherjcampbell.com/assets/js/scripts.min.js"></script>
+
+
+
+
+</body>
+</html>

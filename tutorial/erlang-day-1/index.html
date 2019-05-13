@@ -1,0 +1,425 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Erlang Day 1 &#8211; Heather Campbell's Blog</title>
+<meta name="description" content="My experience with day one of exploring Erlang through Seven Languages in Seven Weeks.
+
+">
+<meta name="keywords" content="seven languages in seven weeks, erlang, languages">
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Erlang Day 1">
+<meta name="twitter:description" content="My experience with day one of exploring Erlang through Seven Languages in Seven Weeks.
+
+">
+<meta name="twitter:site" content="@hcampbell07">
+<meta name="twitter:creator" content="@hcampbell07">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://heatherjcampbell.com/images/">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_GB">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Erlang Day 1">
+<meta property="og:description" content="My experience with day one of exploring Erlang through Seven Languages in Seven Weeks.
+
+">
+<meta property="og:url" content="http://heatherjcampbell.com/tutorial/erlang-day-1/">
+<meta property="og:site_name" content="Heather Campbell's Blog">
+
+
+
+
+
+<link rel="canonical" href="http://heatherjcampbell.com/tutorial/erlang-day-1/">
+<link href="http://heatherjcampbell.com/feed.xml" type="application/atom+xml" rel="alternate" title="Heather Campbell's Blog Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://heatherjcampbell.com/assets/css/main.css">
+<!-- Webfonts -->
+<script src="https://use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="http://heatherjcampbell.com/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="http://heatherjcampbell.com/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://heatherjcampbell.com/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+
+<!-- MathJax -->
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://heatherjcampbell.com/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://heatherjcampbell.com/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://heatherjcampbell.com/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://heatherjcampbell.com/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://heatherjcampbell.com/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://heatherjcampbell.com/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body id="post">
+
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop">
+	    <ul>
+      
+		    
+		    <li><a href="http://heatherjcampbell.com/about/" >About</a></li>
+		  
+		    
+		    <li><a href="http://heatherjcampbell.com/blog/" >Blog</a></li>
+		  
+		    
+		    <li><a href="http://heatherjcampbell.com/presentations/" >Presentations</a></li>
+		  
+		    
+		    <li><a href="https://twitter.com/HCampbell07/" target="_blank">Tweets</a></li>
+		  
+		    
+		    <li><a href="http://heatherjcampbell.com/search/" >Search</a></li>
+		  
+		<li><a href="http://heatherjcampbell.com/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li>
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+<header class="masthead">
+	<div class="wrap">
+      <h1 class="site-title animated fadeIn"><a href="http://heatherjcampbell.com/">Heather Campbell's Blog</a></h1>
+		<h2 class="site-description animated fadeIn" itemprop="description">A place to share my thoughts</h2>
+	</div>
+</header><!-- /.masthead -->
+
+<div class="js-menu-screen menu-screen"></div>
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <ul class="entry-tags">
+          <li><a href="http://heatherjcampbell.com/tags/#seven languages in seven weeks" title="Pages tagged seven languages in seven weeks">seven languages in seven weeks</a></li><li><a href="http://heatherjcampbell.com/tags/#erlang" title="Pages tagged erlang">erlang</a></li><li><a href="http://heatherjcampbell.com/tags/#languages" title="Pages tagged languages">languages</a></li>
+        </ul>
+        
+          <h1 class="entry-title">Erlang Day 1</h1>
+        
+      </header>
+      <footer class="entry-meta">
+        
+        
+          <img src="http://heatherjcampbell.com/images/bio-photo.jpg" class="bio-photo" alt="Heather Campbell bio photo"></a>
+        
+        <span class="author vcard">By <span class="fn">Heather Campbell</span></span>
+        <span class="entry-date date published"><time datetime="2012-10-26T00:00:00+01:00"><i class="fa fa-calendar-o"></i> October 26, 2012</time></span>
+        
+
+        <span class="social-share-twitter">
+  <a href="https://twitter.com/intent/tweet?hashtags=sevenlanguagesinsevenweeks,erlang,languages&amp;text=Erlang%20Day%201&amp;url=http://heatherjcampbell.com/tutorial/erlang-day-1/&amp;via=hcampbell07" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i> Tweet</a>
+</span>
+<span class="social-share-facebook">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://heatherjcampbell.com/tutorial/erlang-day-1/" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i> Like</a>
+</span>
+<span class="social-share-googleplus">
+  <a href="https://plus.google.com/share?url=http://heatherjcampbell.com/tutorial/erlang-day-1/" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> +1</a>
+</span>
+<!-- /.social-share -->
+        
+      </footer>
+      <div class="entry-content">
+        <p><em>My experience with day one of exploring Erlang through <a href="http://pragprog.com/book/btlang/seven-languages-in-seven-weeks">Seven Languages in Seven Weeks</a>.</em></p>
+
+<p>Next up in the languages is Erlang a language developed by Ericsson during the 80’s because they couldn’t find a language which met their reliability needs. This included needing to be able to update the code on the fly without stopping and bringing down their systems. Some applications written in Erlang have run for years without ever coming down for maintenance.</p>
+
+<p>I have to admit to not knowing much about Erlang before reading the book so I was interested to see it is  used in Social Networking and Cloud Computing. It powers Facebook Chat and is behind <a href="http://couchdb.apache.org/">CouchDB</a>  and <a href="http://aws.amazon.com/simpledb/">SimpleDB</a> , two databases used in cloud computing.</p>
+
+<p>Let’s take a look at some of the characteristics of Erlang.</p>
+
+<h2 id="concurrency">Concurrency</h2>
+
+<p>Like Io and Scala, Erlang uses Actors for concurrency. Whereas in Scala an Actor was an object backed by a thread pool in Erlang it is a lightweight process which reads inbound messages from a queue and uses pattern matching to decide how to process it. Erlang’s creators aim was to simplify the creation, management, and communication within applications by using lots of lightweight processes avoiding the pain of threading e.g. needing to handle sharing of resources using strategies such as locking.</p>
+
+<h2 id="reliability">Reliability</h2>
+
+<p>I’m used to writing application with error handling. Erlang takes a different strategy, “Let it Crash”. This works for Erlang because it has good support for monitoring for the death of a process, killing related processes and starting new ones. As mentioned previously you can hot swap code in which makes maintenance a lot simpler as you don’t have to plan for an outage.</p>
+
+<h2 id="functional-language">Functional Language</h2>
+
+<p>Erlang is the first Functional Language the book covers. Scala combined it with OO so there were still objects. In Erlang it is all functions with no objects. Functions normally return the same value given the same inputs and don’t have side effects i.e. they won’t modify state. In a functional language you can only assign any variable once. Erlang is not a pure functional language (otherwise the previous statements would say “Functions always return the same value given the same inputs” etc.) It has the odd exception. Haskell the last language in the book will let me see a purely functional language.</p>
+
+<h2 id="lets-get-coding">Let’s Get Coding!</h2>
+
+<p>Enough talk. Time to write some code and get a feel for the syntax. Starting off with some basic examples. You can see that there is basic type coercion in Erlang between number types but not between a number and a string.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5380184.js?file=coercion.erl"> </script>
+
+<p>String are actually just lists hence the following actually translates as “Ha Ha Ha”! I wasn’t expecting that!</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5380184.js?file=hahaha.erl"> </script>
+
+<p>One things that really caught me out at the start was that variables must start with a capital letter. Hence the following error when you forget to capitalise.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5380184.js?file=not_a_variable.erl"> </script>
+
+<p>They are immutable. Once you’ve assigned a value that’s it. No changing it.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5380184.js?file=immutable.erl"> </script>
+
+<h3 id="atoms-lists-and-tuples">Atoms, Lists, and Tuples</h3>
+
+<p>A symbol is the most primitive data element in Erlang. It begins with a lowercase letter and is called an atom.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5380184.js?file=atom.erl"> </script>
+
+<p>Below are some list examples. Lists can hold a range of types and can be any length</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5380184.js?file=list.erl"> </script>
+
+<p>Tuples are fixed length heterogeneous lists.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5380184.js?file=tuple.erl"> </script>
+
+<p>In Erlang you can use tuples as you would maps or hashes in other languages</p>
+
+<p>In the example below we use an atom as the key and a string as the value. Then we create a hash using atoms as keys and strings for values. We can access the individual elements using pattern matching like in Prolog.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5380184.js?file=comic_strip.erl"> </script>
+
+<h3 id="pattern-matching">Pattern Matching</h3>
+
+<p>Lets take a closer look at pattern matching in Erlang. In the example below we represent a person using a tuple.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5380184.js?file=person.erl"> </script>
+
+<p>We can then match the atoms person, name and profession to themselves in the Person tuple.</p>
+
+<p>The variable Name is matched to ‘Jenson Button’ and Profession to ‘Motor Racing Driver’.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5380184.js?file=person2.erl"> </script>
+
+<p>This feature is the key decision making construct. The initial atom, person, leads to a different stucture to what I’m used to in Java but including such an atom allows you to quickly match tuples of a particular type and disgard others.</p>
+
+<p>List pattern matching is similar to Prolog’s. Again we can use head and tail to split a list into different variables.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5380184.js?file=list_pm.erl"> </script>
+
+<p>If there are not enough elements in the list, the pattern won’t match:</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5380184.js?file=list_pm_err1.erl"> </script>
+
+<p>This throw a bit of light on why we got the error message we did when we accidentally wrote a variable with a lowercase letter.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5380184.js?file=list_pm_err2.erl"> </script>
+
+<p>The = is not assigning it is pattern matching so you’re asking integer 1 to be matched with atom one which it can’t be hence the error.</p>
+
+<h3 id="bit-matching">Bit Matching</h3>
+
+<p>Being able to work at bit level is useful if you’re working with JPEGs or MPEGs or cramming data into minimal space. Here is Erlang’s syntax for working with a bitmap.</p>
+
+<p>Packing the bitmap.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5380184.js?file=packing_bm.erl"> </script>
+
+<p>Unpacking the bitmap.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5380184.js?file=unpacking_bm.erl"> </script>
+
+<h3 id="functions">Functions</h3>
+
+<p>Erlang is dynamically typed, binding types at run time, based on syntactic clues such as quotes or decimal points.</p>
+
+<p>Erlang files have a suffix of .erl which produces .beam executable when compiled. Why beam? Well this is the name of Erlang’s powerful VM.</p>
+
+<p>Let’s look at an example</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5380184.js?file=function.erl"> </script>
+
+<p>Compile using the following syntax in the console</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>c(basic).
+</code></pre></div></div>
+
+<p>Running the executable</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mirror(smiling_mug). 
+% ** exception error: undefined shell command mirror/1
+basic:mirror(smiling_mug). %smiling_mug
+basic:mirror(1). %1
+</code></pre></div></div>
+
+<p>A couple of key things from above you need to include the module name and you can bind the function to two different types because Erlang is dynamically typed.</p>
+
+<p>In the next example we create a matching function where each option has the function name, the argument you wish it to match and the value to be returned.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5380184.js?file=matching.erl"> </script>
+
+<p>Executing it</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-c(matching_function). % {ok,matching_function}
+matching_function:number(one). % 1
+matching_function:number(two). % 2
+matching_function:number(three). % 3
+matching_function:number(four). 
+</code></pre></div></div>
+
+<p>Here are some examples of recursion</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5380184.js?file=recursion.erl"> </script>
+
+<p>We’ve handled the special cases and then used recursion to calculate the rest. Similar idea to previous factorial and fibonacci examples just a slightly different syntax.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5380184.js?file=use_recursion.erl"> </script>
+
+<h2 id="self-study">Self Study</h2>
+
+<h3 id="find">Find:</h3>
+
+<p><a href="http://www.erlang.org/">The Erlang language’s official site</a></p>
+
+<p>Official documentation for Erlang’s function library</p>
+
+<p><a href="http://www.erlang.org/faq/libraries.html#id52089">The documentation for Erlang’s OTP library</a></p>
+
+<h3 id="do">Do:</h3>
+
+<ul>
+  <li>Write a function that uses recursion to return the number of words in a string.</li>
+</ul>
+
+<p>I split the string into a list of words and then use recursion to count the number of words.</p>
+
+<ul>
+  <li>Write a function that uses recursion to count to ten.</li>
+</ul>
+
+<p>count is a basic version that only counts from a number to 10. count2 allows for different end numbers and carrys out a check to make sure the start number is smaller than the end number.</p>
+
+<ul>
+  <li>Write a function that uses matching to selectively print “success” or “error: message” given input of the form {error, Message} or success.</li>
+</ul>
+
+<p>I print the appropriate format of message based on whether a string or tuple is passed.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5380184.js?file=do.erl"> </script>
+
+<p>Check out my code at <a href="https://github.com/heatherjc07/seven_languages_in_seven_days/tree/master/Erlang/Day1" target="_blank">github</a></p>
+
+
+        
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+    <nav class="pagination" role="navigation">
+      
+        <a href="http://heatherjcampbell.com/tutorial/prolog-day-3/" class="btn" title="Prolog Day 3">Previous</a>
+      
+      
+        <a href="http://heatherjcampbell.com/tutorial/erlang-day-2/" class="btn" title="Erlang Day 2">Next</a>
+      
+    </nav><!-- /.pagination -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    
+
+<span>&copy; 2019 Heather Campbell. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/so-simple-jekyll-theme/" rel="nofollow">So Simple Theme</a>.</span>
+<div class="social-icons">
+	<a href="https://twitter.com/hcampbell07" title="Heather Campbell on Twitter" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+	
+	
+	<a href="https://linkedin.com/in/heather-campbell-8b1986a" title="Heather Campbell on LinkedIn" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+	
+	
+	
+	<a href="https://github.com/heatherjc07" title="Heather Campbell on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+	
+  
+	
+  <a href="http://heatherjcampbell.com/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
+</div><!-- /.social-icons -->
+
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script type="text/javascript">
+  var BASE_URL = 'http://heatherjcampbell.com';
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://heatherjcampbell.com/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://heatherjcampbell.com/assets/js/scripts.min.js"></script>
+
+
+
+
+</body>
+</html>

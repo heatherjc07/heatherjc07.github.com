@@ -1,0 +1,925 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+<title type="text">Heather Campbell's Blog</title>
+<generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
+<link rel="self" type="application/atom+xml" href="http://heatherjcampbell.com/feed.xml" />
+<link rel="alternate" type="text/html" href="http://heatherjcampbell.com" />
+<updated>2019-05-13T23:34:35+01:00</updated>
+<id>http://heatherjcampbell.com/</id>
+<author>
+  <name>Heather Campbell</name>
+  <uri>http://heatherjcampbell.com/</uri>
+  <email>you@email.com</email>
+</author>
+
+
+<entry>
+  <title type="html"><![CDATA[Attending Kick Off with My Daughter]]></title>
+  <link rel="alternate" type="text/html" href="http://heatherjcampbell.com/life/attending-kick-off-with-my-daughter/"/>
+  <id>http://heatherjcampbell.com/life/attending-kick-off-with-my-daughter</id>
+  <published>2019-05-08T23:33:00+01:00</published>
+  <updated>2019-05-08T23:33:00+01:00</updated>
+  <author>
+    <name>Heather Campbell</name>
+    <uri>http://heatherjcampbell.com</uri>
+    <email>you@email.com</email>
+  </author>
+  <content type="html">&lt;p&gt;I am very lucky to have been able to take a years maternity leave with each of my children. I always have a bit of anxiety around the fact that technology and Kainos continue to move on without me.  &lt;a href=&quot;http://www.bounty.com/family/work/back-to-work/what-are-keeping-in-touch-days&quot;&gt;KIT, Keeping in Touch&lt;/a&gt; days can help with this. KIT days allow you to work, earning a days wage without affecting your maternity pay. What form this work takes is something you agree with your employer. For example it could be typical day to day work, training or attending a conference. Despite this being my third maternity leave I have never made use of a KIT day . I didn’t know they existed when I had Luke. I’ve breastfed the younger two and so not been in a position to leave them for any length of time. They are not bottle fans.&lt;/p&gt;
+
+&lt;p&gt;Every year the company I work at, &lt;a href=&quot;https://www.kainos.com&quot;&gt;Kainos&lt;/a&gt;, has a Kick Off event. It’s an opportunity for the company to come together and share via a day of talks. Each Kick off has a theme and this year’s was around connecting.&lt;/p&gt;
+
+&lt;p&gt;I wanted to attend Kick Off. It is a great opportunity to catch up with colleagues, find out what is going on and get an insight into  the future. The only thing was Emma would only be 6 months and starting her weaning journey. That combined with the fact that there are not a lot of volunteers to take three kids made me think it might be too difficult to get to go.&lt;/p&gt;
+
+&lt;p&gt;When I was catching up with one of my colleagues at work she suggested taking Emma to Kick Off. I checked out with the committee organising it who gave it the big thumbs up. The same colleague then checked in with me to see what I required to make the day go smoothly for me and Emma. I can’t express enough how important this support was to giving me the confidence to take Emma along. I’ve had opportunities to speak before where there was childcare provided. I’ve always shied away from it thinking it would be too stressful. That support gave me the extra nudge I needed and made me feel welcome.&lt;/p&gt;
+
+&lt;p&gt;I enjoyed the day, checking in with everyone, finding out how my last project is going, hearing about the plans for the company and learning some things during the presentations. Emma had a few moments. The odd cry, nappy explosion, a sweetcorn ring going down the wrong way mid presentation. I was always seated where I could make a quick exit. Once you’re on child three you are pretty relaxed about everything. My main concern was making sure I didn’t disturb a speaker or affect people’s enjoyment of a presentation. No one complained so hopefully that was the case.&lt;/p&gt;
+
+&lt;p&gt;If you’re on maternity leave I’d recommend thinking about using you KIT days. You are only limited by your imagination how you use them. Possibilities include internal hacks, bid work, assurance work, training or conferences. If you know someone on leave who is concerned about feeling out of touch or want to use KIT days but don’t know how, think about how you can support them. It might be as simple as making them aware of ways they can use them. It might be providing options for how they can make it work childcare wise for example the option to bring baby along or do a part day.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://heatherjcampbell.com/life/attending-kick-off-with-my-daughter/&quot;&gt;Attending Kick Off with My Daughter&lt;/a&gt; was originally published by Heather Campbell at &lt;a href=&quot;http://heatherjcampbell.com&quot;&gt;Heather Campbell's Blog&lt;/a&gt; on May 08, 2019.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Playing with Azure Logic Apps]]></title>
+  <link rel="alternate" type="text/html" href="http://heatherjcampbell.com/tutorial/playing-with-azure-logic-apps/"/>
+  <id>http://heatherjcampbell.com/tutorial/playing-with-azure-logic-apps</id>
+  <published>2017-12-29T00:00:00+00:00</published>
+  <updated>2017-12-29T00:00:00+00:00</updated>
+  <author>
+    <name>Heather Campbell</name>
+    <uri>http://heatherjcampbell.com</uri>
+    <email>you@email.com</email>
+  </author>
+  <content type="html">&lt;p&gt;After reading &lt;a href=&quot;https://blogs.msdn.microsoft.com/ranand12/2017/12/18/azure-serverless-computing-explained-in-less-than-5-minutes-lessthan5min/&quot;&gt;Azure Serverless Computing Explained in less than 5 minutes&lt;/a&gt; I decided to have a play about with &lt;a href=&quot;https://docs.microsoft.com/en-us/azure/logic-apps/&quot;&gt;Azure Logic Apps&lt;/a&gt; myself. Logic Apps gives you a designer and a set of defined actions and conditions that you can use to build your workflow.&lt;/p&gt;
+
+&lt;p&gt;I based my workflow on the one desribed in the post:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Check Outlook periodically to see if an email has arrived from a particular email address with ‘Photo Test’ in the subject.&lt;/li&gt;
+  &lt;li&gt;Retrieve the attachment and store it on a file share&lt;/li&gt;
+  &lt;li&gt;Determine age of the people in the photo using &lt;a href=&quot;https://azure.microsoft.com/en-gb/services/cognitive-services/face/&quot;&gt;Face API&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Send email to my account with subject ‘Photo Fun’ and the age in the body of the email&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This involved the following steps:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Subscribe to Face API&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Subscribe to Face API which can be found under Cognitive Services. There is a free tier. Note down your keys which can be found under Resource Management.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://heatherjcampbell.com/images/logic-apps/FaceAPI.png&quot; alt=&quot;family tree&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Setup File Storage&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Set up a storage account and within that a file share and folder to store the images. At the storage account level generate a &lt;a href=&quot;https://docs.microsoft.com/en-us/azure/storage/common/storage-dotnet-shared-access-signature-part-1&quot;&gt;shared access signature&lt;/a&gt;. Note down the one for file share.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://heatherjcampbell.com/images/logic-apps/FileShare.png&quot; alt=&quot;family tree&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://heatherjcampbell.com/images/logic-apps/SAK.png&quot; alt=&quot;family tree&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Create a Logic App&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Create a new Logic App. In the Logic App Designer select the action ‘When a new email arrives’. You’ll need to login to Office 365 to authorize it. In advanced options add the from and subject line criteria. Make sure you select ‘yes’ for ‘include attachments’&lt;/p&gt;
+
+&lt;p&gt;Add another action. Search on Azure FileSystem and select ‘Create File’ and use attachments from last action as input. Configure to use the storage you set up and the attachment name as the image name.&lt;/p&gt;
+
+&lt;p&gt;Add another action. Search on Face API and select ‘Detect Face’ and use attachments from first action as input. In the image url specify the url to the folder within the file share, select the name property from the input and add a ‘?’ followed by the shared access key.&lt;/p&gt;
+
+&lt;p&gt;Add the final action ‘Send email’ which uses output from ‘Detect Face’ as input. Configure to send an email back to yourself. In the body I sent the age property from the input.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://heatherjcampbell.com/images/logic-apps/LogicApp.png&quot; alt=&quot;family tree&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Testing&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Once the logic app is saved you can test it by selecting to run from the top menu bar. In your notifications you’ll see a message to indicate that the trigger has been checked. If you click on that you can see if it has run successfully or not.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://heatherjcampbell.com/images/logic-apps/Status.png&quot; alt=&quot;family tree&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you send an email which meets the requirements and it runs as expected you’ll receive an email with the age of the person in the picture and the image will be loaded to your file share.&lt;/p&gt;
+
+&lt;p&gt;If it doesn’t run succesfully you can click on the failed status to see why it wasn’t succesful. The information provided made it easy to debug. You can see where it fails, the inputs, outputs and any error messages.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://heatherjcampbell.com/images/logic-apps/failure.png&quot; alt=&quot;family tree&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://heatherjcampbell.com/images/logic-apps/error.png&quot; alt=&quot;family tree&quot; /&gt;&lt;/p&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://heatherjcampbell.com/tutorial/playing-with-azure-logic-apps/&quot;&gt;Playing with Azure Logic Apps&lt;/a&gt; was originally published by Heather Campbell at &lt;a href=&quot;http://heatherjcampbell.com&quot;&gt;Heather Campbell's Blog&lt;/a&gt; on December 29, 2017.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Review: Playing Big]]></title>
+  <link rel="alternate" type="text/html" href="http://heatherjcampbell.com/books/review-playing-big/"/>
+  <id>http://heatherjcampbell.com/books/review-playing-big</id>
+  <published>2017-01-11T00:00:00+00:00</published>
+  <updated>2017-01-11T00:00:00+00:00</updated>
+  <author>
+    <name>Heather Campbell</name>
+    <uri>http://heatherjcampbell.com</uri>
+    <email>you@email.com</email>
+  </author>
+  <content type="html">&lt;p&gt;Since the start of the new year I’ve been getting back into regular reading. Committing to at least ten pages a day. I’ve found this approach worked well for me when I was getting back into shape after having Marc. Ten minutes of exercise first thing and after the kids have gone to bed has become a regular part of my day. I feel healthier and happier because of it.&lt;/p&gt;
+
+&lt;p&gt;I’ve been reading &lt;a href=&quot;http://amzn.eu/61IiC8X&quot;&gt;Playing Big&lt;/a&gt; by Tara Mohr. Each chapter in the book delves into something which could be holding you back.&lt;/p&gt;
+
+&lt;p&gt;The chapters start by looking at case studies of women who have experienced this. They help you identify what the behaviour looks like and why it has a negative impact.&lt;/p&gt;
+
+&lt;p&gt;The author tackles concerns you may have with leaving the behaviour behind. For example the chapter on inner critic acknowledges that people can view it as a motivator and that can be the case. It outlines the costs of motivating yourself this way. Later in the book, the chapter on calling, provides a positive framework to find motivation without beating yourself up.&lt;/p&gt;
+
+&lt;p&gt;Practical, actionable advice is given on how to move away from the negative behaviour. Journaling questions are included at the end of each chapter. They help you explore your experience of it and develop a personal strategy to find a better way of doing things going forward.&lt;/p&gt;
+
+&lt;p&gt;The topics covered include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Inner Critic:&lt;/strong&gt; The internal voice that is self doubt. It prevents you from doing things because you might get hurt or fail. Being aware of you inner critic reduces the hold it has over you.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;The Voice of Inner Wisdom:&lt;/strong&gt; The book encourages you to move away from the inner critic and relying on external advice. To recognising that often you have the answers yourself. It looks at developing an understanding of the person you want to become in the future.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;A Very Old New Way of Looking at Fear:&lt;/strong&gt; Recognising that there are different types of fear. One is the fear of projected or imagined things which we need to recognise and manage. The second is the feeling we get when we do something new or bigger and this should be welcomed.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Unhooking from Praise and Criticism:&lt;/strong&gt; Being able to share our ideas, even if controversal, by not needing praise or fearing receiving criticism. Feedback shouldn’t be taken personally instead used to change how you do things to reach and influence your audience.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Leaving Good-Student Habits Behind:&lt;/strong&gt; This chapter looks at how school fails to teach many skills that are crucial to leading. We need to learn to improvise, draw on and trust what we already know. Make our work visible and be willing to challenge authority.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Hiding:&lt;/strong&gt; This section looks at sharing ideas early rather than waiting for everything to be perfectly formed. We need to stop putting false hurdles in place like thinking we need more training. We shouldn’t collect other peoples’ thoughts without sharing our own.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Leaping:&lt;/strong&gt; The antidote of hiding. Learning to help us achieve our bigger aim. A leap is something simple you can do in a week or two. It gets your adrenaline flowing and puts you in contact with your end audience. The outcome of a leap is an answer to a question. It helps you learn quickly what works like a spike in development.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Communicating with Power:&lt;/strong&gt; This chapter identifies speech habits that can reduce the impact of our communication. Using them can undermine our perceived ability.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Callings:&lt;/strong&gt; What a calling is. How to identify your’s and pursue it. Not being put off by a lack of skills/experience (this can be developed) or lack of time (it doesn’t have to engulf your whole life)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Let it Be Easy:&lt;/strong&gt; The value of reframing goals to be kinder. An examples of this is moving from “Clean up my messy house” to “Keeping the house organised enough that it supports the sense of calm I want each day”. Moving from criticism to self care. Putting support in place to help you succeed rather than relying on willpower.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Joining the New Transition Team:&lt;/strong&gt; Recognising that we have the ability to change how things are done. We bring a different perspective and way of doing things.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;New Motherhood and Playing Big:&lt;/strong&gt; Not limiting yourself based on the  experiences or views of others on motherhood. Quietening down the inner critic and taking a step back to see what you are capable of. Recognising you are still you as well as being a mother. Allowing yourself to pursue things that bring you joy. Doing this and caring for yourself allows you to come back to motherhood refreshed.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To get the most out of this book I  need to apply it and make changes in how I think about and approach aspects of my life. I intend to pick one or two things to work on and start practicing them until they become default. I’m going to revisit the journaling questions to help me understand how to achieve it. Setting a regular reminder in my calendar to reflect on how I’m getting on will ensure I’m aware of my progress.&lt;/p&gt;
+
+&lt;p&gt;If you feel like your thoughts or actions are holding you back from doing what you want to do this book is worth a read. Although  aimed at women the advice applies to men who feel they are held back.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://heatherjcampbell.com/books/review-playing-big/&quot;&gt;Review: Playing Big&lt;/a&gt; was originally published by Heather Campbell at &lt;a href=&quot;http://heatherjcampbell.com&quot;&gt;Heather Campbell's Blog&lt;/a&gt; on January 11, 2017.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Back to Work]]></title>
+  <link rel="alternate" type="text/html" href="http://heatherjcampbell.com/life/back-to-work/"/>
+  <id>http://heatherjcampbell.com/life/back-to-work</id>
+  <published>2017-01-04T00:00:00+00:00</published>
+  <updated>2017-01-04T00:00:00+00:00</updated>
+  <author>
+    <name>Heather Campbell</name>
+    <uri>http://heatherjcampbell.com</uri>
+    <email>you@email.com</email>
+  </author>
+  <content type="html">&lt;p&gt;After exactly a year of being on maternity leave, I’m back in the office. I decided to come back a couple of weeks before Christmas to ease myself in. January can be a bit of a bleak month in general and adding on returning to work didn’t feel like a good plan.&lt;/p&gt;
+
+&lt;p&gt;Coming back takes a bit of getting used to. The biggest pain point so far is trying to be organised to get the boys in to nursery/school in good time so I can have time in the evening with them before bed. I’m sure it’ll get slicker with practice.&lt;/p&gt;
+
+&lt;p&gt;Some of the upsides of returning to work include&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Time to myself to explore things that interest me. I’m loving my time on the train where I can sit with a cup of coffee and read up or try out some coding.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Adult company. It has been great to catch up with friends in work and talk about things outside of cbeebies, superheroes and yokai watches.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The buzz of being back in Belfast. Having lived in Belfast for most of my twenties I have a soft spot for it and I love the feel of being in the city.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Some of the harder things are&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Missing the boys. It is hard leaving a small crying person off at nursery even though I know 5 minutes after I leave he’ll be like ‘mummy who?’. Luke has been so much fun over the past year. He’s five now so great craic. I imagine maternity leave with a smaller gap between babies is much harder work.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;As I mentioned previously getting back into a routine. With Luke at school I’m used to being up in good time but it still takes a bit of adjustment especially as Luke has so many activities in the evening.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;A sense of being behind/urgency to get going. When you get back in the office and see how people have grown and all the new faces it really hits home that you’ve missed a year. I have to squash down a feeling of panic that everyone else has developed and I’ve remained how I was before I left. Really I want to return to an amazing project where I can prove I haven’t lost it. In reality I have to wait until there is something to work on. Which is great as it gives me time to play about with some new things and hone my skills but still feels like you’re a bit of a lone wolf with no one aware of what you’re at.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://heatherjcampbell.com/life/back-to-work/&quot;&gt;Back to Work&lt;/a&gt; was originally published by Heather Campbell at &lt;a href=&quot;http://heatherjcampbell.com&quot;&gt;Heather Campbell's Blog&lt;/a&gt; on January 04, 2017.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Review: The Phoenix Project]]></title>
+  <link rel="alternate" type="text/html" href="http://heatherjcampbell.com/books/review-the-phoenix-project/"/>
+  <id>http://heatherjcampbell.com/books/review-the-phoenix-project</id>
+  <published>2016-02-04T00:00:00+00:00</published>
+  <updated>2016-02-04T00:00:00+00:00</updated>
+  <author>
+    <name>Heather Campbell</name>
+    <uri>http://heatherjcampbell.com</uri>
+    <email>you@email.com</email>
+  </author>
+  <content type="html">&lt;p&gt;The &lt;a href=&quot;http://www.amazon.co.uk/The-Phoenix-Project-Helping-Business-ebook/dp/B00AZRBLHO&quot;&gt;Phoenix project&lt;/a&gt; is a fictitious novel which follows Bill in his new role as VP of IT operations at Parts Unlimited.&lt;/p&gt;
+
+&lt;p&gt;Mentored by Erik, a potential board member, Bill and his colleagues turn around a department which is firefighting, missing deadlines and misaligning with the organisation’s objectives. They create an IT department which can respond rapidly to changing markets and deliver IT systems which help the company meet their targets and gain competitive advantage.&lt;/p&gt;
+
+&lt;h3 id=&quot;my-thoughts&quot;&gt;My Thoughts&lt;/h3&gt;
+
+&lt;p&gt;The style of the book makes it a quick and easily read introduction to devops. It delivers a plethora of information (based on the length of my notes) on ways you can improve how your team, department and company operate in an easily digestible fashion. It could be argued that change and improvement come too easily in the book but that didn’t bother me. The point of the book is to distil information in an easy to absorb manner not win a literary book award.&lt;/p&gt;
+
+&lt;p&gt;Most of the improvements were things I was already aware of and which I see implemented in the projects I work on but it is still a useful reminder. The thing that really stuck with me is to not be a bystander but to be someone who actively challenges the norm and looks for ways to improve things. Don’t be a yes woman. Be someone willing to take a risk and innovate.&lt;/p&gt;
+
+&lt;h3 id=&quot;takeaways&quot;&gt;Takeaways&lt;/h3&gt;
+
+&lt;p&gt;Here are some of my takeaways&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Co-ordination and communication across teams, roles and departments is key especially during times of pressure.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Regular outages mean you are reactive and take up resource and time meant to be spent on planned work. Need to understand why they are happening and put measures in place to stop them happening.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Know your constraints including people and have plans in place for how to reduce dependency on them.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Make sure you exploit your constraint  so it is never waiting on anything. Focus on top priority work and set tempo of work according to constraints&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Avoid knowledge silos. Make sure the heroes in your company share knowledge.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Not throwing code over the wall. Developers shouldn’t consider their code successful until it is deployed to live and working as expected. Need to work with ops to supply them the knowledge required to achieve this.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;It is not enough to have a process in place. It must be light weight enough for people to follow it&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Importance of testing including non-functional testing e.g. performance, capacity testing.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Design code for operations. Non-functionals should be built in early and not an after thought.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Integrate security into day to day work not an afterthought&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Controlled release of features and change so you know exactly what code/features/configuration exist in an environment e.g. source control of code including build configuration, automated deployment, reproducible environments&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Importance of having monitoring and health checks in place to warn of issues.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Work In Progress is a silent killer&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Theory of constraints: improvements made anywhere beyond bottleneck are illusion. Identify your bottleneck and make improvements there to stop it being a bottleneck … then find the next bottleneck&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Value in visualizing work to be done and flow through system  e.g. kanban board&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Outcomes are key. Focus on what is important to business. Avoid needless work. Question need to do work.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Have a culture which allows for blameless post-mortems so you can get down to the real root cause of issues.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Importance of paying down technical debt. Like financial debt, the compounding interest costs grow over time.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Need ability to say no and not blindly say yes&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Improving daily work is even more important than doing it&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Need metrics to make informed decision&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Importance of making time for retrospectives&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Know end goals and align with them. Linking individual objectives with team, department and organisational objectives. E.g. a department’s goals may be reliant on delivery by IT so there is a risk if IT does not deliver. Integrate IT into performance measures.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Talk to business owners, understand processes and goals, your role in achieving them, concerns and risks&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Reduce cycle times e.g. move to 2 week sprints. Get feature to market quickly to test assumptions and get feedback from customers&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Guard assets. Protect them from distractions.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Identify common processes/steps, standardize and automate them&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Encourage experimentation, innovation and risk taking. Make it ok to fail.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://heatherjcampbell.com/books/review-the-phoenix-project/&quot;&gt;Review: The Phoenix Project&lt;/a&gt; was originally published by Heather Campbell at &lt;a href=&quot;http://heatherjcampbell.com&quot;&gt;Heather Campbell's Blog&lt;/a&gt; on February 04, 2016.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Reading Challenge]]></title>
+  <link rel="alternate" type="text/html" href="http://heatherjcampbell.com/books/reading-challenge/"/>
+  <id>http://heatherjcampbell.com/books/reading-challenge</id>
+  <published>2016-02-02T00:00:00+00:00</published>
+  <updated>2016-02-02T00:00:00+00:00</updated>
+  <author>
+    <name>Heather Campbell</name>
+    <uri>http://heatherjcampbell.com</uri>
+    <email>you@email.com</email>
+  </author>
+  <content type="html">&lt;p&gt;Hard to believe I’m nearly 2 months into maternity leave. The days are flying in. Marc arrived on the 15th December and I’m now well outnumbered 3 boys to 1 girl.&lt;/p&gt;
+
+&lt;p&gt;In these early days a large amount of my time is spent feeding Marc especially as I feed him on demand. Having already completed all six seasons of Private Practice, a couple of seasons of Girls and started rewatching Greys Anatomy I thought maybe it was time to find something outside of boxsets to entertain me.&lt;/p&gt;
+
+&lt;p&gt;Feeding Marc gives me lots of opportunity to sit, not to mention the time spent trapped under him while he sleeps (his sensors for when he is being put down are as good as Luke’s. Cue eyes open and tears) so I’m finally tackling my backlog of books. I came across this article on twitter &lt;a href=&quot;http://www.inc.com/jessica-stillman/how-even-the-busiest-entrepreneur-can-read-100-books-a-year.html&quot;&gt;reading 100 books in a year&lt;/a&gt; and I’m following some of the tips in it.&lt;/p&gt;
+
+&lt;h4 id=&quot;buy-books-in-advance&quot;&gt;Buy books in advance&lt;/h4&gt;
+
+&lt;p&gt;Not an issue. As mentioned previously I’ve a backlog of books to get through. I’m easily seduced by an offer and tend to buy multiple books at a time. I’ve also got a long wishlist of books I want to read so reading material is not a problem.&lt;/p&gt;
+
+&lt;h4 id=&quot;always-be-reading&quot;&gt;Always be reading&lt;/h4&gt;
+
+&lt;p&gt;Sorted now that I’m being kept in one place by my little son.&lt;/p&gt;
+
+&lt;h4 id=&quot;read-what-you-like&quot;&gt;Read what you like&lt;/h4&gt;
+
+&lt;p&gt;I’ve a load of software books I want to read as well as some aimed at the softer side of my job. I need to find some good fiction to put into the mix. I used to read fiction and autobiographies all the time but, post children, magazines have taken over.&lt;/p&gt;
+
+&lt;h3 id=&quot;tracking-my-reading&quot;&gt;Tracking my Reading&lt;/h3&gt;
+
+&lt;p&gt;I found out about the goodreads reading challenge tracker on twitter and decided to give it a whirl. It’ll help me keep momentum. I’ve set an achievable target of 12 books, one for each month (100 was a bit ambitious for me!).&lt;/p&gt;
+
+&lt;p&gt;Over the past week I’ve discovered ebooks work best. I’ve mastered the art of feeding Marc while reading my ebook and taking notes on my phone using Evernote. In fact I’ve even taken it to the next level, feeding, expressing and reading at once. Multitasking to the max.&lt;/p&gt;
+
+&lt;p&gt;Before  having Marc I preferred paper books for reading but trying to hold a paper book and feed is just too much of a fiddle. Being able to flick between reading and taking notes on the same device is so much simpler. I’ve completed my January book, The Phoenix Project, and moved onto Lean UX so going well so far.&lt;/p&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://heatherjcampbell.com/books/reading-challenge/&quot;&gt;Reading Challenge&lt;/a&gt; was originally published by Heather Campbell at &lt;a href=&quot;http://heatherjcampbell.com&quot;&gt;Heather Campbell's Blog&lt;/a&gt; on February 02, 2016.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Developer Tea]]></title>
+  <link rel="alternate" type="text/html" href="http://heatherjcampbell.com/trends/developer-tea/"/>
+  <id>http://heatherjcampbell.com/trends/developer-tea</id>
+  <published>2016-01-21T00:00:00+00:00</published>
+  <updated>2016-01-21T00:00:00+00:00</updated>
+  <author>
+    <name>Heather Campbell</name>
+    <uri>http://heatherjcampbell.com</uri>
+    <email>you@email.com</email>
+  </author>
+  <content type="html">&lt;p&gt;Over the past week I’ve started listening to the &lt;a href=&quot;https://developertea.com&quot;&gt;Developer Tea&lt;/a&gt; podcast. None of the episodes are long with each one averaging less than 20 mins. A lot of the podcasts I enjoy are an hour or more in length so it is a nice addition to have one which is shorter for when I want a quick burst of inspiration.&lt;/p&gt;
+
+&lt;p&gt;Episodes are recorded regularly for example in the past week alone there have been three episodes, &lt;em&gt;Learning on the Job&lt;/em&gt;, &lt;em&gt;Comparison Conundrums&lt;/em&gt; and &lt;em&gt;Feature’s You Don’t Need&lt;/em&gt;. Each episode is well structured, often providing actionable advice to help you make positive changes. Definitely worth checking out.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://heatherjcampbell.com/trends/developer-tea/&quot;&gt;Developer Tea&lt;/a&gt; was originally published by Heather Campbell at &lt;a href=&quot;http://heatherjcampbell.com&quot;&gt;Heather Campbell's Blog&lt;/a&gt; on January 21, 2016.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Functional Programming with Java]]></title>
+  <link rel="alternate" type="text/html" href="http://heatherjcampbell.com/tutorial/functional-programming-with-java/"/>
+  <id>http://heatherjcampbell.com/tutorial/functional-programming-with-java</id>
+  <published>2015-10-22T00:00:00+01:00</published>
+  <updated>2015-10-22T00:00:00+01:00</updated>
+  <author>
+    <name>Heather Campbell</name>
+    <uri>http://heatherjcampbell.com</uri>
+    <email>you@email.com</email>
+  </author>
+  <content type="html">&lt;p&gt;I just completed &lt;a href=&quot;https://twitter.com/jessitron&quot;&gt;Jessica Kerr’s&lt;/a&gt; Pluralsight course &lt;a href=&quot;http://www.pluralsight.com/courses/java-functional-programming&quot;&gt;Functional Programming with Java&lt;/a&gt;. It’s not the first time I’ve played about with Java 8 and its functional features or functional programming in general. I still found the course useful especially as I applied what it covered to a project I worked on several years ago which was purely Object Orientated. This gave me a chance to put it in to practice and get a feel of the benefits this additional functionality provided.&lt;/p&gt;
+
+&lt;p&gt;BTW if you haven’t read/watched anything created by Jessica before I really recommend that you should check out her &lt;a href=&quot;http://blog.jessitron.com&quot;&gt;blog&lt;/a&gt; or &lt;a href=&quot;https://twitter.com/jessitron&quot;&gt;twitter feed&lt;/a&gt;. The quality of what she produces was one of the things which attracted me to the course.&lt;/p&gt;
+
+&lt;h3 id=&quot;create-easy-to-read-code&quot;&gt;Create easy to read code&lt;/h3&gt;
+
+&lt;p&gt;If you’ve ever had to support or enhance someone elses code you’ll appreciate the importance of creating code which is easy to follow. In an ideal world code should be &lt;a href=&quot;https://en.wikipedia.org/wiki/Self-documenting&quot;&gt;self-documenting&lt;/a&gt;. Two of the big benefits I found when rewriting the project using functional programming was it really focuses you on breaking the code down into small reusable functions and, where appropriate, separating out the side effects from the core computation.&lt;/p&gt;
+
+&lt;p&gt;I think the ability to chain functions together allows you to create code that reads much more like the business requirements it is trying to satisfy. Functions can be passed as parameters and used as return values.&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/5a0e4d916fcf5ccd44ce.js?file=prescription.java&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;We can go one step further, a reasonable assumption is that we’ll want to filter prescription items on more than one criteria so lets create a common filter function that accepts a predicate, a statement that returns true or false depending on the value passed in.&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/5a0e4d916fcf5ccd44ce.js?file=prescription2.java&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;In the example we’re filtering, mapping and reducing each item. You might think to look at it we’re iterating through and filtering each item, then iterating again and mapping and then iterating again and reducing. Infact it is much more efficient than that. There is only one iteration round the prescription items which the functions being called on each item in turn. I recommend checking out the ‘One Trip Through’ and ‘Lazy Streams’ sections of the &lt;a href=&quot;http://www.pluralsight.com/courses/java-functional-programming&quot;&gt;Course&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Another bonus to the code above is we’re being &lt;a href=&quot;https://en.wikipedia.org/wiki/Declarative_programming&quot;&gt;declarative&lt;/a&gt;. We’re writing code that represents the business logic rather than the control flow to carry it out.&lt;/p&gt;
+
+&lt;h3 id=&quot;avoid-duplication-and-magic&quot;&gt;Avoid duplication and magic&lt;/h3&gt;
+
+&lt;p&gt;I can’t take credit for the following example as it is lifted from Jessica’s course. The function can be used to time a piece of code. It wraps the code which is passed in using the Supplier. To avoid tying ourselves to a particular means of displaying the code we pass in the output method using Consumer. In the example below I’m using System.out but in real life it is more likely to be your logging framework.&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/5a0e4d916fcf5ccd44ce.js?file=timeOperation.java&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;This follows the &lt;a href=&quot;https://en.wikipedia.org/wiki/Separation_of_concerns&quot;&gt;separation of concerns&lt;/a&gt; design principle. We’re not mixing our timing code with our calculation logic. It is reusable so we’re keeping our code &lt;a href=&quot;https://en.wikipedia.org/wiki/Don%27t_repeat_yourself&quot;&gt;DRY&lt;/a&gt;. This can be achieved other ways currently e.g. via annotations but this is much more explicit with the implementation and the link less hidden.&lt;/p&gt;
+
+&lt;h3 id=&quot;simplication-of-making-operations-parallel&quot;&gt;Simplication of making operations parallel&lt;/h3&gt;
+
+&lt;p&gt;Suppose we’re gathering stats on the treatment carried out by a particular contractor. This could be very CPU intensive and we might want to parallelize it. You can see in the example below it is as simple as adding parallel() after the stream, our business logic stays the same.&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/5a0e4d916fcf5ccd44ce.js?file=parallalContractorTreatmentStats.java&quot;&gt; &lt;/script&gt;
+
+&lt;h3 id=&quot;the-power-of-optional-versus-null&quot;&gt;The power of optional versus null&lt;/h3&gt;
+
+&lt;p&gt;I hadn’t thought fully about the power of optional versus null until listening to the course. Jessica includes an example of how, using optional, we can avoid doing null checks at various levels within our business logic and just handle the empty check at UI level.&lt;/p&gt;
+
+&lt;p&gt;In the example below there might be no instances of treatment which includes wisdom tooth extraction but we don’t need to care about that when retrieving a contractor who has carried it out. If the treatment is empty the map doesn’t get carried out. We only handle it in the UI when we’re displaying our message using orElse to indicate if no matching contractor was found.&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/5a0e4d916fcf5ccd44ce.js?file=findExampleOfTreatment.java&quot;&gt; &lt;/script&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://heatherjcampbell.com/tutorial/functional-programming-with-java/&quot;&gt;Functional Programming with Java&lt;/a&gt; was originally published by Heather Campbell at &lt;a href=&quot;http://heatherjcampbell.com&quot;&gt;Heather Campbell's Blog&lt;/a&gt; on October 22, 2015.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Making Time to Talk]]></title>
+  <link rel="alternate" type="text/html" href="http://heatherjcampbell.com/culture/making-time-to-talk/"/>
+  <id>http://heatherjcampbell.com/culture/making-time-to-talk</id>
+  <published>2015-10-20T00:00:00+01:00</published>
+  <updated>2015-10-20T00:00:00+01:00</updated>
+  <author>
+    <name>Heather Campbell</name>
+    <uri>http://heatherjcampbell.com</uri>
+    <email>you@email.com</email>
+  </author>
+  <content type="html">&lt;p&gt;I recently finished a project and it made me think about the difference taking time to communicate can make to a person. We are always talking about the importance of not calling people resources. The need to make them feel valued. All too often it is easy to get caught up in dramatic gestures  and forget about the impact of day to day interactions.&lt;/p&gt;
+
+&lt;p&gt;When I was finishing up on a large project earlier this year, two senior members of the team took time to talk to me 1 to 1. They explained when the project was finishing up and the opportunities beyond this. They were both busy and had a lot of people to look after along with customers to keep happy. That 10-15 mins made me feel more valued than any fancy employee benefits scheme could do. It said I appreciate what you’ve done. I care enough about you and your career to make sure you know the opportunities that lie ahead.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://heatherjcampbell.com/culture/making-time-to-talk/&quot;&gt;Making Time to Talk&lt;/a&gt; was originally published by Heather Campbell at &lt;a href=&quot;http://heatherjcampbell.com&quot;&gt;Heather Campbell's Blog&lt;/a&gt; on October 20, 2015.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Why I'm Bought in to Coaching]]></title>
+  <link rel="alternate" type="text/html" href="http://heatherjcampbell.com/culture/why-im-bought-in-to-coaching/"/>
+  <id>http://heatherjcampbell.com/culture/why-im-bought-in-to-coaching</id>
+  <published>2015-09-26T00:00:00+01:00</published>
+  <updated>2015-09-26T00:00:00+01:00</updated>
+  <author>
+    <name>Heather Campbell</name>
+    <uri>http://heatherjcampbell.com</uri>
+    <email>you@email.com</email>
+  </author>
+  <content type="html">&lt;p&gt;Last week I was lucky enough to be sent on a two day coaching course led by &lt;a href=&quot;https://twitter.com/bryandunlop&quot;&gt;Bryan Dunlop&lt;/a&gt;. I’d wanted to go on this for a while as I’ve benefited from being coached in the past. I have a number of people who I currently coach but I was looking forward to some formal training to help me maximise the positive impact I could make. It was a brilliant couple of days with lots of practical to get experience applying what we had learnt.&lt;/p&gt;
+
+&lt;p&gt;Highlights included:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Working out where people were on the skill, will matrix and how to coach for different combinations of skill and will&lt;/li&gt;
+  &lt;li&gt;Giving effective feedback and the importance of not shying away from difficult conversations but giving constructive feedback to help people tackle areas for improvement&lt;/li&gt;
+  &lt;li&gt;The &lt;a href=&quot;https://en.wikipedia.org/wiki/GROW_model&quot;&gt;GROW model&lt;/a&gt;. This was brilliant. In the past I’ve struggled with how to structure conversations to help people define their goals and steps to get there. Sometimes it is hard to get people to open up. Now I have a sequence to follow and example questions to draw on I think it’ll help make sessions much more effective.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;whats-the-value-in-coaching&quot;&gt;What’s the value in coaching?&lt;/h2&gt;
+
+&lt;p&gt;Below are just some of the ways I’ve personally benefited from coaching:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Overcoming self limiting beliefs&lt;/li&gt;
+  &lt;li&gt;Getting perspective&lt;/li&gt;
+  &lt;li&gt;Reinforcing achievements&lt;/li&gt;
+  &lt;li&gt;Understanding strengths and weaknesses&lt;/li&gt;
+  &lt;li&gt;Exploring situations I feel I’ve failed at and understanding why so I can learn from it&lt;/li&gt;
+  &lt;li&gt;Helping identify what is important. Finding focus&lt;/li&gt;
+  &lt;li&gt;Realising what was top priority to work on is in fact not the main thing&lt;/li&gt;
+  &lt;li&gt;Helping find a way of getting from A to B&lt;/li&gt;
+  &lt;li&gt;Coming up with alternative ways of achieving aim&lt;/li&gt;
+  &lt;li&gt;Challenging solution to a problem&lt;/li&gt;
+  &lt;li&gt;Making the unachieveable achieveable&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;finding-a-coach&quot;&gt;Finding a Coach&lt;/h2&gt;
+
+&lt;p&gt;My experience of coaching has not been limited to my formal career coach. I’ve benefited from conversations with colleagues who I respect from a range of roles and backgrounds. It doesn’t have to be someone in the same role or on the same career path or someone with similar personality or experiences. Some of the best coaching I’ve received has been from people who are completely different from me because they challenge my beliefs and natural responses. I’ve been lucky that the people I’ve approached to coach me have been happy to help. If you care about building good relationships with your colleagues day to day you’ll find this is the case. In general we’ve all too much on so make sure you approach the person you want coached by with a purpose and make the most of the time they can spare. Thank them and be appreciative of what they do for you. They don’t have to spend their precious time on you.&lt;/p&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://heatherjcampbell.com/culture/why-im-bought-in-to-coaching/&quot;&gt;Why I'm Bought in to Coaching&lt;/a&gt; was originally published by Heather Campbell at &lt;a href=&quot;http://heatherjcampbell.com&quot;&gt;Heather Campbell's Blog&lt;/a&gt; on September 26, 2015.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[I Know How She Does It]]></title>
+  <link rel="alternate" type="text/html" href="http://heatherjcampbell.com/books/i-know-how-she-does-it/"/>
+  <id>http://heatherjcampbell.com/books/i-know-how-she-does-it</id>
+  <published>2015-08-30T00:00:00+01:00</published>
+  <updated>2015-08-30T00:00:00+01:00</updated>
+  <author>
+    <name>Heather Campbell</name>
+    <uri>http://heatherjcampbell.com</uri>
+    <email>you@email.com</email>
+  </author>
+  <content type="html">&lt;p&gt;Early on in my pregnancy I was having one of those moments where I wondered how I was going to manage two small people and a career. I’m competitive and want to do well but at the same time my mum gave me and my sister a great childhood staying at home with us so I value spending quality time with my children. I came across &lt;a href=&quot;http://www.amazon.co.uk/Know-How-She-Does-Successful/dp/159184732X&quot;&gt;I Know How She Does It&lt;/a&gt; by Laura Vanderkam and I was interested to see how other women carve out their time.&lt;/p&gt;
+
+&lt;p&gt;There are loads of interesting tips within the book but some &lt;strong&gt;key&lt;/strong&gt; things which stood out for me were:&lt;/p&gt;
+
+&lt;h2 id=&quot;lesson-dont-fixate-on-the-ideal-be-realistic&quot;&gt;Lesson: Don’t Fixate on the Ideal be Realistic&lt;/h2&gt;
+
+&lt;p&gt;It can be easy to focus on the negative, the times when things go wrong or targets get missed. I’ve fallen into this before both in terms of work and home life. Dismissing a day out because Luke’s played up instead of focusing on the good parts, the special moments spent together. Beating myself up for being tired one night and taking the lazy route in terms of food and entertaining Luke instead of putting it in perspective as a rarity rather than the norm. Getting hung up when someone finds fault in a design instead of focusing on the parts I got right and looking at it as an opportunity to learn. It’s moving away from an obsession with perfectionism to &lt;strong&gt;being realistic, accepting you’re human and giving yourself credit for what you do achieve, actively making an effort to look for the positive.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;lesson-zoom-out-from-one-day-and-look-at-the-bigger-picture&quot;&gt;Lesson: Zoom out from one day and look at the bigger picture&lt;/h2&gt;
+
+&lt;p&gt;For around 6 months I was travelling every other week for 3 days away from home and I felt extremely guilty for doing it and being away from Luke those two nights. Zooming out and looking at the bigger picture it gave me two nights to geek out and have me time. I read books to Luke each night I was away over FaceTime. Keeping up our bedtime routine. I work a 4 day week so was still spending more hours with Luke than many 9-5 five days a week mums. My weekends were freer because of what I’d achieved those two nights I was away. I was refreshed and made more of an effort to appreciate and make the most of my time with my family.&lt;/p&gt;
+
+&lt;h2 id=&quot;lesson-its-ok-if-9-5-in-the-office-everyday-doesnt-work-for-you&quot;&gt;Lesson: It’s ok if 9-5 in the office everyday doesn’t work for you&lt;/h2&gt;
+
+&lt;p&gt;I found it refreshing to see how many of the women in the book didn’t work typical 9-5 because that totally resonates with me. I work the equivalent of 4 days a week since having Luke. Up until this week that meant working Tuesday to Friday. On a Monday I’d keep an eye on my mail/Skype so I was fairly up on what was happening. It gave me 3 full days with Luke and along with my mum taking him one day meant he spent the majority of the week with family. Now that Luke is starting school I’ve switched to 2 half days and 3 full days so I can pick him up twice a week. If I need to work extra it is rarely carrying on beyond 5, it is generally later at night once I’ve spent time with Luke and put him to bed. Sometimes the OH or my mum picks Luke up and I go hard at it one night so the rest of the week/weekend will not involve overtime. I like to spend the majority of the week in the office as I prefer working with people face to face but working from home the odd day can save me around an hour and a half commuting so it’s great to have the &lt;strong&gt;flex&lt;/strong&gt; to do it at times. Sometimes I work at the weekend or on my day off. If it means I can get something sorted and be present the rest of the time instead of worrying about it then it is worthwhile.&lt;/p&gt;
+
+&lt;h2 id=&quot;lesson-make-time-for-what-is-important-to-you&quot;&gt;Lesson: Make time for what is important to you&lt;/h2&gt;
+
+&lt;p&gt;The past few months have been my most challenging in terms of finding time for what is important to me. Pregnancy has meant I’m much more tired than usual and my evenings seem to have disappeared. Once Luke is in bed I’m ready for bed. In order to make time for the things that are important I’ve found I need to &lt;strong&gt;plan a bit more and set aside time&lt;/strong&gt;. Normally I exercise at home with Turbofire or run but at the moment I’ve not the motivation to do either so I’ve signed up for two classes, aquabellies and yogabellies. Paying upfront is a motivator to attend and I love it once I’m there. They really help me to chill out and look after myself. In terms of blogging and learning I’m keeping a trello board so if I get spare time I can pick something off the board and get stuck in instead of faffing around trying to decide what to do. I don’t think there is an easy answer when you have small children. I think you have to be creative about fitting things in and accept you will be wrecked at times. It’s worth it. Later in life I’ll get more me time again.&lt;/p&gt;
+
+&lt;h2 id=&quot;lesson-set-yourself-up-to-succeed&quot;&gt;Lesson: Set Yourself up to Succeed&lt;/h2&gt;
+
+&lt;p&gt;There were lots of things that the women did in the book that I felt would be useful to apply to my own life to help me succeed. As someone who has to leave at a set time to make childcare pickup I liked the idea of performing a &lt;strong&gt;4pm triage&lt;/strong&gt;. Looking at what I have which is outstanding and splitting it in to what has to be done before I leave and what can wait. It’s made me think about how I approach things, making sure I have the ground work in place to get the most out of meetings, conferences etc. Re-evaluating how I’m spending my work time to make sure it is doing something worthwhile. This will be even more important when I return to work after my second child. I want to make sure I &lt;strong&gt;spend my work time wisely and seize opportunities while not overcommitting.&lt;/strong&gt; Easy eh?&lt;/p&gt;
+
+&lt;h2 id=&quot;lesson-be-present&quot;&gt;Lesson: Be Present&lt;/h2&gt;
+
+&lt;p&gt;It can be easy when tired or under pressure to not be truly present in the moment. I think I could definitely be better at this. When I have a big challenge ahead or know I’ve a lot to get through I find it hard to think of anything else. I really want to work at being &lt;strong&gt;focused mentally on what I’m currently doing&lt;/strong&gt;. If I’m having downtime I want to forget what I have on after that. If I’m with Luke I want to be focused on him, enjoying our time together as although I’m currently his best bud I know I won’t always be his number one person to spend time with.&lt;/p&gt;
+
+&lt;h2 id=&quot;lesson-remember-why-you-work&quot;&gt;Lesson: Remember Why you Work&lt;/h2&gt;
+
+&lt;p&gt;Grass is always greener and all that. Sometimes in the haze of working mother guilt I forget why I work. I work for lots of reasons. I enjoy my job and the people I work with. I like the fact that it means I can make an equal contribution to my OH in terms of supporting our family. The money I earn allows me to regularly take Luke places and do things we might not be able to afford on one wage. While some of the reasons are for me others benefit the rest of my family. Again it is keeping perspective.&lt;/p&gt;
+
+&lt;h2 id=&quot;lesson-plan-some-fun&quot;&gt;Lesson: Plan Some Fun&lt;/h2&gt;
+
+&lt;p&gt;The book made me re-evaluate my weekday pre and post work time. Every day does not have to be a dinner, bath, bed routine. After work can be a great opportunity to get out and do something with my family. To be fair the Northern Ireland weather hasn’t helped me with this. Normally in the summer Luke and I regularly hit the beach or park after work. I need to be better at thinking of fun indoor things to do. I think I might pull together a bucket list of things to do indoor/outdoor so when we get a day off or some free time I can quickly get an idea of something fun to do instead of wasting time procrastinating.&lt;/p&gt;
+
+&lt;p&gt;Date nights def need to be re-introduced before baby 2 arrives. We’ve been rubbish at this recently mostly because we’ve one parent living near by who already has Luke one day a week. I need to get more creative with the at home date nights.&lt;/p&gt;
+
+&lt;h2 id=&quot;overall&quot;&gt;Overall&lt;/h2&gt;
+
+&lt;p&gt;While the book gave me some new ideas for how to manage my time, the main thing I took out of it was a sense that how I handle things and feel was totally normal. &lt;strong&gt;Seeing similarities in how other women approached work/child balance was reassuring.&lt;/strong&gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://heatherjcampbell.com/books/i-know-how-she-does-it/&quot;&gt;I Know How She Does It&lt;/a&gt; was originally published by Heather Campbell at &lt;a href=&quot;http://heatherjcampbell.com&quot;&gt;Heather Campbell's Blog&lt;/a&gt; on August 30, 2015.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Just Trying Not To Lean Out]]></title>
+  <link rel="alternate" type="text/html" href="http://heatherjcampbell.com/life/just-trying-not-to-lean-out/"/>
+  <id>http://heatherjcampbell.com/life/just-trying-not-to-lean-out</id>
+  <published>2015-07-28T00:00:00+01:00</published>
+  <updated>2015-07-28T00:00:00+01:00</updated>
+  <author>
+    <name>Heather Campbell</name>
+    <uri>http://heatherjcampbell.com</uri>
+    <email>you@email.com</email>
+  </author>
+  <content type="html">&lt;p&gt;Long time no post. Over the past few months I’ve been getting to grips with being pregnant again. Turns out a girl can forget what it is like when you leave a 4 year gap between children. I can’t complain as I have had it pretty easy both times. Still there are definitely differences this time. With a four year old running about chances to rest up are hard to find. Luke combined with a role with more responsibility have left me feeling pretty tired and this time I didn’t escape the dreaded morning sickness. Now I’m in my second trimester I can feel my energy coming back and the thought of travel doesn’t fill me with dread (as it did when I was trying to not succumb to sickness)&lt;/p&gt;
+
+&lt;p&gt;This second baby is very much wanted. To be honest it is long overdue as after Luke I put things on hold so I could have a bit of career time. Coming back from maternity leave is not the easiest. A year out of the office (my choice I know and one I’m lucky to have) can leave you feeling a bit shaky in confidence and it definitely took me a bit of time (and complaining) to make people realise I didn’t want to coast. Once I did I got on to some really interesting projects and I’ve had a ball. Having a second baby is definitely not an excuse to escape work (if you’ve ever tried being home 24x7 with a child you’ll know this is a pretty bad plan as there are literally no breaks. You can’t pee alone and chances of drinking your coffee while hot are slim) but I didn’t want to leave any bigger a gap.&lt;/p&gt;
+
+&lt;p&gt;I’ve definitely had to make some adjustments to my expectations of what I can achieve over the past few months. I’ve fought the tiredness but reality is I haven’t been able to dedicate as much time outside of work to things as I’d like. I’ve a pretty extensive list of books, podcasts and courses that I haven’t got round to completing and as shown by the gap in posts the blogging has gone a bit out the window (lots of ideas but not the matching energy/motivation to write). I’ve had to cut myself some slack and accept that I can’t do quite as much as I normally would and I’ve skipped on a few opportunities I normally wouldn’t. (I make this sound like I accepted this easily. No chance I’ve been pretty humped about it and resisted giving in) I’ve tried not to lean out i.e. I’m still giving my all to the essentials like my day to day job and coaching but I’m just not volunteering for as much extra stuff as usual. It’s not that I care less about my job or have lowered my expectations its just the reality is my body is busy making a baby and that takes it out of you.&lt;/p&gt;
+
+&lt;p&gt;The thought of being on maternity leave is amazing and scary. I can’t wait to spend quality time with baby Campbell 2 ( or Yoghurt Baby Campbell as Luke has named him… best not to leave name choices to 4 year olds I think) Plus it is Luke’s first year at school so I’m glad to be able to devote time to getting him settled and helping him adjust. I learnt a few lessons from my first return from maternity leave and I’m trying to put the ground work in to ensure a smoothish return. I’ve spoken with my coach about my concerns and we’ve agreed to come up with a training plan to get me back up to speed. I’ve made clear my desire to continue enjoying my career and taking on challenging roles. I probably shouldn’t even be thinking about it now or during maternity leave but I really felt like everything stalled last time and I can still remember how frustrating that was.&lt;/p&gt;
+
+&lt;p&gt;When I was off on maternity leave last time I took the time to upskill in a number of things including Scala and Ruby. Nightly feeds were often to a tech podcast. (What else is there to do at 2 in the morning) There are already a million things I want to learn on my maternity leave like finally getting to devote some time to Clojure (just because I want to, functional programming appeals to the mathematician in me) obviously I’m blanking out the lack of sleep and attention a new born requires. Something makes me think I’ll have to reset my expectations again in a few months time.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://heatherjcampbell.com/life/just-trying-not-to-lean-out/&quot;&gt;Just Trying Not To Lean Out&lt;/a&gt; was originally published by Heather Campbell at &lt;a href=&quot;http://heatherjcampbell.com&quot;&gt;Heather Campbell's Blog&lt;/a&gt; on July 28, 2015.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Does Everyone Know They're Empowered?]]></title>
+  <link rel="alternate" type="text/html" href="http://heatherjcampbell.com/culture/does-everyone-know-theyre-empowered/"/>
+  <id>http://heatherjcampbell.com/culture/does-everyone-know-theyre-empowered</id>
+  <published>2015-03-28T00:00:00+00:00</published>
+  <updated>2015-03-28T00:00:00+00:00</updated>
+  <author>
+    <name>Heather Campbell</name>
+    <uri>http://heatherjcampbell.com</uri>
+    <email>you@email.com</email>
+  </author>
+  <content type="html">&lt;p&gt;I’ve just finishing reading &lt;a href=&quot;http://www.amazon.co.uk/Decision-Maker-Dennis-Bakke/dp/0983263329&quot;&gt;The Decision Maker&lt;/a&gt; based on a recommendation in Kate Matsudaira’s &lt;a href=&quot;https://popforms.com/what-to-read-in-2015/&quot;&gt;blog post&lt;/a&gt;. Highly recommend it as a means of helping anyone understand the benefits of empowerment and the stumbling blocks you’ll experience along the way. Being fiction it is easy to read and remember the message it delivers.&lt;/p&gt;
+
+&lt;p&gt;It got me thinking about the smells that indicate we’re not doing all the right things to make our new way of working stick.&lt;/p&gt;
+
+&lt;p&gt;Let’s take a look in terms of empowering people.&lt;/p&gt;
+
+&lt;h2 id=&quot;were-empowered-no-one-told-me&quot;&gt;We’re Empowered? No one told me&lt;/h2&gt;
+
+&lt;p&gt;The first mistake can be in assuming everyone knows about it. We need to &lt;strong&gt;explicitly make people aware they’re empowered&lt;/strong&gt;. Doing this as a one time policy launch is not sufficient. New people join and people forget. Our values and culture need to be part of the induction programme, they need to be visible in one accesible, location where people can go and see them. They need to be explained in a &lt;strong&gt;simple, succinct way&lt;/strong&gt; so people take time to listen and understand what it means for them.&lt;/p&gt;
+
+&lt;h2 id=&quot;empowerment-thats-just-a-way-of-making-more-money-for-the-company&quot;&gt;Empowerment that’s just a way of making more money for the company&lt;/h2&gt;
+
+&lt;p&gt;Empowerment might seem like a no brainer to us, bringing benefits to the company &lt;strong&gt;and its people&lt;/strong&gt; but if it is not communicated properly and sincerely people could be skeptical. It might be clear to us that empowerment is good for employees in terms of job satisfication, growth and assuming responsibility. Just because we know that doesn’t mean everyone else does. The value needs to be made explicit rather than assuming everyone gets it. People need to know &lt;strong&gt;why the company is doing it and what it means for them&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;empowerment-allows-people-with-no-leadership-experience-to-make-decisions-how-can-that-be-good&quot;&gt;Empowerment allows people with no leadership experience to make decisions. How can that be good?&lt;/h2&gt;
+
+&lt;p&gt;Everyone will not automatically buy into a decision. To assume they will is naive and to give up on them because they don’t instantly get it can be a waste of talent. Imagine if you’ve worked hard to get to the point where you are leading a team and suddenly you’re told to let your team make some of the decisions you’ve been making. You might feel afraid of losing power or wonder what you’re role is. For a newly graduated employee you might feel you’re not ready to make decisions, unsure if you have the knowledge and experience. Do you think the first can’t be a team lead anymore or the second has no drive and is a waste of effort? No, at least not initially. Change is scary especially if you’ve been comfortable with the state of things before the change.&lt;/p&gt;
+
+&lt;p&gt;We need to &lt;strong&gt;recognise the blockers&lt;/strong&gt; to people getting on board and &lt;strong&gt;address them&lt;/strong&gt; by helping coach them past what is holding them back. Some people may never get onboard and in that case it may be time for them to move on. For many showing you care enough to take time to understand and work through their concerns will be enough to make them change and convince them of the sincerity behind the change&lt;/p&gt;
+
+&lt;h2 id=&quot;i-dont-see-anyone-else-doing-it&quot;&gt;I don’t see anyone else doing it&lt;/h2&gt;
+
+&lt;p&gt;The idea of empowering people needs to be more than a sentence somewhere. It must be &lt;strong&gt;visible in the day to day life&lt;/strong&gt; of the company. Examples of it need to be made visible to others to help spark ideas of their own. People need to see those who seize being empowered and make positive changes rewarded. Seeing the benefits it brings to others will inspire them to get involved.&lt;/p&gt;
+
+&lt;h2 id=&quot;great-im-empowered-but-how-do-i-make-a-good-decision&quot;&gt;Great I’m empowered but how do I make a good decision?&lt;/h2&gt;
+
+&lt;p&gt;We want people to innovate and make decisions that bring value to the company. Giving advice on how to go about making a good decision does not hinder it as long as it is &lt;strong&gt;light weight&lt;/strong&gt;. Encouraging people to sound ideas off others, seek advice from people with different specialities and being explicit about how to get budget and equipment encourage good decision making and do not stiffle creativity. &lt;strong&gt;Guidance&lt;/strong&gt; can be useful in reassuring people they are making the &lt;strong&gt;right move&lt;/strong&gt; and make them &lt;strong&gt;aware of the resources in place&lt;/strong&gt; to help them. People need to know who to go to if they have queries round how to go about it.&lt;/p&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://heatherjcampbell.com/culture/does-everyone-know-theyre-empowered/&quot;&gt;Does Everyone Know They're Empowered?&lt;/a&gt; was originally published by Heather Campbell at &lt;a href=&quot;http://heatherjcampbell.com&quot;&gt;Heather Campbell's Blog&lt;/a&gt; on March 28, 2015.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Review: Commitment]]></title>
+  <link rel="alternate" type="text/html" href="http://heatherjcampbell.com/books/review-commitment/"/>
+  <id>http://heatherjcampbell.com/books/review-commitment</id>
+  <published>2015-02-24T00:00:00+00:00</published>
+  <updated>2015-02-24T00:00:00+00:00</updated>
+  <author>
+    <name>Heather Campbell</name>
+    <uri>http://heatherjcampbell.com</uri>
+    <email>you@email.com</email>
+  </author>
+  <content type="html">&lt;p&gt;Over the past day I’ve been reading &lt;a href=&quot;http://www.amazon.co.uk/Commitment-Novel-about-Managing-Project/dp/9082056909&quot;&gt;Commitment&lt;/a&gt; by Olav Maassen, Chris Matts and Chris Geary.&lt;/p&gt;
+
+&lt;p&gt;Commitment is a graphic novel which makes it easily devoured and once I started I couldn’t put it down until it was read. After a long day at work an easy read is welcome!&lt;/p&gt;
+
+&lt;p&gt;Some of the takeaways from commitment:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Don’t treat options as commitments&lt;/li&gt;
+  &lt;li&gt;If you’re unsure of the correct approach you have 3 choices. Postpone the decision and collect more info. Choose the option easiest to change. Invest in an approach which allows change to be easier.&lt;/li&gt;
+  &lt;li&gt;Value clearing technical debt&lt;/li&gt;
+  &lt;li&gt;Value making your work and its flow through the stages visual&lt;/li&gt;
+  &lt;li&gt;Multitasking creates hidden queues. See one thing through to completion&lt;/li&gt;
+  &lt;li&gt;Focus on end result. Prioritise what brings value and then identify steps to deliver&lt;/li&gt;
+  &lt;li&gt;Value staff liquidity. No keyman. Allocate people with least options first and most options last. Don’t need 100% liquidity, more like 10%&lt;/li&gt;
+  &lt;li&gt;Opposite of a good relationship is no relationship&lt;/li&gt;
+&lt;/ul&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://heatherjcampbell.com/books/review-commitment/&quot;&gt;Review: Commitment&lt;/a&gt; was originally published by Heather Campbell at &lt;a href=&quot;http://heatherjcampbell.com&quot;&gt;Heather Campbell's Blog&lt;/a&gt; on February 24, 2015.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Attitude]]></title>
+  <link rel="alternate" type="text/html" href="http://heatherjcampbell.com/life/attitude/"/>
+  <id>http://heatherjcampbell.com/life/attitude</id>
+  <published>2014-12-31T00:00:00+00:00</published>
+  <updated>2014-12-31T00:00:00+00:00</updated>
+  <author>
+    <name>Heather Campbell</name>
+    <uri>http://heatherjcampbell.com</uri>
+    <email>you@email.com</email>
+  </author>
+  <content type="html">&lt;p&gt;With just hours left before 2015 a final post driven by the events of the past week. Over the Christmas hols I’ve experienced going from the best feeling in the world to one of the saddest points in my life and it got me thinking about the power of having the right attitude.&lt;/p&gt;
+
+&lt;p&gt;Sometimes in life things happen, horrible things and often whether they happen or not is something you have no control over. This was the case in the past few days. There was nothing I could have done to prevent what happened taking place. What I did have control over is how I reacted. The old me would have spent weeks feeling down, wondering why her and generally getting sucked down by it. A victim.&lt;/p&gt;
+
+&lt;p&gt;I refuse to be that person and so while I have shed a tear or two and wondered briefly why me, I’m now dusting myself off and looking forward to new opportunities in 2015. Reflecting on the event, learning lessons and making changes. Trying to get something positive out of it. It is not the end just a set back.&lt;/p&gt;
+
+&lt;p&gt;I’ve learnt over the past year or two the benefit of taking a positive attitude, embracing failure and criticism, seeing it as an opportunity to grow and a motivation to change, prove it wrong and succeed.&lt;/p&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://heatherjcampbell.com/life/attitude/&quot;&gt;Attitude&lt;/a&gt; was originally published by Heather Campbell at &lt;a href=&quot;http://heatherjcampbell.com&quot;&gt;Heather Campbell's Blog&lt;/a&gt; on December 31, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[If Something's Important Make it Visible]]></title>
+  <link rel="alternate" type="text/html" href="http://heatherjcampbell.com/culture/if-somethings-important-make-it-visible/"/>
+  <id>http://heatherjcampbell.com/culture/if-somethings-important-make-it-visible</id>
+  <published>2014-11-28T00:00:00+00:00</published>
+  <updated>2014-11-28T00:00:00+00:00</updated>
+  <author>
+    <name>Heather Campbell</name>
+    <uri>http://heatherjcampbell.com</uri>
+    <email>you@email.com</email>
+  </author>
+  <content type="html">&lt;p&gt;One of the things I’ve learnt over the past year is the power of making things &lt;strong&gt;visible&lt;/strong&gt; to people. Get it up on the wall where it can’t be ignored. That way everyday the team is reminded of it and when it is staring you in the face you tend to take action on it.&lt;/p&gt;
+
+&lt;p&gt;Great candidates are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Things you want to improve&lt;/li&gt;
+  &lt;li&gt;Rules which should be followed&lt;/li&gt;
+  &lt;li&gt;Targets you want to hit&lt;/li&gt;
+  &lt;li&gt;Things the whole team needs to be aware of&lt;/li&gt;
+  &lt;li&gt;System Diagrams&lt;/li&gt;
+  &lt;li&gt;Screen Flows&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;examples&quot;&gt;Examples&lt;/h2&gt;
+
+&lt;p&gt;Below are some examples but the possibilities are endless&lt;/p&gt;
+
+&lt;h3 id=&quot;encouraging-regular-knowledge-sharing&quot;&gt;Encouraging Regular Knowledge Sharing&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Knowledge sharing getting neglected because of other work? Single points of failure due to siloing of expertise? Lack of attendance of Whitebags?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Get up on the wall when the last one took place and the number of people who attended. Making people aware that a large amount of time has passed since the last session or that attendance was poor helps provoke conversation and action to improve. Better still have a place on the wall for suggestions for whitebags, scheduling for future sessions and volunteers to run one.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://heatherjcampbell.com/images/visibility/Whitebag.JPG&quot; alt=&quot;Whitebag Statistics&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;encouraging-good-quality-code-reviews&quot;&gt;Encouraging Good Quality Code Reviews&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Want to encourage consistency in the quality of code reviews across your team?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;As a team pull together a list of things to check for and display the list on the wall. Don’t stick it in some wiki or fileshare where it will get lost. Now there is no excuse for a sloppy review&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://heatherjcampbell.com/images/visibility/CheckList.JPG&quot; alt=&quot;Codereview Checklist&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;encouraging-timely-code-reviews&quot;&gt;Encouraging Timely Code Reviews&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Stories taking ages to progress to test because code reviews are not getting done?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Create a board with peoples’ names and place the story card for the piece of work against the name of the reviewer. Once they’ve completed it they can move it back to the developer or progress it to test depending on the outcome. A code review which hasn’t been progressed is much more visible here than in a code review tracking tool. Better still agree a period in which it has to be carried out and add it to the board.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://heatherjcampbell.com/images/visibility/CodeReview.JPG&quot; alt=&quot;Codereview Tracking Board&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;encouraging-timely-resolving-of-bugs&quot;&gt;Encouraging Timely Resolving of Bugs&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Stories stuck in test because of unresolved bugs?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;On the blocked story add a post-it for each defect with the id of the defect. Now you have an instant understanding of how many bugs are sitting against a story. It promotes conversation on priority of bug resolving vs other work. It helps identify stories which have been stuck over a number of days and highlights issues in quality of code, story definition or the code review process.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://heatherjcampbell.com/images/visibility/TestBoard.JPG&quot; alt=&quot;Stories Blocked in Test&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is just a small selection of the things my team has made visible. Hope it helps spark some ideas for things to display in your project&lt;/p&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://heatherjcampbell.com/culture/if-somethings-important-make-it-visible/&quot;&gt;If Something's Important Make it Visible&lt;/a&gt; was originally published by Heather Campbell at &lt;a href=&quot;http://heatherjcampbell.com&quot;&gt;Heather Campbell's Blog&lt;/a&gt; on November 28, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Sound Learning Advice]]></title>
+  <link rel="alternate" type="text/html" href="http://heatherjcampbell.com/skills/sound-learning-advice/"/>
+  <id>http://heatherjcampbell.com/skills/sound-learning-advice</id>
+  <published>2014-11-26T00:00:00+00:00</published>
+  <updated>2014-11-26T00:00:00+00:00</updated>
+  <author>
+    <name>Heather Campbell</name>
+    <uri>http://heatherjcampbell.com</uri>
+    <email>you@email.com</email>
+  </author>
+  <content type="html">&lt;p&gt;With so much interesting stuff happening in technology it can be hard to know where to start when trying to keep up to date. It can overwhelm you to the point where you don’t start. If you’re looking for some sound advice check out &lt;a href=&quot;https://twitter.com/trisha_gee&quot;&gt;Trisha Gee&lt;/a&gt;’s post on &lt;a href=&quot;http://trishagee.github.io/post/staying_ahead_of_the_curve/&quot;&gt;Staying ahead of the curve&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Two things I liked in particular:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;She emphasizes the importance of deciding to not learn something. Take time to rule out things.&lt;/li&gt;
+  &lt;li&gt;Just because you decide to not learn something now doesn’t mean you can never pick it up.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://heatherjcampbell.com/skills/sound-learning-advice/&quot;&gt;Sound Learning Advice&lt;/a&gt; was originally published by Heather Campbell at &lt;a href=&quot;http://heatherjcampbell.com&quot;&gt;Heather Campbell's Blog&lt;/a&gt; on November 26, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Review: Talking with Tech Leads]]></title>
+  <link rel="alternate" type="text/html" href="http://heatherjcampbell.com/books/review-talking-with-tech-leads/"/>
+  <id>http://heatherjcampbell.com/books/review-talking-with-tech-leads</id>
+  <published>2014-10-24T00:00:00+01:00</published>
+  <updated>2014-10-24T00:00:00+01:00</updated>
+  <author>
+    <name>Heather Campbell</name>
+    <uri>http://heatherjcampbell.com</uri>
+    <email>you@email.com</email>
+  </author>
+  <content type="html">&lt;p&gt;A couple of weeks ago I was having a browse around the books on &lt;a href=&quot;https://leanpub.com&quot;&gt;Leanpub&lt;/a&gt; and I came across &lt;a href=&quot;https://leanpub.com/talking-with-tech-leads&quot;&gt;Talking with Tech Leads&lt;/a&gt; by Patrick Kua. The book contains 35 interviews with Tech Leads from first timers to experienced pros. It looks at how they balance the technical and non technical demands. The interviews illustrate how the reality of being a tech lead differs from their expectations. The tech leads talk about the skills they’ve had to develop along the way and the lessons they’ve learnt. It is an easy read due to the interview format. I would recommend it to senior developers looking to make the transition as it is an insight into what a day being a tech lead involves.&lt;/p&gt;
+
+&lt;p&gt;Over my next couple of posts I’m going to explore some of the topics in the book which resonated with me:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Redefining Your Value&lt;/li&gt;
+  &lt;li&gt;Building Up Others&lt;/li&gt;
+  &lt;li&gt;Welcoming Input&lt;/li&gt;
+  &lt;li&gt;Seeing the Bigger Picture&lt;/li&gt;
+  &lt;li&gt;Staying in Touch with the Code&lt;/li&gt;
+  &lt;li&gt;Developing Yourself&lt;/li&gt;
+  &lt;li&gt;Valuing Building Relationships&lt;/li&gt;
+  &lt;li&gt;Establishing Team Culture&lt;/li&gt;
+  &lt;li&gt;Managing Your Time&lt;/li&gt;
+  &lt;li&gt;Disagreement is Not Criticism&lt;/li&gt;
+&lt;/ul&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://heatherjcampbell.com/books/review-talking-with-tech-leads/&quot;&gt;Review: Talking with Tech Leads&lt;/a&gt; was originally published by Heather Campbell at &lt;a href=&quot;http://heatherjcampbell.com&quot;&gt;Heather Campbell's Blog&lt;/a&gt; on October 24, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Review: Show Your Work!]]></title>
+  <link rel="alternate" type="text/html" href="http://heatherjcampbell.com/books/review-show-your-work/"/>
+  <id>http://heatherjcampbell.com/books/review-show-your-work</id>
+  <published>2014-10-12T00:00:00+01:00</published>
+  <updated>2014-10-12T00:00:00+01:00</updated>
+  <author>
+    <name>Heather Campbell</name>
+    <uri>http://heatherjcampbell.com</uri>
+    <email>you@email.com</email>
+  </author>
+  <content type="html">&lt;p&gt;I found &lt;a href=&quot;http://austinkleon.com/show-your-work/&quot;&gt;Show Your Work!&lt;/a&gt; by Austin Kleon an inspiration for getting out there and sharing what you know and do. It’s an easy to read and digest book, split into 10 chapters, each packed with beautiful illustrations.&lt;/p&gt;
+
+&lt;p&gt;The book reassures that you don’t need to be an expert to have something worth sharing. Through its pages it gives simple steps to follow to get your thoughts out there.&lt;/p&gt;
+
+&lt;p&gt;I was looking for insights for my blog and speaking. The book provided this. It made me look closer at my day to day working and inspirations. I hadn’t stepped back and thought about my inspirations before.&lt;/p&gt;
+
+&lt;p&gt;Chapters on how to share were also useful. I need to follow Kleon’s advice and start sharing little more often. In my job it is easy to overlook the small things which go into delivering a successful project. Taking time out to share these is a good way of making myself more aware of what I’m doing well. It’s good to appreciate the little wins. It is also good to recognise them for future projects.&lt;/p&gt;
+
+&lt;p&gt;The book promotes taking time to pick the prose to share your thoughts as you would if writing a story. It also warns against spamming. I liked the idea of self editing, not sharing for the sake of sharing, make it useful.&lt;/p&gt;
+
+&lt;p&gt;I was glad to see a section on teaching what you know as I’m a huge believer in doing that and the benefits it brings you. It takes you understanding to a new level.&lt;/p&gt;
+
+&lt;p&gt;In the past I have held back sharing my opinion in writing or when speaking because of fear. Fear of being cut down either by trolls or people who know more than me. Kleon offers sound advice on this, making you take a look at why you feel this way. Not easy but worth confronting.&lt;/p&gt;
+
+&lt;p&gt;I spend a lot of time reading technical books and this is a welcome distraction from those. It gave me a reassuring push that I’m doing the right thing sharing my thoughts. That a lone made it worth reading.&lt;/p&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://heatherjcampbell.com/books/review-show-your-work/&quot;&gt;Review: Show Your Work!&lt;/a&gt; was originally published by Heather Campbell at &lt;a href=&quot;http://heatherjcampbell.com&quot;&gt;Heather Campbell's Blog&lt;/a&gt; on October 12, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[The Little Book of Lunch]]></title>
+  <link rel="alternate" type="text/html" href="http://heatherjcampbell.com/books/the-little-book-of-lunch/"/>
+  <id>http://heatherjcampbell.com/books/the-little-book-of-lunch</id>
+  <published>2014-09-08T00:00:00+01:00</published>
+  <updated>2014-09-08T00:00:00+01:00</updated>
+  <author>
+    <name>Heather Campbell</name>
+    <uri>http://heatherjcampbell.com</uri>
+    <email>you@email.com</email>
+  </author>
+  <content type="html">&lt;p&gt;Recently I thought it would be good to start sharing things that help me to be a happy, healthy programmer. This post falls under that category and is a review of &lt;a href=&quot;http://www.amazon.co.uk/Little-Book-Lunch-Caroline-Craig/dp/0224095730/ref=sr_1_1?s=books&amp;amp;ie=UTF8&amp;amp;qid=1410190693&amp;amp;sr=1-1&amp;amp;keywords=the+little+book+of+lunch&quot;&gt;The Little Book of Lunch&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I tend to mostly take a packed lunch to work and had got stuck in a real sandwich and soup rut. I’m pretty flat out at the moment and lunchtime is my little sanctuary of calm and it just felt like I wasn’t making the most of it. I wanted to change up my lunch and start making it something I really looked forward to. Something that would lift my spirits and leave be feeling revitalised after a hard morning.&lt;/p&gt;
+
+&lt;p&gt;Wandering through a bookshop one lunchtime I came across &lt;a href=&quot;http://www.amazon.co.uk/Little-Book-Lunch-Caroline-Craig/dp/0224095730/ref=sr_1_1?s=books&amp;amp;ie=UTF8&amp;amp;qid=1410190693&amp;amp;sr=1-1&amp;amp;keywords=the+little+book+of+lunch&quot;&gt;The Little Book of Lunch&lt;/a&gt;. Flicking through the pages I was impressed by how many of the recipes appealed to me. In general the recipes require a small number of ingredients. I don’t want to have to buy in a million things for one lunch. They also tend to have a short preparation time. Having a fulltime job, house, toddler and dog to look after means spare time is at a premium. The book even simplifies your weekly shop by grouping recipes with similar ingredients and providing a shopping list. Genius.&lt;/p&gt;
+
+&lt;p&gt;I’ve had the book a couple of months now and I’ve not been disappointed in a recipe yet. I’ve tried lots of different things including:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Herby Quinoa With Peas &amp;amp; Seasonal Greens&lt;/li&gt;
+  &lt;li&gt;Spanish Lunch: Chorizo Egg &amp;amp; Potato Salad&lt;/li&gt;
+  &lt;li&gt;Rainbow Rescue&lt;/li&gt;
+  &lt;li&gt;Vietnamese Salad&lt;/li&gt;
+  &lt;li&gt;South-East Asian Pho&lt;/li&gt;
+  &lt;li&gt;Thai Fishcakes&lt;/li&gt;
+  &lt;li&gt;Harissa Chicken&lt;/li&gt;
+  &lt;li&gt;Simple Tortilla&lt;/li&gt;
+  &lt;li&gt;Salted Caramel Brownies (I don’t want to count how many of the batch I ate myself. Scared to make the peanut butter ones as I’d prob eat the lot)&lt;/li&gt;
+  &lt;li&gt;Lemon Curd Cupcakes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I’ve enjoyed them all and they’ve transported well too. I feel like I’m fuelling my body with something healthy and not processed and they feel like a treat.&lt;/p&gt;
+
+&lt;p&gt;To help with transporting I got myself some really cute Tupperware from Paperchase a bit like &lt;a href=&quot;http://www.paperchase.co.uk/gifts/home-and-kitchen-gifts/lunch-boxes-bottles/all-change-snack-boxes-set-of-4.html&quot;&gt;these&lt;/a&gt;. (If my 20 year old self could see me now she’d be so disappointed at me getting excited about this). The smallest one is great for dressings. Also got myself a wee flask from ikea.&lt;/p&gt;
+
+&lt;p&gt;I’ve found I’m using herbs so much more that I’m now growing mint, coriander and basil. Sainsburys sell them at a pound a pop so very small outlay and so far they’ve survived and I’m by no means the most green fingered of people. Breaking off a mint stalk, sticking it in a cup and adding boiled water makes the best mint tea. Much better than a teabag.&lt;/p&gt;
+
+&lt;p&gt;If you’re looking to spruce up your lunchtimes look no further than &lt;a href=&quot;http://www.amazon.co.uk/Little-Book-Lunch-Caroline-Craig/dp/0224095730/ref=sr_1_1?s=books&amp;amp;ie=UTF8&amp;amp;qid=1410190693&amp;amp;sr=1-1&amp;amp;keywords=the+little+book+of+lunch&quot;&gt;The Little Book of Lunch&lt;/a&gt;. Well worth a purchase.&lt;/p&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://heatherjcampbell.com/books/the-little-book-of-lunch/&quot;&gt;The Little Book of Lunch&lt;/a&gt; was originally published by Heather Campbell at &lt;a href=&quot;http://heatherjcampbell.com&quot;&gt;Heather Campbell's Blog&lt;/a&gt; on September 08, 2014.&lt;/p&gt;</content>
+</entry>
+
+</feed>
